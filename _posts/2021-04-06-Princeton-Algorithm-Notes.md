@@ -29,10 +29,6 @@ Table of Contents
 ==========
 <!-- TOC -->
 
-- [Princeton Algorithm Coursera Course Notes](#princeton-algorithm-coursera-course-notes)
-  - [Junfan Zhu](#junfan-zhu)
-  - [Course Links](#course-links)
-- [Table of Contents](#table-of-contents)
 - [1. Union Find](#1-union-find)
   - [1.1. Quick Find (eager approach)](#11-quick-find-eager-approach)
   - [1.2. Quick Union (lazy approach)](#12-quick-union-lazy-approach)
@@ -3402,6 +3398,6 @@ public class HamiltonPath
 
 ---
 
-$\mathbb{E}$nd - $\mathbb{O}$f - $\mathbb{T}$he - $\mathbb{C}$ourse - $\mathbb{N}$otes
+# End of Course Notes
 ====
 
