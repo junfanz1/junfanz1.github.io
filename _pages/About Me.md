@@ -1,6 +1,6 @@
 ---
 permalink: /about/
-title: "About"
+title: "About Me"
 ---
 
 I'm currently an Analyst at Societe Generale. I graduated with M.S. in Financial Mathematics from UChicago in December 2020. My interests lie in Quant Research/Trading.
