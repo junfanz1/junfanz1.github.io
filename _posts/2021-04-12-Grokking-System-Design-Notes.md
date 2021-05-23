@@ -548,3 +548,9 @@ For load balancing, as we discussed in the beginning, the real data is essential
 To handle this issue, we add “virtual replicas” for caches. Instead of mapping each cache to a single point on the ring, we map it to multiple points on the ring, i.e. replicas. This way, each cache is associated with multiple portions of the ring.
 
 If the hash function “mixes well,” as the number of replicas increases, the keys will be more balanced.
+
+---
+
+# End of Course Notes
+
+- [__PDF Notes__](https://github.com/junfanz1/CS-Online-Course-Notes/blob/main/Grokking%20the%20System%20Design%20Interview/Grokking%20the%20System%20Design%20Interview.pdf)
