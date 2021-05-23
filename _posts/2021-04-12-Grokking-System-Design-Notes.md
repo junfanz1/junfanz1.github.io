@@ -20,7 +20,6 @@ Table of Contents
 
 <!-- TOC -->
 
-- [Grokking the System Design Interview](#grokking-the-system-design-interview)
 - [1. Back-of-the-envelope estimation](#1-back-of-the-envelope-estimation)
 - [2. Shortening URL](#2-shortening-url)
   - [2.1. Encoding actual URL](#21-encoding-actual-url)
