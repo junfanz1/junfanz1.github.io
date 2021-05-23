@@ -2,7 +2,7 @@
 title: "Princeton Algorithm Coursera Course Notes"
 date: 2021-04-06
 categories:
-  - blog
+  - Blog
 tags:
   - CS
   - Notes
