@@ -8,8 +8,6 @@ tags:
   - Notes
 ---
 
-- [__PDF Notes__](https://github.com/junfanz1/Quant-Books-Notes/blob/main/ML%20for%20Algorithmic%20Trading/Notes%20on%20Machine%20Learning%20for%20Algorithmic%20Trading.pdf)
-
 Book Link
 -------------
 
@@ -2062,3 +2060,5 @@ Rank correlation of performance metrics (Figure A.18)
 -----
 
 # End of Book Notes
+
+- [__PDF Notes__](https://github.com/junfanz1/Quant-Books-Notes/blob/main/ML%20for%20Algorithmic%20Trading/Notes%20on%20Machine%20Learning%20for%20Algorithmic%20Trading.pdf)
