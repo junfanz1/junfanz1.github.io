@@ -1,11 +1,11 @@
 ---
-title: "Grokking the System Design Interview"
+title: "Grokking System Design Notes"
 categories:
   - Blog
 tags:
   - CS
   - Notes
-link: https://github.com/junfanz1/CS-Online-Course-Notes
+
 ---
 
 
