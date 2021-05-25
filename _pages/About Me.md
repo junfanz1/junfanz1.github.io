@@ -41,9 +41,15 @@ I love self-learning. I have certificates from Triplebyte Certified Machine Lear
 
 ## __Hobbies__
 
-Outdoors: I completed Dalian International Marathon in 4h'55min, and Half Marathon in 2h'11min. 
+I'm a marathon runner. I completed Dalian International Marathon in 4h'55min, and Half Marathon in 2h'11min. 
 
-I love trekking (Grand Circle itinerary in US Southwest, Nepal Annapurna Base Camp Trek, Inner-Mongolia Kubuqi Desert Traverse), quite new to skiing (Cascade Mountain in Wisconsin).
+I'm a big fan of trekking
+
+- Grand Circle itinerary in US Southwest
+- Nepal Annapurna Base Camp Trek
+- Inner-Mongolia Kubuqi Desert Traverse
+
+I'm new to skiing, wrestle a lot :) (Cascade Mountain in Wisconsin).
 
 I love Chinese Calligraphy (childhood favoraites), Violin (L8, Shanghai Conservatory of Music), Kunqu Opera (my hometown culture), law (took China Bar Exam), and cooking. 
 
