@@ -119,13 +119,13 @@ High frequency studies can be done for limite sampling periods with large sample
 
 1. Aggregation factor of 4 to 5 oordders of magnitude.
 
-- Long memory effect in 20-min absolute returns, Dacorogna *et al*. (1993). 
-- Similar hyperbolic decay of the autocorrelation function was observed on adily returns, Ding *et al*. (1993) 
-- Difficult to distinguish rigoroously in the data between long memory effects and regime shifts. Hyperbolic decay is empicially found at time scales that differ by 2 orders of magnitude in aggregation is a sign that the process must include long range dependence or there are regime shifts at *all time scales*.
+  - Long memory effect in 20-min absolute returns, Dacorogna *et al*. (1993). 
+  - Similar hyperbolic decay of the autocorrelation function was observed on adily returns, Ding *et al*. (1993) 
+  - Difficult to distinguish rigoroously in the data between long memory effects and regime shifts. Hyperbolic decay is empicially found at time scales that differ by 2 orders of magnitude in aggregation is a sign that the process must include long range dependence or there are regime shifts at *all time scales*.
 
 2. Scaling properties and scaling laws.
 
-- Scaling laws of different moments of return distributions. Challenge is to develop models that simultaneously characterize the short-term and long-term behaviors of a time series.
+  - Scaling laws of different moments of return distributions. Challenge is to develop models that simultaneously characterize the short-term and long-term behaviors of a time series.
 
 # 2. Markets and Data
 
@@ -143,7 +143,7 @@ ETF FX  market voume is much lower than FX spot market, and OTC derivatives (FX 
 
 Direct markets for primary assets, like FX, equity, they are traded immediately at the time of transaction. 
 
-Cons: The timing is not flexible, traders have to delal with physical delivery of the traded assets (like commodities), and interest rate spot market is affected nby counterparty default risk. So, the derivatives markets are more important than spot markets in some cases. FX market is a market when spot trading is strong.
+__Cons:__ The timing is not flexible, traders have to delal with physical delivery of the traded assets (like commodities), and interest rate spot market is affected nby counterparty default risk. So, the derivatives markets are more important than spot markets in some cases. FX market is a market when spot trading is strong.
 
 ## 2.3. Futures Market
 
@@ -196,9 +196,13 @@ Spot interest rates is a deposit of fixed duration, the maturity period.
 
 ### 2.7.2. Foregin Exchange Forward Rates
 
-Due to delayed transaction, the buyer of FX forward contract earns some interest on the base currency of FX rate instead of exchanged currency. If interest rates of 2 currencies deviate, there is net interest payment flow from/to buyer during maturity period. This determines the price oof FX *outright* forward rate. To avoid riskfree arbitrage, the outright forward rate deviates from simultaneousely quoted FX spot price, by an amount to offset the deviations in interest payment. The price deviation between FX spot prices and uotright forward rates reflects the interest rate *differential* between 2 exchanged currencies, rather than absolute level of IRs. (See formula 2.2) 
+Due to delayed transaction, the buyer of FX forward contract earns some interest on the base currency of FX rate instead of exchanged currency. If interest rates of 2 currencies deviate, there is net interest payment flow from/to buyer during maturity period. This determines the price oof FX *outright* forward rate. 
 
-Instead of outright FX forward prices $$f$$, the difference (outright forward - simultaneously valid FX spot price) $$f-p$$ is quoted, which is less volatile than outright forward price.  $$f-p > 0$$: forward premium.  $$f-p > 0$$: forward discouont. Both are called forward points. Together are called FX swap rates. FX forward transactin = spot transaction + swap transaction (swapping 2 currencies during maturity)
+To avoid riskfree arbitrage, the outright forward rate deviates from simultaneousely quoted FX spot price, by an amount to offset the deviations in interest payment. The price deviation between FX spot prices and uotright forward rates reflects the interest rate *differential* between 2 exchanged currencies, rather than absolute level of IRs. (See formula 2.2 in the book) 
+
+Instead of outright FX forward prices $$f$$, the difference (outright forward - simultaneously valid FX spot price) $$f-p$$ is quoted, which is less volatile than outright forward price.  
+
+$$f-p > 0$$: forward premium.  $$f-p > 0$$: forward discouont. Both are called forward points. Together are called FX swap rates. FX forward transactin = spot transaction + swap transaction (swapping 2 currencies during maturity)
 
 ## 2.8. Interest Rate Futures
 
@@ -235,11 +239,15 @@ Bonds are long-term interest rates. Bond futures are standardized, just like sho
 
 Rollover scheme can create a continuous time series with different expiries futures contracts, they are good for transaction cost analysis, different optimization goals lead to different rollover schemes. Rollover must follow economic contraint imposing that the value of portfolio changes only when the market prices oof individual bond futures move, with no change arising soly from rollover procedure. When rolling over, the number of new contracts to be bought is calculated, so that total amouoont invested is const, and number of new contracts is given by number of old contracts being sold multiplied by middle price, divided by middle price of new contracts being bought. 
 
-- Scheme 1: use conversion factor to render continuous the transition froom one contract to the next one, at a fixed date before the first contract's expiry.
+## 2.9.1 Scheme 1
+
+Scheme 1: use conversion factor to render continuous the transition froom one contract to the next one, at a fixed date before the first contract's expiry.
 
 The timing of rollover determines the character of obtained continuous time series. Simple rollover, $$\alpha$$ factor (see formula 2.10) varies over time, often slower than prices. Rollover time is chosen when both contracts are liquid. So we take a mean $$\alpha$$ from daytimes where simultaneous quotes of both contracts are found, rather than an $$\alpha$$ determined at only oone fixed daytime. Ballocchi and Hopman (1997) says the discontinuities of $$\alpha$$ factors by asynchronicties in the underlying bonds, are called *cheapest-to-deliver* (or benchmark bonds), which is helpful to analyze continuous series. If underlying bonds of 2 successive contracts don't change exactly at the same time, the $$\alpha$$ factor is affected by difference. 
 
-- Scheme 2: construct a bond futures portfolio with const mean time-to-expiry, though a daily partial rollover, whereas the constituent bond futures have a fixed calendar data expiry.
+### 2.9.2 Scheme 2
+
+Scheme 2: construct a bond futures portfolio with const mean time-to-expiry, though a daily partial rollover, whereas the constituent bond futures have a fixed calendar data expiry.
 
 Based on const-time-to-expiry, to have a portfolio doesn't expire at a fixed date, but keeps const mean time-to-expiry as time moves on, by means of an appropriate daily rollover. This rollover doesn't need to be executed so high transaction costs are avoided. The time-to-expiry $$h$$ of a portfolio is defined as weighted average of time-to-expiry of constituents. (See formula 2.11) Each day we arrange partial rollover, selling a proportion of holdings in the first expiry and buying the second one to keep $$h$$ const. We can use volume-dependent timing of rollover (roll over when volume of a new contract overtakes that of an old contract).
 
@@ -260,16 +268,20 @@ Commodity futures aren't liquid enough for huge transactions, large orders will 
 3. Equity (index) *futures*, liquid, high quality, high frequency.
 4. *Options* implied vol.
 
+----
+
 # 3. Time Series
 
 When considering spacing of data in time, we should discuss time scale.
 
-1. Homogeneous: regularly spaced time series. Most time series analysis. 
+# 3.0.1 Homogeneous: regularly spaced time series. Most time series analysis. 
   
   - Use regularizing operator to do time series of same variable. Sampling an inhomogeneous time series at regular time intervals for time series analysis
   - Microscopic operator depends on actual sampling of inhomogeneoous time series. Eliminating random ticks lead to different results.
 
-2. Inhomogeneous: irregularly spaced time series. It's different from missing observations (homogeneous + few gaps). Use Operator $$\Omega$$, do time series $$\Omega[z]$$, new variable on same time points.
+# 3.0.2. Inhomogeneous: irregularly spaced time series. 
+
+It's different from missing observations (homogeneous + few gaps). Use Operator $$\Omega$$, do time series $$\Omega[z]$$, new variable on same time points.
 
   - Compute a new variable from initial variable while keeping initial inhomogeneous time points. *Ex*: computing a series of local vol from initial price series.
   - Macroscopic operators extract *average* behavior of time series. They are immune to small variations of individual ticks, including adding/eliminating few ticks. They have well-defined limit when price quotes become infinitely dense. If price quotes are sufficiently dense inside the range of operator, we are close enough to its limit. For inhomogeneous time series, macroscopic operators are robust [^5]. The archetype of macroscopic operator is exponential moving average (EMA), with decaying weight on the past.
@@ -290,7 +302,9 @@ $$x(t_j) = \frac{\log p_{bid} (t_j) + \log p_{ask}(t_j)}{2} \tag {3.1}$$
 
 , due to antisymetric property: if $$x$$ is USD-JPY price, then JPY-USD is $$-x$$, and they are the same market. Another advantage of logarithmic is to make returns (difference of $$x$$) dimensionless, which is independent of original units in which price is measured. 
 
-In FX spot market, bid/ask prices are just indicative quotes produced by market makers who are interested in either bid or ask; the other price are dummy value. This leads to small error for this formula, and often the bid-ask spread is often smaller than the real spread. Due to transmission delays, like market maker B enters a quote after market maker A, but the quote of market maker B is the first to appear on multi-contributor data feed. That's why we use effective price, with best bid/ask in a time window of the size of a quote lifetime (2 mins). And also, we can elminate negative first-order autocorrelation of returns at high frequencies.
+In FX spot market, bid/ask prices are just indicative quotes produced by market makers who are interested in either bid or ask; the other price are dummy value. This leads to small error for this formula, and often the bid-ask spread is often smaller than the real spread. 
+
+Due to transmission delays, like market maker B enters a quote after market maker A, but the quote of market maker B is the first to appear on multi-contributor data feed. That's why we use effective price, with best bid/ask in a time window of the size of a quote lifetime (2 mins). And also, we can elminate negative first-order autocorrelation of returns at high frequencies.
 
 ### 3.1.3. Realized Vol
 
@@ -300,7 +314,9 @@ where $$n$$ = number of return (price changes) observations. 2 time intervals: r
 
 For $$p$$ choosing, should < tail index of distrbution (3.5 for high frequency FX data, 4-th moment of return distribution often diverges.) p can be limited to *half* of tail index.
 
-By Gaussian scaling law, $$v^2 \propto \Delta t$$, scaled vol = $$v_{scaled} = \sqrt{\frac{\Delta t_{scale}}{\Delta t}} v$$. 
+By Gaussian scaling law, $$v^2 \propto \Delta t$$, 
+
+scaled vol = $$v_{scaled} = \sqrt{\frac{\Delta t_{scale}}{\Delta t}} v$$. 
 
 If $$\Delta t_{scale}$$ = 1 year, then it's annualized vol. Typical annualized vool for FX rates are around 10%.
 
@@ -310,7 +326,7 @@ So we have 3 time intervals:
 - sample size $$n \Delta t$$ (n=250 working days)
 - scaling interval $$\Delta t_{scale}$$ (1 year: annualized vol)
 
-Three volatilities:
+__Three volatilities:__
 
 - Realized vol = historical vol: determined by past observations, like formula (3.1). Based on homogeneous series of returns. Can also do interval overlapping for more precise realized vol. Coarse realized vol with large $$\Delta t$$ predicts the value of fine vol (small $$\Delta t$$). This lead-lag effect indicates that the dynamics of vol are complex, and realized vol owith one choice of $$\Delta t$$ isn't a perfect substitute for realized vool with another value of $$\Delta t$$. For low-frequency (daily) datta, GARCH has better estimation of vol than realized vol. For high-frequency (intraday), realized vol is better.
 - Model vol = virtual variable in theoretical model like GARCH or stochastic vol.
@@ -371,7 +387,7 @@ To measure tail, we can use first 2 moments of kernel, defined as aspect ratio
 
 $$A R[\Omega]=<<t^{2}>w^{1 / 2} /\left\langle t>_{\omega}\right\rangle$$
 
-= $$2/\sqrt{3}$$ for rectangular kernel, and $$\sqrt{2}$$ for simple EMA. 
+$$= 2/\sqrt{3}$$ for rectangular kernel, and $$\sqrt{2}$$ for simple EMA. 
 
 Low aspect ratio means that the kernel of operator has short tail, so a short build-up time interval is good. For nonnegative causal kernels, the aspect ratio is less useful for choosing build-up interval of causal kernels with more complicated, partially negative shapes.
 
@@ -389,7 +405,9 @@ $$\Omega[z](t) = \displaystyle{\left[\int_{-\infty}^t dt'~w(t-t')~|z(t')|^p \rig
 
 For moving norm, $$w$$ = average, $$q = 1/p$$.
 
-__Nonlinear operators can build robust estimators.__ Data errors (outliers) should be eliminated by data filter prior to any computation. Prior data cleaning, robust estimators can reduce dependency of results on outliers or the choice of data cleaning algorithm. This problem is acute mainly when working with returns, because the difference operator needed to coompute returns from prices is sensitive to outliers. So the modified operator acheives robustness by giving a higher weight to the center of the distribution of returns than to the tails.
+__Nonlinear operators can build robust estimators.__ Data errors (outliers) should be eliminated by data filter prior to any computation. Prior data cleaning, robust estimators can reduce dependency of results on outliers or the choice of data cleaning algorithm. 
+
+This problem is acute mainly when working with returns, because the difference operator needed to coompute returns from prices is sensitive to outliers. So the modified operator acheives robustness by giving a higher weight to the center of the distribution of returns than to the tails.
 
 Robust operator mapping function $$sign (x) \lvert x \rvert ^{\gamma} = x\lvert x \rvert ^{\gamma-1}$$ has exponent $$0 \leq \gamma < 1$$. 
 
@@ -397,11 +415,19 @@ For vol estimates, usual $$L^2$$ vol operator based on squared returns can be ma
 
 ### 3.2.3. Iterated EMA Operator
 
-EMA Decaying kernel $$ema(t) = \frac{e^{-t/\tau}}{\tau}$$.
+EMA Decaying kernel 
+
+$$ema(t) = \frac{e^{-t/\tau}}{\tau}$$.
 
 Technical analysis is simple iterated EMA operators to homogeneous time series for long-term. 
 
-Kernel of EMA$$[\tau, n] (t) = \frac{1}{(n-1)!}(\frac{t}{\tau})^{n-1} \frac{e^{-t/\tau}}{\tau}$$. This is Laguerre polynomials, which are orthogonal w.r.t. measure $$e^{-t}$$ for $$\tau = 1$$. Any kernel can be expressed as sum of iterated EMA kernels. So, the convolution with an arbitrary kernel can be evaluated by iterated exponential moving averages. But the convergence is slow. For different $$\tau, n$$ choosing, see *Figure 3.5*.
+Kernel of EMA
+
+$$[\tau, n] (t) = \frac{1}{(n-1)!}(\frac{t}{\tau})^{n-1} \frac{e^{-t/\tau}}{\tau}$$. 
+
+This is Laguerre polynomials, which are orthogonal w.r.t. measure $$e^{-t}$$ for $$\tau = 1$$. 
+
+Any kernel can be expressed as sum of iterated EMA kernels. So, the convolution with an arbitrary kernel can be evaluated by iterated exponential moving averages. But the convergence is slow. For different $$\tau, n$$ choosing, see *Figure 3.5*.
 
 ### 3.2.4. Differential (Wavelet Transforms)
 
@@ -409,7 +435,7 @@ Low-noise differential operator suitable to stochastic process should compute an
 
 Our point of view is different from continuous-time stochastic analysis. In continuous time, $$\tau \rightarrow 0$$, leading to Ito derivative with subttleties. Here, we keep the range $$\tau$$ finite to analyze process at different time scales (different orders of magnitudes of $$\tau$$). Moreover, the $$\tau \rightarrow 0$$ is not true in financial data, because a process is known only on a discrete set of time points and doesn't exist in continuous time. 
 
-Differential operator $$\Delta\[\tau\] = \gamma (EMA[\alpha \tau, 1] + EMA[\alpha \tau, 2] - 2EMA[\alpha \beta \tau, 4])$$, see figure 3.8.
+Differential operator $$\Delta[\tau] = \gamma (EMA[\alpha \tau, 1] + EMA[\alpha \tau, 2] - 2EMA[\alpha \beta \tau, 4])$$, see figure 3.8.
 
 ### 3.2.5. $$\gamma$$-Derivative
 
@@ -433,7 +459,13 @@ A soft kernel will lead to lower mean value of vol than hard kernel (positive/ne
 
 ### 3.2.7. Windowed Fourier Transform (Complex Moving Average)
 
-For time series and vol at different time scales, we want a double representation in time and frequency, but we don't need an invertible transformation, because we need to analyze rather than further process the signal. This gives us flexibility in choosing transformations. We want a couple of oscillations in window $$2\tau$$, large $$k$$ increase frequency resolution at the cost of time resolutin. We compute EMA with complex $$\tau$$, which is equivalent to include sine and cosine in the kernel. Because this has nice computational iterative property of moving average. Kernel of complex ema: $$ema[\zeta](t) = \frac{e^{-\zeta t}}{\tau}$$, where $$\zeta = \frac{1}{\tau}(1+ik)$$ is complex. By using convolution formula, we can have iterative kernel of complex $$EMA[\zeta,n;c] = \frac{c}{(1+ik)^n}$$.
+For time series and vol at different time scales, we want a double representation in time and frequency, but we don't need an invertible transformation, because we need to analyze rather than further process the signal. This gives us flexibility in choosing transformations. We want a couple of oscillations in window $$2\tau$$, large $$k$$ increase frequency resolution at the cost of time resolution. 
+
+We compute EMA with complex $$\tau$$, which is equivalent to include sine and cosine in the kernel. Because this has nice computational iterative property of moving average. 
+
+Kernel of complex ema: $$ema[\zeta](t) = \frac{e^{-\zeta t}}{\tau}$$, where $$\zeta = \frac{1}{\tau}(1+ik)$$ is complex. 
+
+By using convolution formula, we can have iterative kernel of complex $$EMA[\zeta,n;c] = \frac{c}{(1+ik)^n}$$.
 
 Windowed Fourier transforms can be computed for a set of different $$\tau$$ values to obtain a full spectrum. But there's an upper limit in the range of computable frequencies. Results are reliable if $$\tau$$ > average time interval between ticks; but for $$\tau$$ < average tick interval, results are biased and noisy, which also applies to other time series operators.
 
