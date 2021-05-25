@@ -103,7 +103,7 @@ Table of Contents
   - [7.2. Analytic Functions](#72-analytic-functions)
     - [7.2.1. Over](#721-over)
     - [7.2.2. Window frame clauses](#722-window-frame-clauses)
-    - [7.2.3. $3$ types of analytic functions](#723-3-types-of-analytic-functions)
+    - [7.2.3. $$3$$ types of analytic functions](#723-3-types-of-analytic-functions)
   - [7.3. Nested and Repeated Data](#73-nested-and-repeated-data)
     - [7.3.1. Nested data](#731-nested-data)
     - [7.3.2. Repeated data](#732-repeated-data)
