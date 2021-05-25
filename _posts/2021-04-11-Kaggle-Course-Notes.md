@@ -474,7 +474,7 @@ my_model.fit(X_train, y_train)
 
 We multiply the predictions from each model by a small number `learning_rate` before adding them in. Each tree we add to the ensemble helps us less, so we can set a higher value for `n_estimators` without overfitting. If we early stopping, the number of trees will be determined automatically. 
 
-Small `learning_rate = 0.05` + large number of estimators $\Rightarrow$ accurate XGBoost models, though training time longer.
+Small `learning_rate = 0.05` + large number of estimators $$\Rightarrow$$ accurate XGBoost models, though training time longer.
 
 For large datasets, use parallelism to faster the model, set `n_jobs` = number of cores on your machine. 
 
@@ -2203,7 +2203,7 @@ FROM 'data.runners.train_time'
 - `ROWS BETWEEN 3 PRECEDING AND 1 FOLLOWING` = 3 previous rows, the current row, and the following row
 - `ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING` = all rows in the partition
 
-### 7.2.3. $3$ types of analytic functions
+### 7.2.3. $$3$$ types of analytic functions
 
 1. Analytic aggregate functions
 
@@ -2480,7 +2480,7 @@ Steps.
 Two parameters that have largest effect on how SGD training proceeds:
 
 - __minibatch / batch__: Each iteration's sample of training data. (__epoch__: a complete round of training data.)
-- __learning rate__: Size of shift in direction of each batch is determined by learning rate. Small learning rate $\Rightarrow$ network needs to see more minibatches before its weights converge to best values.
+- __learning rate__: Size of shift in direction of each batch is determined by learning rate. Small learning rate $$\Rightarrow$$ network needs to see more minibatches before its weights converge to best values.
 
 Optimizer: `Adam` has adaptive learning rate that makes it suitable for most problems without any parameter tuning, it's self-tuning.
 
@@ -3344,7 +3344,7 @@ perm = PermutationImportance(my_model, random_state = 1).fit(val_X, val_y)
 eli5.show_weights(perm, feature_names = val_X.columns.tolist())
 ```
 
-We can see the Weight | Feature table. First number in each row shows how much model performance decrease with a random shuffling, the $\pm$ term measures how performance variedd from one-reshuffling to the next, the randomness. Random chance may also cause the prediction on shuffled data to be more accurate, which is common for small data, because there is more room for luck and chance.
+We can see the Weight $$\lvert$$ Feature table. First number in each row shows how much model performance decrease with a random shuffling, the $$\pm$$ term measures how performance variedd from one-reshuffling to the next, the randomness. Random chance may also cause the prediction on shuffled data to be more accurate, which is common for small data, because there is more room for luck and chance.
 
 ## 10.2. Partial Dependece Plots
 
