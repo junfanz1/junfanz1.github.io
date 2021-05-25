@@ -105,7 +105,7 @@ Table of Contents
 - [13. Data-Driven Risk Factors & Asset Allocation w/ Unsupervised Learning](#13-data-driven-risk-factors--asset-allocation-w-unsupervised-learning)
   - [13.1. PCA vs. ICA](#131-pca-vs-ica)
   - [13.2. Manifold learning - nonlinear dim reduction](#132-manifold-learning---nonlinear-dim-reduction)
-    - [13.2.1. $t$-distributed Stochastic Neighbor Embedding](#1321-t-distributed-stochastic-neighbor-embedding)
+    - [13.2.1. $$t$$-distributed Stochastic Neighbor Embedding](#1321-t-distributed-stochastic-neighbor-embedding)
     - [13.2.2. Uniform Manifold Approximation and Projection (UMAP)](#1322-uniform-manifold-approximation-and-projection-umap)
   - [13.3. Clustering](#133-clustering)
     - [13.3.1. Density-based spatial clustering of applications with noise (DBSCAN, 1996)](#1331-density-based-spatial-clustering-of-applications-with-noise-dbscan-1996)
@@ -137,7 +137,7 @@ Table of Contents
   - [21.2. GAN Training](#212-gan-training)
   - [21.3. TimeGAN for synthetic financial data](#213-timegan-for-synthetic-financial-data)
     - [21.3.1. Combining Adversarial and supervised training](#2131-combining-adversarial-and-supervised-training)
-    - [21.3.2. $4$ components of TimeGAN architecture](#2132-4-components-of-timegan-architecture)
+    - [21.3.2. $$4$$ components of TimeGAN architecture](#2132-4-components-of-timegan-architecture)
   - [21.4. TimeGAN Implementation using TensorFlow 2](#214-timegan-implementation-using-tensorflow-2)
   - [21.5. Assessing diversity - visualization with PCA and t-SNE](#215-assessing-diversity---visualization-with-pca-and-t-sne)
   - [21.6. Summary on TimeGAN](#216-summary-on-timegan)
@@ -250,7 +250,7 @@ with (data_path / file_name).open('rb') as data:
                 break
 ```
 
-### 2.1.2. Summarizing trading activity for r8500 stocks
+### 2.1.2. Summarizing trading activity for 8500 stocks
 
 ```python
 with pd.HDFStore(itch_store) as store:
@@ -715,14 +715,14 @@ How much to stake on each bet in an infinite sequence of bets with varying but f
 
 Kelly has connection to Shannon's info theory.
 
-- $b$: odds defining the amount won for $1 bet. Odds = 5/1 implies $4 gain if bet wins plus recovery of $1 capital.
-- $p$: prob defining likelihood of a favorable outcome
-- $f$: share of current capital to bet
-- $V$: value of capital as a result of betting
-- $G = \lim\limits_{N \rightarrow \infty} \frac{1}{N} \log \frac{V_N}{V_0}$: values' growth rate, we should maximize, where $W, L$ are number of wins and losses
-- $V_N = (1+b*f)^w (1-f)^L V_0 \Rightarrow G = p\log(1+b*f)+(1-p)\log(1-f)$
+- $$b$$: odds defining the amount won for $1 bet. Odds = 5/1 implies $4 gain if bet wins plus recovery of $1 capital.
+- $$p$$: prob defining likelihood of a favorable outcome
+- $$f$$: share of current capital to bet
+- $$V$$: value of capital as a result of betting
+- $$G = \lim\limits_{N \rightarrow \infty} \frac{1}{N} \log \frac{V_N}{V_0}$$: values' growth rate, we should maximize, where $$W, L$$ are number of wins and losses
+- $$V_N = (1+b*f)^w (1-f)^L V_0 \Rightarrow G = p\log(1+b*f)+(1-p)\log(1-f)$$
 
-Optimal share of capital to bet (Kelly Criterion): $f^* = \frac{b*p+p-1}{b}$
+Optimal share of capital to bet (Kelly Criterion): $$f^* = \frac{b*p+p-1}{b}$$
 
 ### 5.1.1. Optimal investment: Multiple assets
 
@@ -795,7 +795,7 @@ Financial data labels are derived from overlapping data points, because returns 
 
 - Purging: Eliminate training data points where evaluation occurs after prediction of point-in-time data point in validation set to avoid look-ahead bias.
 - Embargoing: Further eliminate training samples that follow a test period.
-- Combinatorial CV: Walk-forward CV limits historical paths to be tested. Instead, given $T$ observations, compute all possible train/test splits for $N<T$ groups that each maintain their order, and purge and embargo potentially overlapping groups. Then, train model on all combination of $N-k$ groups while testing the model on remaining $k$ groups. The result is a much larger number of possible historical paths.
+- Combinatorial CV: Walk-forward CV limits historical paths to be tested. Instead, given $$T$$ observations, compute all possible train/test splits for $$N<T$$ groups that each maintain their order, and purge and embargo potentially overlapping groups. Then, train model on all combination of $$N-k$$ groups while testing the model on remaining $$k$$ groups. The result is a much larger number of possible historical paths.
 
 # 7. Linear Models for Return Forecasts
 
@@ -805,7 +805,7 @@ Financial data labels are derived from overlapping data points, because returns 
 
 ## 7.1. Baseline: Multiple linear regression
 
-A linear functional relationship between one continuous outcome variable and $p$ input variables, which is regression of multiple outputs on multiple input variables.
+A linear functional relationship between one continuous outcome variable and $$p$$ input variables, which is regression of multiple outputs on multiple input variables.
 
 Ways to correct OLS estimates for heteroskedasticity:
 
@@ -814,7 +814,7 @@ Ways to correct OLS estimates for heteroskedasticity:
 - Geeralized Least Squares (GLS): for arbitrary convariance matrix structure, yields efficient and unbiased estimates in presence of heteroskedasticity or serial correlation.
 - Feasible generalized least squares (GLSAR), for autocorrelated errors that follow an autoregressive AR(p) process.
 
-Multicollinearity occurs when $\geq$ 2 independent variables are highly correlated. 
+Multicollinearity occurs when $$\geq$$ 2 independent variables are highly correlated. 
 
 - Difficult to determine which factors influence dependent variable.
 - Individual p-value can be misleading, a high p-value but variable is important
@@ -824,7 +824,7 @@ Multicollinearity occurs when $\geq$ 2 independent variables are highly correlat
 
 ## 8.1. Optimal Stopping for backtests
 
-Optimal rule is to reject the first $n/e$ candidates and then select the first candidate that surpasses all previous options. There's $1/e$ prob of selecting the best candidate, irrespective of size $n$. Similarly, we test a random sample of $1/e$ (roughly 37%) of reasonable strats outperforms those tested before, and choose a near-best as soon as possible while minimizing the risk of a false positive.
+Optimal rule is to reject the first $$n/e$$ candidates and then select the first candidate that surpasses all previous options. There's $$1/e$$ prob of selecting the best candidate, irrespective of size $$n$$. Similarly, we test a random sample of $$1/e$$ (roughly 37%) of reasonable strats outperforms those tested before, and choose a near-best as soon as possible while minimizing the risk of a false positive.
 
 ### 8.1.1. Vectorized vs. Event-driven backtesting
 
@@ -844,7 +844,7 @@ Adding seasonal differencing - SARIMAX: we include AR and MA terms that captures
 
 Impulse-response function produced by multivariate model can examine cross-series dependencies (like how policy change to IR will affect other variables over different horizons), and can simulate how 1 variable responds to sudden change in other variables. Granger causality analyzes whether 1 variable is useful in forecasting another. 
 
-Vector Autoregressive VAR($p$) model can be expressed in matrix form. If some or all of $k$ series are unit-root non-stationary, they may be cointegrated. This extension of unit root to multiple time series means that a linear combination of $\geq$ 2 time series is stationary and mean-reverting. So we use Vector Error Correction Model (VECM, 1990) to explore cointegration because this can form pairs-trading strat.
+Vector Autoregressive VAR($$p$$) model can be expressed in matrix form. If some or all of $$k$$ series are unit-root non-stationary, they may be cointegrated. This extension of unit root to multiple time series means that a linear combination of $$\geq$$ 2 time series is stationary and mean-reverting. So we use Vector Error Correction Model (VECM, 1990) to explore cointegration because this can form pairs-trading strat.
 
 ## 9.3. Cointegration - time series with a shared trend
 
@@ -967,7 +967,7 @@ class Pair:
 
 ## 10.1. MCMC Sampling
 
-Draw samples $X = (x_1, ..., x_n)$ from given distribution $p(x)$. Monte Carlo methods is to repeatedly random sample to approximate results that may be deterministic but that don't permit an exact analytic solution. 
+Draw samples $$X = (x_1, ..., x_n)$$ from given distribution $p(x)$. Monte Carlo methods is to repeatedly random sample to approximate results that may be deterministic but that don't permit an exact analytic solution. 
 
 Steps.
 
@@ -1112,7 +1112,7 @@ with logistic_model:
 
 ## 10.3. Bayesian Model Diagnostics
 
-PyMC3 has `pm.summary()`. Highest posterior density (HPD) estimate the min width credible interval [^2] and is computed at 95% level. $\hat{R}$ is Gelman-Rubin statstic, checks convergence by comparing variance between chains to variance within each chain. If sampler converged, these variances should be identical and the statistics $\approx$ 1.
+PyMC3 has `pm.summary()`. Highest posterior density (HPD) estimate the min width credible interval [^2] and is computed at 95% level. $$\hat{R}$$ is Gelman-Rubin statstic, checks convergence by comparing variance between chains to variance within each chain. If sampler converged, these variances should be identical and the statistics $$\approx$$ 1.
 
 [^2]: Credible intervals is the Bayesian counterpart of confidence intervals, as percentiles of the trace. See figure 10.8.
 
@@ -1224,7 +1224,7 @@ for i in range(reps):
 
 Sample size for features
 
-- Classification: sample size $\approx \sqrt{\# features}$
+- Classification: sample size $$\approx \sqrt{\# features}$$
 - Regressin: 1/3 to all features, selected based on cross-validation
 
 ### 11.2.2. Random Forest Pros and Cons
@@ -1290,15 +1290,15 @@ Ensemble algorithm to iteratively adapt to cumulative learning progress when fit
 
 Adaboost grows shallow trees as weak learners, often producing superior accuracy with stumps: trees formed by a single split. We start with equally weighted training set, and successively alters sample distribution. After each iteration, AdaBoost increases the weights of incorrectly classfied observations and reduces weights of correctly predicted samples so that subsequent weak learners focus more on difficult cases. Once trained, the new decision tree is incorporated into ensemble with a weight that reflects its contribution to reducing training error.
 
-Adaboost for ensemble of base learners $h_m(x)$ predicts discrete classes $y \in [-1,1]$, $N$ training observationns:
+Adaboost for ensemble of base learners $$h_m(x)$$ predicts discrete classes $$y \in [-1,1]$$, $$N$$ training observationns:
 
-- Initialize sample weights $w_i = 1/N$ for observations $i = 1, ..., N$.
-- For each base classifier $h_m$:
-    - Fit $h_m(x)$ to training data, weighted by $w_i$.
-    - Compute base learner's weighted error rate $\epsilon_m$ on training set.
-    - Compute base learner's ensemble weight $\alpha_m = \log (\frac{1-\epsilon_m}{\epsilon_m})$ as function of its error rate.
-    - Update weights for misclassified samples by $w_i * \exp(\alpha_m)$
-- Predict positive class when weighted sum of ensemble members is positive, and negative otherwise: $H(x) = \rm sign\left( \sum\limits_{m=1}^M \alpha_m h_m(x) \right)$
+- Initialize sample weights $$w_i = 1/N$$ for observations $$i = 1, ..., N$$.
+- For each base classifier $$h_m$$:
+    - Fit $$h_m(x)$$ to training data, weighted by $$w_i$$.
+    - Compute base learner's weighted error rate $$\epsilon_m$$ on training set.
+    - Compute base learner's ensemble weight $$\alpha_m = \log (\frac{1-\epsilon_m}{\epsilon_m})$$ as function of its error rate.
+    - Update weights for misclassified samples by $$w_i * \exp(\alpha_m)$$
+- Predict positive class when weighted sum of ensemble members is positive, and negative otherwise: $$H(x) = \rm sign\left( \sum\limits_{m=1}^M \alpha_m h_m(x) \right)$$
 
 Advantages
 
@@ -1314,11 +1314,11 @@ Disadvantages
 
 ## 12.2. Gradient Booosting - Ensembles for most tasks
 
-AdaBoost is a stagewise forward approach to minimize an exponential loss function for a binary outcome $y$ that identifies a new base learner $h_m$, at each iteration $m$ with weight $\alpha_m$, and adds t ensemble
+AdaBoost is a stagewise forward approach to minimize an exponential loss function for a binary outcome $$y$$ that identifies a new base learner $$h_m$$, at each iteration $$m$$ with weight $$\alpha_m$$, and adds t ensemble
 
 $$\underset{\alpha, h}{\arg \min } \sum_{i=1}^{N} \exp \left(-y_{i}\left(f_{m-1}\left(x_{i}\right)\right)+\alpha_{m} h_{m}\left(x_{i}\right)\right)$$
 
-In $\exp$, there is current ensemble + new member. AdaBoost is a gradient descent algorithm that minimizes exponential loss function.
+In $$\exp$$, there is current ensemble + new member. AdaBoost is a gradient descent algorithm that minimizes exponential loss function.
 
 Gradient boosting applies boosting method t a wider range of loss functions.
 
@@ -1328,7 +1328,7 @@ Gradient boosting optimizes over the functions $h_m$ in an additive fashion. Its
 
 ## 12.3. Train and Tune GBM models
 
-We can use shrinkage to regularize, by scaling the contribution of each new ensemble member down by a factor $\in [0,1]$. This factor is learning rate of boosting ensemble. Reducing learning rate increases shrinkage, because it lowers the contribution of each new decision tree to ensemble.
+We can use shrinkage to regularize, by scaling the contribution of each new ensemble member down by a factor $$\in [0,1]$$. This factor is learning rate of boosting ensemble. Reducing learning rate increases shrinkage, because it lowers the contribution of each new decision tree to ensemble.
 
 Lower learning rates + larger ensembles = reduce test error inn regression / prob estimation.
 
@@ -1340,9 +1340,9 @@ Stochastic gradient boosting samples training data withouot replacement at each 
 
 ## 12.4. XGBoost, LightGBM and CatBoost
 
-Random forests can be trained in parallel by growing individual trees on independent boostrap samples. __Sequantial approach of gradient boosting__ slows down training, and have large number of hyperparameters to tune. Computational cost during training $\propto$ time it takes to evaluate potential split points for each feature.
+Random forests can be trained in parallel by growing individual trees on independent boostrap samples. __Sequantial approach of gradient boosting__ slows down training, and have large number of hyperparameters to tune. Computational cost during training $$\propto$$ time it takes to evaluate potential split points for each feature.
 
-Regularization penalty help avoid overfitting by favoring a model that uses simple yet predictive regression trees. In XGBoost, penalty for regression tree $h$ depends on # of leaves per tree $T$, regression tree scores for each terminal noed $w$, and hyperparameters $\gamma, \lambda$. At each step, algorithm greedily adds the hypothesis $h_m$ that most improves regularized objective. 
+Regularization penalty help avoid overfitting by favoring a model that uses simple yet predictive regression trees. In XGBoost, penalty for regression tree $h$ depends on # of leaves per tree $$T$$, regression tree scores for each terminal noed $w$, and hyperparameters $$\gamma, \lambda$$. At each step, algorithm greedily adds the hypothesis $h_m$ that most improves regularized objective. 
 
 ### 12.4.1. Simpliefied split-finding algorithms
 
@@ -1455,14 +1455,14 @@ PCA Assumptions
 - Linear transformations capture relevant aspects of data
 - High-order stats, beyond first/second moments don't matter, which implies data has normal distribution.
 
-Independent Component Analysis (ICA) is a linear algorithm that can deal with blind source separation. $n$ original signals, and unknown square matrix $A$ with $n$-dim set of $m$ observations. Our goal is to find matrix $W=A^{-1}$ that untangles the mixed signals to recover sources.
+Independent Component Analysis (ICA) is a linear algorithm that can deal with blind source separation. $$n$$ original signals, and unknown square matrix $A$ with $n$-dim set of $m$ observations. Our goal is to find matrix $$W=A^{-1}$$ that untangles the mixed signals to recover sources.
 
 ICA Assumptions
 
 - Source of signals are statistically independent
 - Linear transformations are sufficient to capture the relevant info
 - Independent components don't have normal distribution
-- Maxing matrix $A$ can be inverted.
+- Maxing matrix $$A$$ can be inverted.
 - Data should be centered and whitened (mutually uncorrelated with unit variance), so we can preprocessinng data by PCA.
 
 `FastICA` by sklearn.
@@ -1473,14 +1473,14 @@ A manifold is a space locally resembles Euclidean space. Manifold hypothesis mai
 
 Technique to approximate a lower-dim manifold: locally linear embedding (LLE, 2000), which identifies a given number of nearest neighbors and computes weights that represent each point as a linear combination of its neighbors. It finds lower-dim embeding by linearly projecting each neighborhood on global internal coordinates on lower-dim manifold and can be thought of as a sequence of PCA applications.
 
-### 13.2.1. $t$-distributed Stochastic Neighbor Embedding
+### 13.2.1. $$t$$-distributed Stochastic Neighbor Embedding
 
-t-SNE (2008) detects patterns in high-dim data. By converting high-dim distances into conditional prob, where high prob imply low distance and reflect likelihood of sampling 2 points based on similarity. It first position a normal distribution over each point and compute density for a point and each neighbor. Second, it arranges points in low dim and uses similarly computed low-dim prob to match high-dim distribution by KL divergence, which puts high penalty on misplacing similar points in low dim. The low-dim prob use t-distribution with 1 degree of freedome, because it has fatter tails that reduces penalty of misplacing points that are more distant in high dim to manage crowing problem.
+$$t$$-SNE (2008) detects patterns in high-dim data. By converting high-dim distances into conditional prob, where high prob imply low distance and reflect likelihood of sampling 2 points based on similarity. It first position a normal distribution over each point and compute density for a point and each neighbor. Second, it arranges points in low dim and uses similarly computed low-dim prob to match high-dim distribution by KL divergence, which puts high penalty on misplacing similar points in low dim. The low-dim prob use $$t$$-distribution with 1 degree of freedome, because it has fatter tails that reduces penalty of misplacing points that are more distant in high dim to manage crowing problem.
 
 Weakness
 
-- computational complexity scales quadratically in $n$ points, as it evaluates all pairwise distances, but a subsequent tree-based implementation can have $n \log n$.
-- cannot facilitate projection of new data points into low-dim space. The compressed output is not useful input for distance- or density-based cluster algo, because t-SNE treats small and large distances differently.
+- computational complexity scales quadratically in $n$ points, as it evaluates all pairwise distances, but a subsequent tree-based implementation can have $$n \log n$$.
+- cannot facilitate projection of new data points into low-dim space. The compressed output is not useful input for distance- or density-based cluster algo, because $$t$$-SNE treats small and large distances differently.
 
 ### 13.2.2. Uniform Manifold Approximation and Projection (UMAP)
 
@@ -1488,7 +1488,7 @@ Assumption
 
 - Data is uniformly distributed on locally connected manifold and looks for closest low-dim equivalent usign fuzzy topology.
 
-Faster and scales better to large datasets than t-SNE, and preserves global structure better than t-SNE. 
+Faster and scales better to large datasets than $$t$$-SNE, and preserves global structure better than $$t$$-SNE. 
 
 ## 13.3. Clustering
 
@@ -1576,16 +1576,16 @@ Dropout: randomized omission of individual units with a given prob during forwar
 
 Too high learning rate can lead to repeated overshooting and oscillation around or divergence from minimum.
 
-Momentum can accelerate cnvergence to local min. Momentum can track recent directions and adjust params by a weighted average of most recent gradient and current value with momentum term $\gamma$ to weight contribution ooff latest adjustment to iteration's update $v_t = \gamma v_{t-1} + \eta \nabla_\theta J(\theta)$.
+Momentum can accelerate cnvergence to local min. Momentum can track recent directions and adjust params by a weighted average of most recent gradient and current value with momentum term $$\gamma$$ to weight contribution ooff latest adjustment to iteration's update $$v_t = \gamma v_{t-1} + \eta \nabla_\theta J(\theta)$$.
 
-__Nesterov momentum__ (2013) is simple change to normal momentum. Gradient term is not computed at current parameter space position $\theta_t$ but instead from an imtermediate position. Goal is to correct foor the momentum term overshooting or pointing in wrong direction.
+__Nesterov momentum__ (2013) is simple change to normal momentum. Gradient term is not computed at current parameter space position $$\theta_t$$ but instead from an imtermediate position. Goal is to correct foor the momentum term overshooting or pointing in wrong direction.
 
 Adam = adaptive moment deviation. Hyperparameters:
 
-- $\alpha$ = learning rate/step size, determine how much weights are updated so that larger values speed up learning before the rate is updated, by default 0.001.
-- $\beta_1$ = exponential decay rate for first moment estimates, by default 0.9
-- $\beta_2$ = exponential decay rate for secondn moment estimates, by default 0.999
-- $\epsilon$ = small number to prevent division by 0, by default 1e-8.
+- $$\alpha$$ = learning rate/step size, determine how much weights are updated so that larger values speed up learning before the rate is updated, by default 0.001.
+- $$\beta_1$$ = exponential decay rate for first moment estimates, by default 0.9
+- $$\beta_2$$ = exponential decay rate for secondn moment estimates, by default 0.999
+- $$\epsilon$$ = small number to prevent division by 0, by default 1e-8.
 
 TensorBoard is visualization tool. 
 
@@ -1678,7 +1678,7 @@ Combines 4 parameterized layers that interact with each other and the cell state
 
 - Forget gate controls how much cell's state should be voided to regulate network's memory.
 - Input gate computes sigmoid activation that produces update candidates.
-- Output gate filters updated cell state using sigmoid activation, and multiplies it by cell state normalized to $[-1,1]$ range by tanh activation.
+- Output gate filters updated cell state using sigmoid activation, and multiplies it by cell state normalized to $$[-1,1]$$ range by tanh activation.
 
 ### 19.1.2. GRU - Gated Recurrent Units
 
@@ -1696,7 +1696,7 @@ Variatinal autoencoders (VAE) is generative modeling, which solves the more gene
 
 VAE can learn latent (unobserved) variables of model responsiblle for input data. If successful, you can generate new data points by sampling from distribution learned by VAE.
 
-We can use t-SNE to visualize the encoding.
+We can use $$t$$-SNE to visualize the encoding.
 
 ## 20.2. Convolutional Autoencoders
 
@@ -1881,7 +1881,7 @@ __Supervised loss__: how well generator approximates the actual next time step i
 
 ## 21.4. TimeGAN Implementation using TensorFlow 2
 
-We scale each series to $[0,1]$ with Sklearn `MinMaxScaler` class
+We scale each series to $$[0,1]$$ with Sklearn `MinMaxScaler` class
 
 ```python
 df = pd.read_hdf(hdf_store, 'data/real')
@@ -2005,11 +2005,11 @@ Caveats:
 
 ## 22.1. Q-leaning
 
-Bellman equations define a recursive relationship between value functions for all states $s$ in $S$ and any of their successor states $s$ under a policy $\pi$, by decompsing the value function into immediate reward and discounted value of next state.
+Bellman equations define a recursive relationship between value functions for all states $$s$$ in $$S$$ and any of their successor states $$s$$ under a policy $$\pi$$, by decompsing the value function into immediate reward and discounted value of next state.
 
 Solve MDP/Q-learning using `pymdptoolbox` library.
 
-Q-learning uses learning rate $\alpha$ * Temporal difference to update the value function, this improvement is bootstrapping. Q-learning is part of temporal difference (TD) learning algorithms. TD learning doesn't wait until receiving final reward for an episode. Instead, it updates its estimates using values of intermediate states that are closer to final reeward, so intermediate state is one time step ahead.
+Q-learning uses learning rate $$\alpha$$ * Temporal difference to update the value function, this improvement is bootstrapping. Q-learning is part of temporal difference (TD) learning algorithms. TD learning doesn't wait until receiving final reward for an episode. Instead, it updates its estimates using values of intermediate states that are closer to final reeward, so intermediate state is one time step ahead.
 
 ## 22.2. Double Deep Q-learning (DDQN) - decoupling action and prediction
 
