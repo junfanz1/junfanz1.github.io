@@ -35,7 +35,11 @@ I’m proficient in Python, R, SQL; intermediate in C++, Spark, kdb+, Cuda.
 
 In Rotman International Trading Competition, I ranked Top 10 Algorithmic Trader. I have honors including Outstanding Bachelor Thesis (Top 1%), Meritorious Winner in International Mathematical Contest in Modeling, Second Prize in Asia Supercomputing Challenge, and Top 10% in Citadel Datathon. 
 
-I love self-learning. I have certificates from Triplebyte Certified Machine Learning Engineer, Coursera Deep Learning & NLP & GAN & Probabilistic Graphical Models Specializations, etc. More Coursera learning certificates are available on [LinkedIn](https://www.linkedin.com/in/junfan-zhu/) `Licences & Certificates`, with selected notes and remarks (written in Chinese) on [Douban](https://www.douban.com/people/junfanz/notes).
+## __Online Course & Reading Book Notes__
+
+I love MOOC self-learning and reading all kinds of books. I have certificates from Triplebyte Certified Machine Learning Engineer, Coursera Deep Learning & NLP & GAN & Probabilistic Graphical Models Specializations, etc. More Coursera learning certificates are available on [LinkedIn](https://www.linkedin.com/in/junfan-zhu/) `Licences & Certificates`, 
+
+More selected Coursera course notes and remarks, as well as book excerpts and "Minutes of Humanities and Social Sciences Reading Club" blogs are available on [Douban](https://www.douban.com/people/junfanz/notes) (written in Chinese).
 
 ---
 
@@ -43,15 +47,17 @@ I love self-learning. I have certificates from Triplebyte Certified Machine Lear
 
 I'm a marathon runner. I completed Dalian International Marathon in 4h'55min, and Half Marathon in 2h'11min. 
 
-I'm a big fan of trekking
+I'm a big fan of trekking [^1]
 
-- Grand Circle itinerary in US Southwest
+- Grand Circle itinerary in Southwest USA
 - Nepal Annapurna Base Camp Trek
 - Inner-Mongolia Kubuqi Desert Traverse
 
-I'm new to skiing, wrestle a lot :) (Cascade Mountain in Wisconsin).
+I'm new to skiing, wrestle a lot in Cascade Mountain in Wisconsin :) 
 
 I love Chinese Calligraphy (childhood favoraites), Violin (L8, Shanghai Conservatory of Music), Kunqu Opera (my hometown culture), law (took China Bar Exam), and cooking. 
+
+[^1]: See more on [Chicago Travelling Notes](https://www.douban.com/note/796577749/), written in Chinese on Douban.
 
 ---
 
