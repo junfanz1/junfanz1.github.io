@@ -70,9 +70,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/junfan-zhu"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:junfanz@gatech.edu
+#     - label: "Email"
+#       icon: "fas fa-fw fa-envelope-square"
+#       url: mailto:junfanz@gatech.edu
       
 defaults:
   # _posts
