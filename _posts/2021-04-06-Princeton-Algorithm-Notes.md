@@ -1739,7 +1739,7 @@ Use an array of $$M<N$$ linked lists.
 
 Separate Chaining Searching Tree
 
-```Java
+```java
 public class SeparateChainingHashST<Key, Value>
 {
     private int M = 97; // number of chains
