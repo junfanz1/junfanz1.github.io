@@ -369,7 +369,7 @@ The heavier the tail of kernel, the longer the required build-up. Build-up inter
 
 To measure tail, we can use first 2 moments of kernel, defined as aspect ratio
 
-$$AR[\Omega] = <<t^2>~w^{1/2} / <t>_\omega>$$
+$$A R[\Omega]=<<t^{2}>w^{1 / 2} /\left\langle t>_{\omega}\right\rangle$$
 
 = $$2/\sqrt{3}$$ for rectangular kernel, and $$\sqrt{2}$$ for simple EMA. 
 
