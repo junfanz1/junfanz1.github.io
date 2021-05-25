@@ -56,7 +56,7 @@ Table of Contents
     - [3.2.2. Homogeneous Operators and Robustness](#322-homogeneous-operators-and-robustness)
     - [3.2.3. Iterated EMA Operator](#323-iterated-ema-operator)
     - [3.2.4. Differential (Wavelet Transforms)](#324-differential-wavelet-transforms)
-    - [3.2.5. $\gamma$-Derivative](#325-gamma-derivative)
+    - [3.2.5. $$\gamma$$-Derivative](#325-gamma-derivative)
     - [3.2.6. Vol](#326-vol)
     - [3.2.7. Windowed Fourier Transform (Complex Moving Average)](#327-windowed-fourier-transform-complex-moving-average)
 - [4. Adaptve Data Cleaning](#4-adaptve-data-cleaning)
@@ -81,8 +81,8 @@ Table of Contents
 - [6. Modeling Seasonal Volatility](#6-modeling-seasonal-volatility)
   - [6.1. Modeling Vol Patterns with Alternative Time Scale and Activity Variable](#61-modeling-vol-patterns-with-alternative-time-scale-and-activity-variable)
     - [6.1.1. Geographical Seasonality Patterns](#611-geographical-seasonality-patterns)
-  - [6.2. $\nu$-Scale](#62-nu-scale)
-    - [6.2.1. Adjustments of $\nu$-Scale](#621-adjustments-of-nu-scale)
+  - [6.2. $$\nu$$-Scale](#62-nu-scale)
+    - [6.2.1. Adjustments of $$\nu$$-Scale](#621-adjustments-of-nu-scale)
     - [6.2.2. Filtering Intraday Seasonalities with Wavelets](#622-filtering-intraday-seasonalities-with-wavelets)
 - [7. Realized Vol Dynamics](#7-realized-vol-dynamics)
     - [7.0.3. Short/Long Memory](#703-shortlong-memory)
@@ -117,13 +117,13 @@ We shouldn't seek simplicity at the cost of missing important features of data-g
 
 High frequency studies can be done for limite sampling periods with large samples. The market properties with such periods are nearly unchanged. The results are less affected by structural breaks or shifts in the economy than low-frequency ones.
 
-1. Aggregation factor of 4 to 5 oordders of magnitude.
+- Aggregation factor of 4 to 5 oordders of magnitude.
 
   - Long memory effect in 20-min absolute returns, Dacorogna *et al*. (1993). 
   - Similar hyperbolic decay of the autocorrelation function was observed on adily returns, Ding *et al*. (1993) 
   - Difficult to distinguish rigoroously in the data between long memory effects and regime shifts. Hyperbolic decay is empicially found at time scales that differ by 2 orders of magnitude in aggregation is a sign that the process must include long range dependence or there are regime shifts at *all time scales*.
 
-2. Scaling properties and scaling laws.
+- Scaling properties and scaling laws.
 
   - Scaling laws of different moments of return distributions. Challenge is to develop models that simultaneously characterize the short-term and long-term behaviors of a time series.
 
@@ -239,7 +239,7 @@ Bonds are long-term interest rates. Bond futures are standardized, just like sho
 
 Rollover scheme can create a continuous time series with different expiries futures contracts, they are good for transaction cost analysis, different optimization goals lead to different rollover schemes. Rollover must follow economic contraint imposing that the value of portfolio changes only when the market prices oof individual bond futures move, with no change arising soly from rollover procedure. When rolling over, the number of new contracts to be bought is calculated, so that total amouoont invested is const, and number of new contracts is given by number of old contracts being sold multiplied by middle price, divided by middle price of new contracts being bought. 
 
-## 2.9.1 Scheme 1
+### 2.9.1 Scheme 1
 
 Scheme 1: use conversion factor to render continuous the transition froom one contract to the next one, at a fixed date before the first contract's expiry.
 
@@ -274,7 +274,9 @@ Commodity futures aren't liquid enough for huge transactions, large orders will 
 
 When considering spacing of data in time, we should discuss time scale.
 
-# 3.0.1 Homogeneous: regularly spaced time series. Most time series analysis. 
+# 3.0.1 Homogeneous: regularly spaced time series. 
+
+Most time series analysis are this type. 
   
   - Use regularizing operator to do time series of same variable. Sampling an inhomogeneous time series at regular time intervals for time series analysis
   - Microscopic operator depends on actual sampling of inhomogeneoous time series. Eliminating random ticks lead to different results.
@@ -492,7 +494,7 @@ __Data Cleaning Algorithm__ (Adaptive) and Filtering methodology:
 
 ## 4.2. Data Errors
 
-The filter needs a build-up period to learn from the data, so it's adaptive filter. Raw data $\rightarrow$ filter $\rightarrow$ computational block $\rightarrow$ filter $\rightarrow$ application. Some computational blocks like cross rate, yield curve computations require filtered input and produce an output that user want to filter again. 
+The filter needs a build-up period to learn from the data, so it's adaptive filter. Raw data $$\rightarrow$$ filter $$\rightarrow$$ computational block $$\rightarrow$$ filter $$\rightarrow$$ application. Some computational blocks like cross rate, yield curve computations require filtered input and produce an output that user want to filter again. 
 
 ### 4.2.1. Filtering of Single Scalar Quotes: The Level Filter
 
@@ -506,12 +508,12 @@ Level filter can be used on bid-ask spread, which are volatile tick by tick but 
 
 ### 4.2.2. Pair Filtering: The Credibility of Returns
 
-Pair filtering's change filter judges the credibility of a variable change. Distributins of high-frequency price changes are fat-tailed with outlier prob $\sim \xi^{-\alpha}, \alpha$ is tail index. Determining the distribution in moving sample is not our filter's job here, so we make rough assumption on $\alpha$ that's goo across many rates and filtered variable types.
+Pair filtering's change filter judges the credibility of a variable change. Distributins of high-frequency price changes are fat-tailed with outlier prob $$\sim \xi^{-\alpha}, \alpha$$ is tail index. Determining the distribution in moving sample is not our filter's job here, so we make rough assumption on $$\alpha$$ that's goo across many rates and filtered variable types.
 
 Notes:
 
-1. Filtering shoul stay a local concept on time axis. But a quote has few close neighbors an distant neighbors, so when the additive trust capital of a qute is determined by pairwise comparisns to other quotes, the results from distant quotes must not dominate those from close neighbors, the interaction range should be limited. So we define trust capital $\propto (\Delta \nu)^{-3}$ for asymptotically large quote intervals $\Delta \nu$.
-2. For large $\Delta \nu$, even moderately aberrant quotes are easily accepted. So, the decline of trust capital with growing $\Delta \nu$ is important. But for negative trust capital, should stay negative even if $\Delta \nu$ is large. So there is a selective decline of trust capital with increasing $\Delta \nu$: fast for small $\xi$ (positive trust capital), slow for large $\xi$ (negative trust capital). It's important for data holes or gaps, where there're no close neighbor quotes.
+1. Filtering shoul stay a local concept on time axis. But a quote has few close neighbors an distant neighbors, so when the additive trust capital of a qute is determined by pairwise comparisns to other quotes, the results from distant quotes must not dominate those from close neighbors, the interaction range should be limited. So we define trust capital $$\propto (\Delta \nu)^{-3}$$ for asymptotically large quote intervals $$\Delta \nu$$.
+2. For large $$\Delta \nu$$, even moderately aberrant quotes are easily accepted. So, the decline of trust capital with growing $$\Delta \nu$$ is important. But for negative trust capital, should stay negative even if $\Delta \nu$ is large. So there is a selective decline of trust capital with increasing $$\Delta \nu$$: fast for small $$\xi$$ (positive trust capital), slow for large $$\xi$$ (negative trust capital). It's important for data holes or gaps, where there're no close neighbor quotes.
 
 Trust capital from change filter.
 
@@ -578,17 +580,17 @@ At frequencies > 10 min, the fat tails start to decrease. (See figure 5.6) If da
 
 3 kinds of tail of distributions:
 
-1. Thin-tailed: all moments are finite and cumulative distribution declines exponentially in the tails. Tail index $\alpha = \infty$
-2. Fat-tailed: cumulative distribution declnes with a power in the tails. $\alpha > 0$
-3. Bounded distribution with no tails. $\alpha < 0$
+1. Thin-tailed: all moments are finite and cumulative distribution declines exponentially in the tails. Tail index $$\alpha = \infty$$
+2. Fat-tailed: cumulative distribution declnes with a power in the tails. $$\alpha > 0$$
+3. Bounded distribution with no tails. $$\alpha < 0$$
 
 Extreme value theory: extreme value distribution of ordered data must belong to one of above 3 general families, regardless of original distribution function.
 
-Hill (1975) Estimator: $\hat{\gamma_{n,m}}^H = \frac{1}{m-1} \sum\limits_{i-1}^{m-1} \ln X_{(i)} - \ln X_{(m)}, m>1$ is consistent of $\gamma = 1/\alpha$ for fat-tailed distribution. $(\gamma_{n,m} - \gamma) m^{1/2}$ is asymptotically normally distributed with mean 0 variance $\gamma^2$.
+Hill (1975) Estimator: $$\hat{\gamma_{n,m}}^H = \frac{1}{m-1} \sum\limits_{i-1}^{m-1} \ln X_{(i)} - \ln X_{(m)}, m>1$$ is consistent of $$\gamma = 1/\alpha$$ for fat-tailed distribution. $$(\gamma_{n,m} - \gamma) m^{1/2}$$ is asymptotically normally distributed with mean 0 variance $$\gamma^2$$.
 
 Tail index values of FX rattes can be estimated by a subsample bootstrap method (see Table 5.3)on Hill estimator, confidence ranges can be obtained by jackknife method.
 
-Tail index reflects the institutional setup and the way different agents on the market interact, so it's another (apart from drft exponent) empirical measure of market regulation and efficiency. Large tail index $\rightarrow$ free interactions between agents in different time zones, with low degree of regulation and smooth adjustment to external shocks.  
+Tail index reflects the institutional setup and the way different agents on the market interact, so it's another (apart from drft exponent) empirical measure of market regulation and efficiency. Large tail index $$\rightarrow$$ free interactions between agents in different time zones, with low degree of regulation and smooth adjustment to external shocks.  
 
 ### 5.2.3. Extreme Risk
 
@@ -598,11 +600,15 @@ Practically, hedging against extreme risk must be based on *unconditional* distr
 
 Expansion of asymptotic cumulative distribution function from $X_i$ observations are:
 
-$F(x) = 1-ax^{-\alpha}[1+bx^{-\beta}]$
+$$F(x) = 1-ax^{-\alpha}[1+bx^{-\beta}]$$
 
-$x_p, x_t$: quantiles w.r.t. exceedance prob $p$ and $t$. $n$: sample size, $x_t$ inside sample ($p<1/n < t$). By def, and based on same logic as Hill estimator, we have $\hat{x}_p = X_m (\frac{m}{np})^{\hat{\gamma}}$, where $m = \hat{m}$ from tail estimation corresponding to $\hat{\gamma}$. For $m$ small w.r.t. $n$, the tail of $F(x)$ is well approximated by Pareto law, and $\hat{x_p}$ is also good. 
+$$x_p, x_t$$: quantiles w.r.t. exceedance prob $$p$$ and $$t$$. 
 
-$\frac{\sqrt{m}}{\ln \frac{m / n}{p}}\left(\frac{\hat{x}_{p}}{x_{p}}-1\right)$ has the same limiting normal distribution as Hill estimator, which is an estimator of our quantile computation.
+$$n$$: sample size, $$x_t$$ inside sample ($$p<1/n < t$$). By def, and based on same logic as Hill estimator, we have $$\hat{x}_p = X_m (\frac{m}{np})^{\hat{\gamma}}$$, where $$m = \hat{m}$$ from tail estimation corresponding to $$\hat{\gamma}$$. 
+
+For $$m$$ small w.r.t. $$n$$, the tail of $$F(x)$$ is well approximated by Pareto law, and $$\hat{x_p}$$ is also good. 
+
+$$\frac{\sqrt{m}}{\ln \frac{m / n}{p}}\left(\frac{\hat{x}_{p}}{x_{p}}-1\right)$$ has the same limiting normal distribution as Hill estimator, which is an estimator of our quantile computation.
 
 To compromise between accuracy of tail estimation and length of interval needed by risk managers, the time interval is shorter than overnight position practically. First, by Monte Carlo simulations of synthetic data, where process was fitted to 30-min return. Second, quantile estimation on FX rates as function of prob of event happending once a year. (See Table 5.7). HARCH model slightly overestimates extreme risk due to its long memory, but GARCH model underestimates the risk a lot. ARCH-type process capture the tail behavior of FX rates, which can provide early warning in case of turbulent situations. However, the Gaussian-based models will overestimate risk, this model is focusing on tails, for the cases far from tails, normal distribution produce higher quantiles than actual data.
 
@@ -610,7 +616,7 @@ To compromise between accuracy of tail estimation and length of interval needed 
 
 Time interval $\Delta t$ and average vol measured as a power $p$ of absolute returns observed over intervals, has relationship:
 
-${E[|r|^p]}^{1/p} = c(p) \Delta t ^{D(p)}$.
+$${E[\lvert r \rvert ^p]}^{1/p} = c(p) \Delta t ^{D(p)}$$.
 
 $D$: drift exponent. Taking logarithm, estimation of $c$ and $D$ can be derived by OLS regression. The lower the weight of tails in statistics, the more empirically determined drift exponent deviates from Gaussian random walk value 0.5, due to the changing form of distribution under aggregation and a sign of multifractality.
 
@@ -620,7 +626,9 @@ Scaling law applies to different currencies and commodities (gold, silver), when
 
 We not only should study statistical error by uncertainty of price, but also the market makers bias like bouncing effect that reflect in negative autocorrelation of returns in very short term. True market price is not middle price, if spreads large (minor FX rates), the uncertainty implies great measurement error. 
 
-$\rm Var(\log \overline{|\Delta x|}) \approx \frac{\eta^4}{4\overline{|\Delta x|}^4} + \frac{1}{2n}$. For long time intervals, $\overline{|\Delta x|} \gg \eta$, and $1/2n$ is essential part of errors. In case of short time intervals, $n$ is big, $\overline{|\Delta x|}$ has same order as $\eta$, so the first term plays the central role. This explains that errors are large for high frequency points, then diminishing and eventually increasing again when number of observations becomes small. (See figure 5.8)
+$$\rm Var(\log \overline{ \lvert \Delta x \rvert}) \approx \frac{\eta^4}{4\overline{\lvert \Delta x \rvert}^4} + \frac{1}{2n}$$. For long time intervals, $$\overline{\lvert \Delta x \rvert} \gg \eta$$, and $$1/2n$$ is essential part of errors. 
+
+In case of short time intervals, $$n$$ is big, $$\overline{|\Delta x|}$$ has same order as $$\eta$$, so the first term plays the central role. This explains that errors are large for high frequency points, then diminishing and eventually increasing again when number of observations becomes small. (See figure 5.8)
 
 ### 5.3.2. Limitations of Scaling Laws
 
@@ -638,8 +646,8 @@ Banks issue price quotes have constraints:
 
 The cumulative distribuion functions have properties:
 
-- Not Gaussian, but convex ($s$ strongly, $\ln s$ slightly), indicating a positive skewness and leptokerticity of the tail on positive side.
-- Look like staircase with smooth corners. For nominal spread in basis point $s_{nom}$, we expect a staircase with sharp corners, the vertical parts of staircase function indicating the preferred *even* values like 10 basis points. 
+- Not Gaussian, but convex ($$s$$ strongly, $$\ln s$$ slightly), indicating a positive skewness and leptokerticity of the tail on positive side.
+- Look like staircase with smooth corners. For nominal spread in basis point $$s_{nom}$$, we expect a staircase with sharp corners, the vertical parts of staircase function indicating the preferred *even* values like 10 basis points. 
 
 # 6. Modeling Seasonal Volatility
 
@@ -647,14 +655,14 @@ The cumulative distribuion functions have properties:
 
 First, model the price process for seasonal vol patterns. Due to nonstationarity, we introduce a new time scale such that the transformed data of the new time scale don't possess intraday seasonalities. Two components:
 
-- Directing process $\nu (t)$, is a mapping rom physical time to another predetermined time scale, to contain intraday seasonal variations.
-- Subordinated price process generated from directing process $x(t) = x^*[\nu (t)]$ is tick data with intraday seasonalities, which leads to $x^*$ process (with no intraday seasonalities). 
+- Directing process $$\nu (t)$$, is a mapping rom physical time to another predetermined time scale, to contain intraday seasonal variations.
+- Subordinated price process generated from directing process $$x(t) = x^*[\nu (t)]$$ is tick data with intraday seasonalities, which leads to $$x^*$$ process (with no intraday seasonalities). 
 
 Transaction clock is defined to cumulate transaction volume to obtain new time scale. Since $\nu$-scale considers the seasonality of $x$, $x^*$ has nonseasonal vol patterns, it may be conditionally heteroskedastic.
 
 Market Activity and Scaling Law
 
-$\Delta \nu_i = (\frac{E[|r_i|]}{c^*})^{1/D}$
+$$\Delta \nu_i = (\frac{E[\lvert r_i \rvert]}{c^*})^{1/D}$$
 
 ### 6.1.1. Geographical Seasonality Patterns
 
@@ -662,23 +670,25 @@ See Figure 6.2, panel on let is the shape of geographical seasonality in Euro ma
 
 To sum over the intraweekly sample, the minimization problem is nonlinear for some params (Eqn 6.15), can be solved by Levenverg-Marquardt method (1986).
 
-## 6.2. $\nu$-Scale
+## 6.2. $$\nu$$-Scale
 
-$\nu$ can model the seasonal, intradaily and intraweekly aspect of heteroskedasticity. Activity variable can define the speed of $\nu$ against time $t$. 
+$$\nu$$ can model the seasonal, intradaily and intraweekly aspect of heteroskedasticity. Activity variable can define the speed of $\nu$ against time $$t$$. 
 
 __Def__ 
 
-$\nu (t) = \displaystyle{\int_{t_0}^t a(t') dt' = a_0 (t-t_0) + \sum_{k=1}^3 \nu_k (t)}$
+$$\nu (t) = \displaystyle{\int_{t_0}^t a(t') dt' = a_0 (t-t_0) + \sum_{k=1}^3 \nu_k (t)}$$
 
-$\nu_k$ represents business time scale of $k^{th}$ market: $\nu_k(t) = \displaystyle{\int_{t_0}^t a_{1,k}(t') dt'}$, which can model intramarket behavior. Due to normalization, $\nu$-time can be measured in the same units as physical time (hours).
+$$\nu_k$$ represents business time scale of $$k^{th}$$ market: $$\nu_k(t) = \displaystyle{\int_{t_0}^t a_{1,k}(t') dt'}$$,
 
-Relative weight $W_k$ of each market component can be defined as the share of the $k^{th}$ market in $\nu$ interval of 1 week. 
+which can model intramarket behavior. Due to normalization, $$\nu$$-time can be measured in the same units as physical time (hours).
 
-$\nu$-scale contracts periods of low activity and expands period of high activity.
+Relative weight $$W_k$$ of each market component can be defined as the share of the $$k^{th}$$ market in $$\nu$$ interval of 1 week. 
 
-### 6.2.1. Adjustments of $\nu$-Scale
+$$\nu$$-scale contracts periods of low activity and expands period of high activity.
 
-Recalibrate factor $c^*$ over whole sample. See Figure 6.6 time mapping function between physical time and $\nu$ time. It's difficult to consider different holidays of each markets accurately (like half-day holiday, will need to split daily activity functions into halves).
+### 6.2.1. Adjustments of $$\nu$$-Scale
+
+Recalibrate factor $$c^*$$ over whole sample. See Figure 6.6 time mapping function between physical time and $$\nu$$ time. It's difficult to consider different holidays of each markets accurately (like half-day holiday, will need to split daily activity functions into halves).
 
 ### 6.2.2. Filtering Intraday Seasonalities with Wavelets
 
@@ -694,9 +704,15 @@ Autocorrelation of squared returns is meaningful only if kurtosis of return proc
 
 ### 7.0.3. Short/Long Memory
 
-Hyperbolic $f_h(\tau) = k \tau^{-h}$, exponential $f_e (\tau) = k e^{-\tau/h}$, where $\tau$ : lag order of autocorrelation function. Exponential function can't simultaneously capture the short and long-term persistence, but hyperbolic function can capture both.
+Hyperbolic $$f_h(\tau) = k \tau^{-h}$$, exponential $$f_e (\tau) = k e^{-\tau/h}$$, 
 
-This is similar to fractional noise process $a = \frac{|l+1|^{2H} - 2l^{2H} + |l-1|^{2H}}{2}$, where $l$: lag parameter, $H$: Hurst exponent $\in [0.5,1]$ for persistent fractional noise. For larger lags $l$, autocorrelation converges to $a \approx H(2H-1)l^{2(H-1)}$ which has a hyperbolic decay. $H$ value tend to be lower like 0.25, indicating vol doesn't follow pure fractional noise process, but vol is positive definite and has skewed and fat-tailed distribution, whereas distribution function of pure fractional noise is Gaussian. (Return process doesn't has fractional noise since it's unlike vol having autocorrelation)
+where $$\tau$$: lag order of autocorrelation function. Exponential function can't simultaneously capture the short and long-term persistence, but hyperbolic function can capture both.
+
+This is similar to fractional noise process $$a = \frac{\lvert l+1 \rvert ^{2H} - 2l^{2H} + \lvert l-1 \rvert ^{2H}}{2}$, 
+
+where $$l$$: lag parameter, $$H$$: Hurst exponent $$\in [0.5,1]$$ for persistent fractional noise. 
+
+For larger lags $$l$$, autocorrelation converges to $$a \approx H(2H-1)l^{2(H-1)}$$ which has a hyperbolic decay. $$H$$ value tend to be lower like 0.25, indicating vol doesn't follow pure fractional noise process, but vol is positive definite and has skewed and fat-tailed distribution, whereas distribution function of pure fractional noise is Gaussian. (Return process doesn't has fractional noise since it's unlike vol having autocorrelation)
 
 ## 7.1. Heterogeneous Market
 
@@ -713,67 +729,75 @@ Long term and short term traders have different fine/coarse time grid. So we def
 
 To analyze correlation of 2 time series, like fine and coarse vols, *lagged* correlation is more powerful to see relation between 2 time series. The lagged correlation function considers simultaneously and has a time shift, and reveals Granger causality relations and info flow structures. If 2 time series are generated by a synchronous info flow, they would have symmetric lagged correlation function. The correlation between fine and coarse vol is a function of number of lags. See Figure 7.8, the negative lags indicate that the coarse vol was lagged compared to fine vol, the thin curve indicates asymmetry.
 
-__Heat wave effect__: traders have better memory of events about 1 day ag than a broken number of days ago. $\nu$-scale is well able to treat ordinary seasonality as indicated by lack of analogous peak around positive lags. Heat wave effect is not only seasonality, but also can't be eliminated by time scale transformation. That's because vol modeling needd to consider selective memory.
+__Heat wave effect__: traders have better memory of events about 1 day ag than a broken number of days ago. $$\nu$$-scale is well able to treat ordinary seasonality as indicated by lack of analogous peak around positive lags. Heat wave effect is not only seasonality, but also can't be eliminated by time scale transformation. That's because vol modeling needd to consider selective memory.
 
 ### 7.1.3. Conditional Predictability
 
-See Figure 7.9, lead-lag correlation of fine and coarse vols for 4 different implied forward rates, 3-hr grid in $\nu$-time. The asymmetry of lead-lag correlation is apparent around diagonal, see figure 7.10. So, in intraday, influence of heat wave effect is important.
+See Figure 7.9, lead-lag correlation of fine and coarse vols for 4 different implied forward rates, 3-hr grid in $$\nu$$-time. The asymmetry of lead-lag correlation is apparent around diagonal, see figure 7.10. So, in intraday, influence of heat wave effect is important.
 
 # 8. Vol Processes
 
 3 types:
 
-- ARCH. Autoregressive conditional heteroskedastic models define variance $\sigma_t^2$ of return as a function of *past returns*. In GARCH, $\sigma_t$ depends on its own past values and past returns.
-- Stochastic Vol models. $\sigma_t$ doesn't depend on past returns, and depends on its own past values. Since $\sigma_t$ is not observable andd not computable from past returns, so it's difficult to estimate params of this model. 
-- Realized vol models. Rather than modeling $\sigma_t$, we define $\sigma_t$ as realized vol computed at $t-1$. With high frequency data, return interval of 30-min keeps stochastic errors low. Time interval of main model is higher, as using realized vl at $t-1$ is predictor of vol between $t-1$ and $t$ relying on the vol clustering. Its advantage is that we use empirical data instead of model assumptions that might be wrong. Note that realized vol is biased if computed at high frequency (need bias correction methd). And realized vol at fine vol lags behind coarse vol in lead-lag analysis, which leads to suboptimal forecat quality when predicting the next step vol. In the end, realized vol at $t-1$ may not be the best predictor of vol between $t-1$ and $t$, which should be replaced by a more sophisticated forecast of realized vol at $t$.
+- ARCH. Autoregressive conditional heteroskedastic models define variance $$\sigma_t^2$$ of return as a function of *past returns*. In GARCH, $$\sigma_t$$ depends on its own past values and past returns.
+- Stochastic Vol models. $\sigma_t$ doesn't depend on past returns, and depends on its own past values. Since $$\sigma_t$$ is not observable andd not computable from past returns, so it's difficult to estimate params of this model. 
+- Realized vol models. Rather than modeling $$\sigma_t$$, we define $$\sigma_t$$ as realized vol computed at $$t-1$$. With high frequency data, return interval of 30-min keeps stochastic errors low. Time interval of main model is higher, as using realized vl at $t-1$ is predictor of vol between $$t-1$$ and $$t$$ relying on the vol clustering. Its advantage is that we use empirical data instead of model assumptions that might be wrong. Note that realized vol is biased if computed at high frequency (need bias correction methd). And realized vol at fine vol lags behind coarse vol in lead-lag analysis, which leads to suboptimal forecat quality when predicting the next step vol. In the end, realized vol at $$t-1$$ may not be the best predictor of vol between $$t-1$$ and $$t$$, which should be replaced by a more sophisticated forecast of realized vol at $$t$$.
 
 ## 8.1. Temporal Aggregatin of GARCH
 
-The maximum of likelihood function of GARCH can be found by iterative procedure with genetic algorithm and Berndt-Hall-Hall-Hausman (BHHH) algorithm (a variant of gradient descent, but will trap in local maxima).
+The maximum of likelihood function of GARCH can be found by iterative procedure with genetic algorithm and __Berndt-Hall-Hall-Hausman (BHHH)__ algorithm (a variant of gradient descent, but will trap in local maxima).
 
-GARCH can be viewed as a jump process or diffusion process, both approaches lead to similar results, the autoregressive param $\beta_1 \rightarrow 1$ while moving average param $\alpha_1 \rightarrow 0$ as frequency increases, which means in higher frequency, the vol clustering is longer as measured in time intervals. For disaggregation, we go from low to high-frequency, we need to determine params of aggregated GARCH processes. GARCH doesn't capture the heterogeneity of traders acting at different time zones.
+GARCH can be viewed as a jump process or diffusion process, both approaches lead to similar results, the autoregressive param $$\beta_1 \rightarrow 1$$ while moving average param $$\alpha_1 \rightarrow 0$$ as frequency increases, which means in higher frequency, the vol clustering is longer as measured in time intervals. For disaggregation, we go from low to high-frequency, we need to determine params of aggregated GARCH processes. GARCH doesn't capture the heterogeneity of traders acting at different time zones.
 
 ## 8.2. Heterogeneous Vol: HARCH
 
 HARCH process can be seen as a Markov chain, it takes intervals of different sizes.
 
-$r_t = \sigma_t \epsilon_t$, $\sigma_t^2 = c_0 + \sum\limits_{j=1}^n c_j (\sum\limits_{i=1}^j r_{t-i})^2$
+$$r_t = \sigma_t \epsilon_t$$, $$\sigma_t^2 = c_0 + \sum\limits_{j=1}^n c_j (\sum\limits_{i=1}^j r_{t-i})^2$$
 
 HARCH (Heterogeneous Autoregressive Condition Heteroskedasticity, 1997, Muller) is based on squared returns, with good analytical tractability. Ithas variance equation based on returns over intervals of *different sizes*. The empirical behavior of lagged correlatin can be reproduced with this process, indicating HARCH can reproduce long memory of vol [^7]. Moreover, the conditional variance of HARCH reflect component structure of market.
 
 [^7]: FIGARCH (1996) can model long memory but can't reproduce lead-lag correlation.
 
-Memory of vol is long, so we need a hiigh order of HARCH with large $n$, to model the time series, which implies a high number of coefficients $c_j$, and we need a parsimonious parametrization to explore component structure of market.
+Memory of vol is long, so we need a hiigh order of HARCH with large $$n$$, to model the time series, which implies a high number of coefficients $$c_j$$, and we need a parsimonious parametrization to explore component structure of market.
 
 ## 8.3. EMA-HARCH
 
-It has advantage of including a memory from past intervals. *partial* vol $\sigma_j^2$ is the contribution of $j^{th}$ component to the total market vol $\sigma^2$. $\sigma_{j,t}^2 = \mu_j \sigma_{j, t-1}^2 + (1-\mu_j) \left(\sum\limits_{i=1}^{j_j} r_{t-i}\right)^2$. The depth of vol memory decay is determined by const $\mu_j = e^{-\frac{1}{M(k_j)}}$.
+It has advantage of including a memory from past intervals. *partial* vol $$\sigma_j^2$$ is the contribution of $j^{th}$ component to the total market vol $$\sigma^2$$. 
+
+$$\sigma_{j,t}^2 = \mu_j \sigma_{j, t-1}^2 + (1-\mu_j) \left(\sum\limits_{i=1}^{j_j} r_{t-i}\right)^2$$. 
+
+The depth of vol memory decay is determined by const $$\mu_j = e^{-\frac{1}{M(k_j)}}$$.
 
 # 9. Forecasting Returns over multiple time horizons
 
 ## 9.1. Intrinsic Time
 
-FX returns has conditional heteroskedasticity, and can be treated with a change of time scale. Based on scaling law and price vol: $\tau(t_c) = \tau(t_{c-1}) + k \frac{\nu(t_c) - \nu(t_{c-1})}{\Delta \nu} \frac{|\Delta x|^E}{c}$, where $t_c$ is current time, price difference on same interval is $\Delta \nu$, $E, c$ are scaling law inverse exponent and factor. $k$ is calibration factor on time series, to keep $\tau$ in line with physical time in the long run. So, it's the reverse of scaling law for a return on const $\nu$-time interval size. 
+FX returns has conditional heteroskedasticity, and can be treated with a change of time scale. Based on scaling law and price vol: $$\tau(t_c) = \tau(t_{c-1}) + k \frac{\nu(t_c) - \nu(t_{c-1})}{\Delta \nu} \frac{|\Delta x|^E}{c}$$, 
 
-$\tau$-scale is intrinsic time, which expands periods of high vol and contract those of low vol, thus caputuring the relative importance of events to market. Any moving average based on intrinsic time $\tau$ dynamically adapts its range to market events. Forecasting model based on $\tau$-scale has a *dynamic memory* of price history.
+where $$t_c$$ is current time, price difference on same interval is $$\Delta \nu$$, $$E, c$$ are scaling law inverse exponent and factor. $$k$$ is calibration factor on time series, to keep $$\tau$$ in line with physical time in the long run. So, it's the reverse of scaling law for a return on const $$\nu$$-time interval size. 
 
-But, intrinsic time $\tau$ only know the past, business time scale $\nu$ also know future, because it's based on average behavior. So, a forecasting model for price need to combine 2 forecasting modedls, one for intrinsic time, one for the price. 
+$$\tau$$-scale is intrinsic time, which expands periods of high vol and contract those of low vol, thus caputuring the relative importance of events to market. Any moving average based on intrinsic time $$\tau$$ dynamically adapts its range to market events. Forecasting model based on $$\tau$$-scale has a *dynamic memory* of price history.
+
+But, intrinsic time $$\tau$$ only know the past, business time scale $$\nu$$ also know future, because it's based on average behavior. So, a forecasting model for price need to combine 2 forecasting modedls, one for intrinsic time, one for the price. 
 
 ## 9.2. Linear combination of nonliner indicators
 
-An indicator is a predictor of price change for forecasting. For fixed forecasting horizon $\Delta \nu_f$, price forecast $\tilde{x}_f = x_c + \sum\limits_{j=1}^m c_{x,j} (\Delta \nu_f) z_{x,j} (\Delta \tilde{\tau}_f, \tau_c)$, where $x_c$: current price, $m$: number of intrinsic-time $\tau$-scale indicators in model, coefficients $c_{x,j}(\Delta \nu_f)$are estimated with multiple linear regression model. $\Delta \tilde{\tau}_f = \sum\limits_{j=1}^m c_{\tau,j} (\Delta \nu_f) z_{\tau,j} (\Delta \nu_f, \nu_c)$ is intrinsic time forecast.
+An indicator is a predictor of price change for forecasting. For fixed forecasting horizon $$\Delta \nu_f$$, price forecast $$\tilde{x}_f = x_c + \sum\limits_{j=1}^m c_{x,j} (\Delta \nu_f) z_{x,j} (\Delta \tilde{\tau}_f, \tau_c)$$, 
 
-This model doesn't rely on a fixed basic time interval, but is designed with a concept of continuous time. The time when a price is recorded in the database is unequally spaced in time, and $\tau$-scale implies that our forecasting models must be computed simultaneously over several fixed time horizons $\Delta \nu_f$.
+where $$x_c$$: current price, $$m$$: number of intrinsic-time $$\tau$$-scale indicators in model, coefficients $$c_{x,j}(\Delta \nu_f)$$ are estimated with multiple linear regression model. $$\Delta \tilde{\tau}_f = \sum\limits_{j=1}^m c_{\tau,j} (\Delta \nu_f) z_{\tau,j} (\Delta \nu_f, \nu_c)$$ is intrinsic time forecast.
+
+This model doesn't rely on a fixed basic time interval, but is designed with a concept of continuous time. The time when a price is recorded in the database is unequally spaced in time, and $$\tau$$-scale implies that our forecasting models must be computed simultaneously over several fixed time horizons $$\Delta \nu_f$$.
 
 ## 9.3. Measuring Forecast Quality
 
-We use a mapping function of returns: the forecast should fit the mapped returns $\hat{Y_i}$ rather than real returns $Y_i$, the map returns should have less leptokurtic than original returns.
+We use a mapping function of returns: the forecast should fit the mapped returns $\hat{Y_i}$ rather than real returns $$Y_i$$, the map returns should have less leptokurtic than original returns.
 
 - Small returns should be amplified when considered in regression, to establish a sufficient penalty against forecasts of wrong direction.
 - Large returns should be reduced when considered in regresson, so the distribution function of mapped returns is no longer leptokurtic.
 - Mapping effects should decrease with increasing time horizon size.
 
-$\hat{Y_i} = M(Y_i) = \frac{AY_i}{[Y_i^2+B]^\alpha}$, where $\alpha \in [0, 0.5]$ since the mapping function must be underproportional bijection.
+$$\hat{Y_i} = M(Y_i) = \frac{AY_i}{[Y_i^2+B]^\alpha}$$, where $$\alpha \in [0, 0.5]$$ since the mapping function must be underproportional bijection.
 
 # 10. Correlation & Multivariate Risk
 
@@ -785,7 +809,7 @@ In asset allocation and risk, return measurement intervals should be chosen long
 
 ## 10.1. Covolatility Weighting
 
-We need to introduce a time scale that compresses physical time if there is no info and expand t when it exists (similar to $\nu$-time in model vol patterns), and we have multivariate problem of 2 time series for a common time scale.
+We need to introduce a time scale that compresses physical time if there is no info and expand t when it exists (similar to $$\nu$$-time in model vol patterns), and we have multivariate problem of 2 time series for a common time scale.
 
 Large data gaps (varying/nonmatching data arrival frequencies) occur due to failures in data acquisition chain, we can only guess. 
 
@@ -820,7 +844,7 @@ p_{i} & \text { if } g_{i} g_{i-1}<0 \text { or } g_{i-1}=0 \\
 \text { undefined } & \text { if } g_{i}=0
 \end{array}\right. \tag {11.1}$$
 
-where $g_{i-1}$ and $g_i$ are previous and current gearings. The return of a deal $r_i = (g_{i-1} - g_i')\left(\frac{p_i}{\bar{p_{i-1}}} -1 \right)$.
+where $$g_{i-1}$$ and $$g_i$$ are previous and current gearings. The return of a deal $$r_i = (g_{i-1} - g_i')\left(\frac{p_i}{\bar{p_{i-1}}} -1 \right)$$.
 
 __Gearing Calculation__ is the heart of a trading model, it provides trading model with intelligence and ability to capitalize on movements in markets. It's the real model. It consists of indicators (produced from input price data) and trading rules (functions of past dealing history).
 
@@ -847,11 +871,11 @@ So we need a new sharing function that penalizes clusters with: large variance o
 
 $$s_{f}(i)=\overline{f_{c}}-\left(\frac{N_{c}}{N_{a v}}+\frac{1-r_{d}}{r_{d}}\right) \sigma\left(f_{c}\right) \quad \forall x_{i} \in C_{c} \tag {11.2}$$
 
-where $N_c$ is number of genes in cluster, $\bar{f_c}$ is average fitness value.
+where $$N_c$$ is number of genes in cluster, $$\bar{f_c}$$ is average fitness value.
 
 $$\overline{f_{c}}=\frac{1}{N_{c}} \sum_{i=1}^{N_{c}} f(i) \quad \text { and } \quad \sigma\left(f_{c}\right)=\sqrt{\frac{1}{N_{c}-1} \sum_{i=1}^{N_{c}}\left(f(i)-\overline{f_{c}}\right)^{2}}$$
 
-If $N_c <$ expected average number of genes inside each cluster $N_{av}$, the correction is reduced, otherwise increased. The second term $(1-r_d)/r_d$ is used to penalize clusters with too high a concentration of genes around centrooiod. 
+If $$N_c <$$ expected average number of genes inside each cluster $$N_{av}$$, the correction is reduced, otherwise increased. The second term $$(1-r_d)/r_d$$ is used to penalize clusters with too high a concentration of genes around centrooiod. 
 
 ## 11.2. Real-time Testing
 
