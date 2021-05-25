@@ -5,7 +5,7 @@ title: "About Me"
 
 ## __Bio__
 
-My name is Junfan Zhu, I grow up in [Wuxi](https://en.wikipedia.org/wiki/Wuxi), a beautiful cultural city in China.
+My name is 朱俊帆 Junfan Zhu, I grow up in 无锡 [Wuxi](https://en.wikipedia.org/wiki/Wuxi), a beautiful cultural city in China.
 
 I'm currently an Analyst at Societe Generale in Chicago. I received M.S. degree in Financial Mathematics from the [University of Chicago](https://www.uchicago.edu/) in 2020 December. 
 
@@ -39,7 +39,7 @@ In Rotman International Trading Competition, I ranked Top 10 Algorithmic Trader.
 
 I love MOOC self-learning and reading all kinds of books. I have certificates from Triplebyte Certified Machine Learning Engineer, Coursera Deep Learning & NLP & GAN & Probabilistic Graphical Models Specializations, etc. More Coursera learning certificates are available on [LinkedIn](https://www.linkedin.com/in/junfan-zhu/) `Licences & Certificates`, 
 
-More selected Coursera course notes and remarks, as well as book excerpts and "Minutes of Humanities and Social Sciences Reading Club" blogs are available on [Douban](https://www.douban.com/people/junfanz/notes) (written in Chinese).
+More selected Coursera course notes and remarks, as well as book excerpts and "Minutes of Humanities and Social Sciences Reading Club" blogs are available on 豆瓣 [Douban](https://www.douban.com/people/junfanz/notes) (written in Chinese).
 
 ---
 
@@ -65,5 +65,5 @@ I love Chinese Calligraphy (childhood favoraites), Violin (L8, Shanghai Conserva
 
 - [Blog](https://junfanz1.github.io/)  
 - [Github](https://github.com/junfanz1)  
-- [Zhihu](https://www.zhihu.com/people/zhu-jun-fan-33)  知乎
-- [Douban](https://www.douban.com/people/junfanz/notes) 豆瓣
+- 知乎 [Zhihu](https://www.zhihu.com/people/zhu-jun-fan-33)  
+- 豆瓣 [Douban](https://www.douban.com/people/junfanz/notes) 
