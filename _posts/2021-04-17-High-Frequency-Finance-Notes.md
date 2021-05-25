@@ -379,7 +379,7 @@ Low aspect ratio means that the kernel of operator has short tail, so a short bu
 
 Most nonlinear operators are homogeneous of degree $$p$$, 
 
-$$\Omega[ax] = |a|^p \Omega[x]$$, 
+$$\Omega[ax] = \left| a \right|^p \Omega[x]$$, 
 
 nonlinear operators can build robust estimators. 
 
