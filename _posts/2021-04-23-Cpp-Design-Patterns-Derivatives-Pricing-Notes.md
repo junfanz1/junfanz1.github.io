@@ -1445,7 +1445,9 @@ Stock price follows process $$dS_t = (r(t) - d(t)) S_t dt + \sigma(t) S_t dW_t$$
 
 To simulate the process, we set 
 
-$$\log S_{t_j} = log S_{t_{j-1}} + \displaystyle{\int_{t_{j-1}}^{t_j} \left( r(s) - d(s) - \frac{1}{2} \sigma(s)^2 \right)ds + \sqrt{\int_{t_{j-1}}^{t_j} \sigma(s)^2 ds W_j  }}$$
+$$\log S_{t_j} = log S_{t_{j-1}} + \displaystyle{\int_{t_{j-1}}^{t_j}\\
+&\left( r(s) - d(s) - \frac{1}{2} \sigma(s)^2\\
+&\right)ds + \sqrt{\int_{t_{j-1}}^{t_j} \sigma(s)^2 ds W_j  }}$$
 
 ```cpp
 // ExoticBSEngine.h
@@ -1597,7 +1599,7 @@ PathDependent* PathDependentAsian::clone() const
 
 ## 8.1. Intro
 
-Value of $S_t$ doesn't depend on path of $$W_t$$ but solely on its value at $$t$$, only $$Y_l$$ matters for each $$X_j$$, which means that our tree is recombining, it doesn't matter whether we go down then up or not, we assume vol to be const. See formula 8.6. We're approximating continuous martingales with discrete r.v. almost as martingales.
+Value of $$S_t$$ doesn't depend on path of $$W_t$$ but solely on its value at $$t$$, only $$Y_l$$ matters for each $$X_j$$, which means that our tree is recombining, it doesn't matter whether we go down then up or not, we assume vol to be const. See formula 8.6. We're approximating continuous martingales with discrete r.v. almost as martingales.
 
 Tree is good for pricing American options, this corresponds to optimal strategy of exercise iff exercise gives more money than not.
 
