@@ -5,7 +5,8 @@ title: "About Me"
 
 ## __Bio__
 
-My name is 朱俊帆 Junfan Zhu, I grow up in 无锡 [Wuxi](https://en.wikipedia.org/wiki/Wuxi), a beautiful cultural city in China.
+My name is  ![image](https://user-images.githubusercontent.com/56275127/119561880-562ef380-bd6b-11eb-9b15-7e8e890fc8cf.png) 朱俊帆 Junfan Zhu, I grow up in 无锡 [Wuxi](https://en.wikipedia.org/wiki/Wuxi), a beautiful cultural city in China.
+
 
 I'm currently an Analyst at Societe Generale in Chicago. I received M.S. degree in Financial Mathematics from the [University of Chicago](https://www.uchicago.edu/) in 2020 December. 
 
@@ -61,7 +62,7 @@ I love Chinese Calligraphy (childhood favoraites), Violin (L8, Shanghai Conserva
 
 ---
 
-## __Relevant Links__
+## __My Links__
 
 - [Blog](https://junfanz1.github.io/)  
 - [Github](https://github.com/junfanz1)  
