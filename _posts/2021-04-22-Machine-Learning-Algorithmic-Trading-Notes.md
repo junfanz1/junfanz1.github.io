@@ -692,7 +692,7 @@ performance.to_pickle('single_factor.pickle')
 
 ## 4.3. Info Coefficient
 
-IR is similar to Sharpe ratio but uses a benchmark (S&P500) rather than risk-free rate. $IR = \frac{\alpha}{Tracking Error}$
+IR is similar to Sharpe ratio but uses a benchmark (S&P500) rather than risk-free rate. $$IR = \frac{\alpha}{Tracking Error}$$
 
 Information Ratio (IR) measures average excess return per unit of risk taken by dividing alpha by the tracking risk. It's better to use non-parametric Spearman rank correlation coefficient, which measures how well relationship between 2 variables be described using monotomic function, as opposed to Pearson correlation, which measures the strength of a linear relationship.
 
@@ -852,7 +852,7 @@ Conintegration differs from correlation, two series can be highly correlated but
 
 [^1]: 2 growing series are const multiples of each other, their correlation is high, but any linear combination will grow rather than revert to stable mean.
 
-If $\geq$ 2 asset price series revert to a common mean, we can leverage deviations from the trend, because they imply future price moves in the opposite direction. We can use __Johansen likelihood-ratio test__ to see if cointegration exists, it's long term relationship.
+If $$\geq$$ 2 asset price series revert to a common mean, we can leverage deviations from the trend, because they imply future price moves in the opposite direction. We can use __Johansen likelihood-ratio test__ to see if cointegration exists, it's long term relationship.
 
 ## 9.4. Pairs Trading
 
@@ -867,7 +867,7 @@ This can select cointegrated pairs with lower divergence risk, while ensuring mo
 
 Many tests will lead to __data snooping bias__,since multiple testing can increase number of false positives that mistakenly reject null hypothesis of no cointegration. 
 
-We first estimate optimal number of lags that we need to specify for Johansen test. For both tests (plus Engle-Granger test), we assume the cointegrated series (spread) may have intercept $\neq$ 0 but no trend.
+We first estimate optimal number of lags that we need to specify for Johansen test. For both tests (plus Engle-Granger test), we assume the cointegrated series (spread) may have intercept $$\neq$$ 0 but no trend.
 
 ```python
 def compute_pair_metrics(security, candidates):
@@ -967,7 +967,7 @@ class Pair:
 
 ## 10.1. MCMC Sampling
 
-Draw samples $$X = (x_1, ..., x_n)$$ from given distribution $p(x)$. Monte Carlo methods is to repeatedly random sample to approximate results that may be deterministic but that don't permit an exact analytic solution. 
+Draw samples $$X = (x_1, ..., x_n)$$ from given distribution $$p(x)$$. Monte Carlo methods is to repeatedly random sample to approximate results that may be deterministic but that don't permit an exact analytic solution. 
 
 Steps.
 
@@ -983,7 +983,7 @@ MCMC key property is that the process should forget about its initial position a
 
 ### 10.1.1. Gibbs Sampling
 
-It simplifies multivariate sampling to a sequence of 1-dim draws. It iteratively holds $n-1$ variables const while sampling the $n$-th variable. It incorporates this sample and repeats it. The sequential nature prevents parallellization.
+It simplifies multivariate sampling to a sequence of 1-dim draws. It iteratively holds $$n-1$$ variables const while sampling the $$n$$-th variable. It incorporates this sample and repeats it. The sequential nature prevents parallellization.
 
 ### 10.1.2. Metropolis-Hasting Sampling
 
@@ -1028,7 +1028,7 @@ Federal Reserves' Economic Data (FRED)
 - National Financial Conditions Index (NFCI)
 - NFCI nonfinancial leverage subindex
 
-Will US economy be in recession x months in the future? We do Bayesian inference for logistic regression. Logistic regression models the prob that economy will be in recession 12 months after month $i$ based on $k$ features. Likelihood combines params with data according to logistic regression. Outcome is Bernoulli random variables with success prob given by likelihood.
+Will US economy be in recession x months in the future? We do Bayesian inference for logistic regression. Logistic regression models the prob that economy will be in recession 12 months after month $$i$$ based on $$k$$ features. Likelihood combines params with data according to logistic regression. Outcome is Bernoulli random variables with success prob given by likelihood.
 
 ```python
 with pm.Model() as manual_logistic_model:
@@ -1324,7 +1324,7 @@ Gradient boosting applies boosting method t a wider range of loss functions.
 
 Gradient Boosting machines (GBMs) is training the base learners to learn negative gradients of current loss function of ensemble. So each addition to ensemble directly contributes to reducinng overall training error, given errors made by prior ensemble members. 
 
-Gradient boosting optimizes over the functions $h_m$ in an additive fashion. Its success is based on the ability to learn complex functional relationships in an incremental fashion. But we need to pay attention to risk of overfitting by tuning hyperparameters to contrain the model learning noise.
+Gradient boosting optimizes over the functions $$h_m$$ in an additive fashion. Its success is based on the ability to learn complex functional relationships in an incremental fashion. But we need to pay attention to risk of overfitting by tuning hyperparameters to contrain the model learning noise.
 
 ## 12.3. Train and Tune GBM models
 
@@ -1342,7 +1342,7 @@ Stochastic gradient boosting samples training data withouot replacement at each 
 
 Random forests can be trained in parallel by growing individual trees on independent boostrap samples. __Sequantial approach of gradient boosting__ slows down training, and have large number of hyperparameters to tune. Computational cost during training $$\propto$$ time it takes to evaluate potential split points for each feature.
 
-Regularization penalty help avoid overfitting by favoring a model that uses simple yet predictive regression trees. In XGBoost, penalty for regression tree $h$ depends on # of leaves per tree $$T$$, regression tree scores for each terminal noed $w$, and hyperparameters $$\gamma, \lambda$$. At each step, algorithm greedily adds the hypothesis $h_m$ that most improves regularized objective. 
+Regularization penalty help avoid overfitting by favoring a model that uses simple yet predictive regression trees. In XGBoost, penalty for regression tree $$h$$ depends on # of leaves per tree $$T$$, regression tree scores for each terminal noed $$w$$, and hyperparameters $$\gamma, \lambda$$. At each step, algorithm greedily adds the hypothesis $$h_m$$ that most improves regularized objective. 
 
 ### 12.4.1. Simpliefied split-finding algorithms
 
@@ -1448,16 +1448,16 @@ Dimensionality reduction
 - Linear algo. PCA/ICA constrain new variables to be linear combinations of original features. PCA requires new features to be uncorrelated, ICA goes further and imposes stats independence, implying absence of both linear and nonlinear relationships.
 - Nonlinear algo. t-distributed stochastic neighbor embedding (t-SNE), Uniform Manifold Approximation and Projection (UMAP) for high-dim data.
 
-PCA Assumptions
+__PCA Assumptions__
 
 - High variance implies high signal-to-noise ratio
 - Standardized data, so variance is comparable across features
 - Linear transformations capture relevant aspects of data
 - High-order stats, beyond first/second moments don't matter, which implies data has normal distribution.
 
-Independent Component Analysis (ICA) is a linear algorithm that can deal with blind source separation. $$n$$ original signals, and unknown square matrix $A$ with $n$-dim set of $m$ observations. Our goal is to find matrix $$W=A^{-1}$$ that untangles the mixed signals to recover sources.
+Independent Component Analysis (ICA) is a linear algorithm that can deal with blind source separation. $$n$$ original signals, and unknown square matrix $$A$$ with $$n$$-dim set of $$m$$ observations. Our goal is to find matrix $$W=A^{-1}$$ that untangles the mixed signals to recover sources.
 
-ICA Assumptions
+__ICA Assumptions__
 
 - Source of signals are statistically independent
 - Linear transformations are sufficient to capture the relevant info
@@ -1477,9 +1477,9 @@ Technique to approximate a lower-dim manifold: locally linear embedding (LLE, 20
 
 $$t$$-SNE (2008) detects patterns in high-dim data. By converting high-dim distances into conditional prob, where high prob imply low distance and reflect likelihood of sampling 2 points based on similarity. It first position a normal distribution over each point and compute density for a point and each neighbor. Second, it arranges points in low dim and uses similarly computed low-dim prob to match high-dim distribution by KL divergence, which puts high penalty on misplacing similar points in low dim. The low-dim prob use $$t$$-distribution with 1 degree of freedome, because it has fatter tails that reduces penalty of misplacing points that are more distant in high dim to manage crowing problem.
 
-Weakness
+__Weakness__
 
-- computational complexity scales quadratically in $n$ points, as it evaluates all pairwise distances, but a subsequent tree-based implementation can have $$n \log n$$.
+- computational complexity scales quadratically in $$n$$ points, as it evaluates all pairwise distances, but a subsequent tree-based implementation can have $$n \log n$$.
 - cannot facilitate projection of new data points into low-dim space. The compressed output is not useful input for distance- or density-based cluster algo, because $$t$$-SNE treats small and large distances differently.
 
 ### 13.2.2. Uniform Manifold Approximation and Projection (UMAP)
@@ -1532,7 +1532,7 @@ LDA solves Bayesian inference problem of recovering distributions from body of d
 
 ## 15.2. Evaluation on LDA
 
-- Perplexity: evaluates how well topic-word prob distribution recovered by model predicts a sample of unseen documents, based on entropy $H(p)$ of distribution.
+- Perplexity: evaluates how well topic-word prob distribution recovered by model predicts a sample of unseen documents, based on entropy $$H(p)$$ of distribution.
 - Topic coherence: evaluates semantic consistency of uncovered patterns, whether human perceive the words and prob associated with topics meaningful.
 
 UCI metric (2012): a word pair's score = pointwise mutual info (PMI) between 2 distinct pairs of topic words and a smoothing factor. Prob is computed from word co-occurrence frequencies in sliding window over external corpus, so that it's a comparison to semantic ground truth.
@@ -1861,7 +1861,7 @@ TimeGAN includes an embedding network that maps the time-series features to a lo
 
 Both generator and embedding (autoencoder) network in TimeGAN are responsible for minimizing the supervised loss that measures how well the model learns the dynamics. So, the model learns a latent space conditioned on facilitating the generator's task to faithfully reproduce temporal relationships observed in historical data. 
 
-### 21.3.2. $4$ components of TimeGAN architecture
+### 21.3.2. $$4$$ components of TimeGAN architecture
 
 - Autoencoder: embedding and recovery networks
 - Adversarial network: sequence generator and sequence discriminator components
