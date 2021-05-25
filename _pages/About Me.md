@@ -5,12 +5,13 @@ title: "About Me"
 
 ## __Bio__
 
-My name is Junfan Zhu (Chinese characters below), I grow up in 无锡 ([Wuxi](https://en.wikipedia.org/wiki/Wuxi)), a beautiful cultural city in China.
+My name is Junfan Zhu (Chinese characters below).
 
 ![eb028265fa024f1480bef5dab2034fdd](https://user-images.githubusercontent.com/56275127/119562808-64c9da80-bd6c-11eb-990c-983fe77af963.png)
 
+I grow up in 无锡 ([Wuxi](https://en.wikipedia.org/wiki/Wuxi)), a beautiful cultural city in China.
 
-I'm currently an Analyst at Societe Generale in Chicago. I received M.S. degree in Financial Mathematics from the [University of Chicago](https://www.uchicago.edu/) in 2020 December. 
+Currently, I'm an Analyst at Societe Generale in Chicago. I received M.S. degree in Financial Mathematics from the [University of Chicago](https://www.uchicago.edu/) in 2020 December. 
 
 My interests lie in Quant Research/Trading, Machine Learning and Computer Science.
 
