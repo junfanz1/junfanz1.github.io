@@ -16,14 +16,16 @@ tags:
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
+
 Book Link
 -------------
+
 
 An Introduction to High-Frequency Finance, by Ramazan Gençay, et al.
 
 > https://www.amazon.com/Introduction-High-Frequency-Finance-Ramazan-Gen%C3%A7ay/dp/0122796713
 
----
+-----
 
 Table of Contents
 =====
