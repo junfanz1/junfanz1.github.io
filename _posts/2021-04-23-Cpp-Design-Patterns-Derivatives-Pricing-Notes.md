@@ -1445,7 +1445,9 @@ Stock price follows process $$dS_t = (r(t) - d(t)) S_t dt + \sigma(t) S_t dW_t$$
 
 To simulate the process, we set 
 
-$$\displaystyle{\log S_{t_j} = log S_{t_{j-1}} + \int_{t_{j-1}}^{t_j} \left( r(s) - d(s) - \frac{1}{2} \sigma(s)^2  \right)ds + \sqrt{\int_{t_{j-1}}^{t_j} \sigma(s)^2 ds W_j}}$$
+
+$$\displaystyle{\log S_{t_j} = log S_{t_{j-1}} + \int_{t_{j-1}}^{t_j} \left( r(s) - d(s) - \frac{1}{2} \sigma(s)^2  \right)ds + \sqrt{\int_{t_{j-1}}^{t_j} \sigma(s)^2 ds W_j}} \tag {7.5}$$
+
 
 ```cpp
 // ExoticBSEngine.h
