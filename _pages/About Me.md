@@ -65,5 +65,5 @@ I love Chinese Calligraphy (childhood favoraites), Violin (L8, Shanghai Conserva
 
 - [Blog](https://junfanz1.github.io/)  
 - [Github](https://github.com/junfanz1)  
-- [Zhihu](https://www.zhihu.com/people/zhu-jun-fan-33)  
-- [Douban](https://www.douban.com/people/junfanz/notes)
+- [Zhihu](https://www.zhihu.com/people/zhu-jun-fan-33)  知乎
+- [Douban](https://www.douban.com/people/junfanz/notes) 豆瓣
