@@ -8,6 +8,8 @@ tags:
   - Notes
 ---
 
+https://www.google.com/url?sa=i&url=https%3A%2F%2Falgs4.cs.princeton.edu%2F&psig=AOvVaw3UZGrn8NZTPhVTqgj3x5n3&ust=1622061232443000&source=images&cd=vfe&ved=2ahUKEwj04uON1-XwAhVWgXIEHXmGAsoQjRx6BAgAEAc
+
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
