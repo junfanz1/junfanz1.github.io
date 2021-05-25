@@ -391,9 +391,9 @@ For moving norm, $$w$$ = average, $$q = 1/p$$.
 
 __Nonlinear operators can build robust estimators.__ Data errors (outliers) should be eliminated by data filter prior to any computation. Prior data cleaning, robust estimators can reduce dependency of results on outliers or the choice of data cleaning algorithm. This problem is acute mainly when working with returns, because the difference operator needed to coompute returns from prices is sensitive to outliers. So the modified operator acheives robustness by giving a higher weight to the center of the distribution of returns than to the tails.
 
-Robust operator mapping function $$sign (x) |x|^\gamma = x|x|^{\gamma-1}$$ has exponent $$0 \leq \gamma < 1$$. 
+Robust operator mapping function $$sign (x) \lvert x \rvert ^\gamma = x\lvert x \rvert ^{\gamma-1}$$ has exponent $$0 \leq \gamma < 1$$. 
 
-For vol estimates, usual $$L^2$$ vol operator based on squared returns can be made more robust by using mapping function: the signed square root $$f = sign(x)\sqrt{|x|}$$, which transforms $$L^2$$ vol into $$L^{2p}$$ vol. This power law transformation includes in the definition of moving norm, moving variance or vol operators.
+For vol estimates, usual $$L^2$$ vol operator based on squared returns can be made more robust by using mapping function: the signed square root $$f = sign(x)\sqrt{\lvert x \rvert}$$, which transforms $$L^2$$ vol into $$L^{2p}$$ vol. This power law transformation includes in the definition of moving norm, moving variance or vol operators.
 
 ### 3.2.3. Iterated EMA Operator
 
