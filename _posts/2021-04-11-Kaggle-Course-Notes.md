@@ -8,6 +8,10 @@ tags:
   - Notes
 ---
 
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 Course Links
 -------------
 
@@ -437,7 +441,7 @@ __Gradient Bosting__ goes through cycles to iteratively add moodels into an ense
 - Then, use loss function to fit a new model that will be added to the ensemble. Determine model parameters so that adding the new model to ensemble will reduce loss.
 - Finally, add new model to ensemble, and repeat the process[^1].
 
-[^1]: Make predictions $\Rightarrow$ Calculate loss $\Rightarrow$ Train new model $\Rightarrow$ Add new model to ensember $\Rightarrow$ Repeat.
+[^1]: Make predictions $$\Rightarrow$$ Calculate loss $$\Rightarrow$$ Train new model $$\Rightarrow$$ Add new model to ensember $$\Rightarrow$$ Repeat.
 
 __XGBoost__ = extreme gradient boosting, an implementation of gradient boosting with several additional features focused on performance and speed. 
 
@@ -458,8 +462,8 @@ XGBoost has few parameters that can dramatically affect accuracy and training sp
 
 `n_estimators` specifies how many times to go through the modeling cycle described above. It's equal to number of models we use in the ensemble. Typically range from 100 - 1000, and depends on `learning_rate`.
 
-- Too low value $\Rightarrow$ underfitting, inaccurate predictions on both training data and testing data.
-- Too high value $\Rightarrow$ overfitting, accurate predictions on training data, inaccurate predictions on test data.
+- Too low value $$\Rightarrow$$ underfitting, inaccurate predictions on both training data and testing data.
+- Too high value $$\Rightarrow$$ overfitting, accurate predictions on training data, inaccurate predictions on test data.
 
 ```python
 my_model = XGBRegressor(n_estimators = 500)
@@ -959,7 +963,7 @@ Mutual info is like correlation in that it measures a relationship between two q
 
 The MI between 2 quantities is a measure of the extent to which knowledge of one quantity reduces uncertainty about the other.
 
-MI $\in [0, \infty)$, it's logarithmic quantity, so it increases slowly, and can capture any kind of association, can understand relative potential of a feature as a predictor of the target.
+MI $$\in \left( 0, \infty \right)$$ , it's logarithmic quantity, so it increases slowly, and can capture any kind of association, can understand relative potential of a feature as a predictor of the target.
 
 A feature may be informative when interacting with other features, but not so informative alone. MI can't detect interactions between features, it's a __univariate__ metric.
 
@@ -1121,7 +1125,7 @@ Features = principal components, weights = loadings. When your features are high
 
 PCA can collect informative signal into a smaller number of features while leaving the noise alone, thus boosting the signal-to-noise ratio. Some ML algorithms are bad with highly-correlated features, PCA transforms correlated features into uncorrelated components.
 
-Notes:
+__Notes:__
 
 - PCA only work with numeric features like continuous quantities
 - PCA is sensitive to scale, so we should standardize data
