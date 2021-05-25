@@ -57,7 +57,7 @@ plugins:
 author:
   name   : "Junfan Zhu"
   avatar : "https://avatars.githubusercontent.com/u/56275127?s=400&u=f11d0ea730981957d1dc8eb9f1c1d3ed6af16463&v=4"
-  bio    : "I will update my studying notes on this blog."
+  bio    : "A tech blog on Financial Mathematics, Machine Learning, and coding."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -68,7 +68,10 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/junfan-zhu"
-
+    - label: "Email"
+      icon: "fas fa-fw fa-email"
+      url: "junfanz@gatech.edu"
+      
 defaults:
   # _posts
   - scope:
