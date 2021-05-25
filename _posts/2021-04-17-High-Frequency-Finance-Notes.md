@@ -369,12 +369,11 @@ The heavier the tail of kernel, the longer the required build-up. Build-up inter
 
 To measure tail, we can use first 2 moments of kernel, defined as aspect ratio
 
-$$ AR\left[ \Omega \right] = <t^2>~w^{1/2} / <t>_\omega$$,
+$$AR[\Omega] = <<t^2>~w^{1/2} / <t>_\omega>$$
 
 = $$2/\sqrt{3}$$ for rectangular kernel, and $$\sqrt{2}$$ for simple EMA. 
 
 Low aspect ratio means that the kernel of operator has short tail, so a short build-up time interval is good. For nonnegative causal kernels, the aspect ratio is less useful for choosing build-up interval of causal kernels with more complicated, partially negative shapes.
-
 
 ### 3.2.2. Homogeneous Operators and Robustness
 
