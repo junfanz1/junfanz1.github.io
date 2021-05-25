@@ -300,7 +300,9 @@ where $$n$$ = number of return (price changes) observations. 2 time intervals: r
 
 For $$p$$ choosing, should < tail index of distrbution (3.5 for high frequency FX data, 4-th moment of return distribution often diverges.) p can be limited to *half* of tail index.
 
-By Gaussian scaling law, $$v^2 \propto \Delta t$$, scaled vol = $$v_{scaled} = \sqrt{\frac{\Delta t_{scale}}{\Delta t}} v$$. If $$\Delta t_{scale}$$ = 1 year, then it's annualized vol. Typical annualized vool for FX rates are around 10%.
+By Gaussian scaling law, $$v^2 \propto \Delta t$$, scaled vol = $$v_{scaled} = \sqrt{\frac{\Delta t_{scale}}{\Delta t}} v$$. 
+
+If $$\Delta t_{scale}$$ = 1 year, then it's annualized vol. Typical annualized vool for FX rates are around 10%.
 
 So we have 3 time intervals:
 
@@ -365,7 +367,14 @@ $$\displaystyle{\epsilon^2 = E[(\Omega[-T;z](0) - Omega[- \infty;z](0))^2]} \\
 
 The heavier the tail of kernel, the longer the required build-up. Build-up interval should be computed numerically, and can be solved analytically for simple EMA kervel. The build-up time interval is large for small error tolerance and for process with high vol.
 
-To measure tail, we can use first 2 moments off kernel, defined as aspect ratio $$AR\[\Omega\] = <t^2>~w^{1/2} / <t>_\omega$$, = $$2/\sqrt{3}$$ for rectangular kernel and $$\sqrt{2}$$ for simple EMA. Low aspect ratio means that the kernel of operator has short tail, so a short build-up time interval is good. For nonnegative causal kernels, the aspect ratio is less useful for choosing build-up interval of causal kernels with more complicated, partially negative shapes.
+To measure tail, we can use first 2 moments of kernel, defined as aspect ratio
+
+$$ AR\left[ \Omega \right] = <t^2>~w^{1/2} / <t>_\omega$$,
+
+= $$2/\sqrt{3}$$ for rectangular kernel, and $$\sqrt{2}$$ for simple EMA. 
+
+Low aspect ratio means that the kernel of operator has short tail, so a short build-up time interval is good. For nonnegative causal kernels, the aspect ratio is less useful for choosing build-up interval of causal kernels with more complicated, partially negative shapes.
+
 
 ### 3.2.2. Homogeneous Operators and Robustness
 
@@ -391,15 +400,17 @@ Kernel of EMA$$[\tau, n] (t) = \frac{1}{(n-1)!}(\frac{t}{\tau})^{n-1} \frac{e^{-
 
 ### 3.2.4. Differential (Wavelet Transforms)
 
-Low-noise differential operator suitable to stochastic process should compute an *average differential*, the difference between an average around time now over a time interval $\tau_1$ and an average around time $now - \tau$ on a time interval $\tau_2$. Kernel of similar kind are used for wavelet transforms.
+Low-noise differential operator suitable to stochastic process should compute an *average differential*, the difference between an average around time now over a time interval $$\tau_1$$ and an average around time $$now - \tau$$ on a time interval $$\tau_2$$. Kernel of similar kind are used for wavelet transforms.
 
-Our point of view is different from continuous-time stochastic analysis. In continuous time, $\tau \rightarrow 0$, leading to Ito derivative with subttleties. Here, we keep the range $\tau$ finite to analyze process at different time scales (different orders of magnitudes of $\tau$). Moreover, the $\tau \rightarrow 0$ is not true in financial data, because a process is known only on a discrete set of time points and doesn't exist in continuous time. 
+Our point of view is different from continuous-time stochastic analysis. In continuous time, $$\tau \rightarrow 0$$, leading to Ito derivative with subttleties. Here, we keep the range $$\tau$$ finite to analyze process at different time scales (different orders of magnitudes of $$\tau$$). Moreover, the $$\tau \rightarrow 0$$ is not true in financial data, because a process is known only on a discrete set of time points and doesn't exist in continuous time. 
 
-Differential operator $\Delta[\tau] = \gamma (EMA[\alpha \tau, 1] + EMA[\alpha \tau, 2] - 2EMA[\alpha \beta \tau, 4])$, see figure 3.8.
+Differential operator $$\Delta\[\tau\] = \gamma (EMA[\alpha \tau, 1] + EMA[\alpha \tau, 2] - 2EMA[\alpha \beta \tau, 4])$$, see figure 3.8.
 
-### 3.2.5. $\gamma$-Derivative
+### 3.2.5. $$\gamma$$-Derivative
 
-$\gamma$-derivative $D[\tau,\gamma] = \frac{\Delta[\tau]}{(\tau/1y)^\gamma}$. When $\gamma=0$, differential, $\gamma=0.5$, stochastic diffusion process, $\gamma=1$, derivative.
+$$\gamma$$-derivative $$D[\tau,\gamma] = \frac{\Delta[\tau]}{(\tau/1y)^\gamma}$$. 
+  
+When $$\gamma=0$$, differential, $$\gamma=0.5$$, stochastic diffusion process, $$\gamma=1$$, derivative.
 
 ### 3.2.6. Vol
 
@@ -410,16 +421,16 @@ Realized vol based on regularized data has drawbacks:
 - Inhomogeneous time series, a synthetic regular time series must be created, which involves interpolation scheme.
 - Difference is computed with pointwise difference, which implies noise in stochastic data.
 - Only some values at regular time points are used. Info from ther points of series between regular sampling points is thrown away. Due to information loss, the estimator is less accurate.
-- It's based on rectangular weighting kernel, that all points have const weight of $1/n$ or 0, as soon as they're excluded from sample. Continuous kernel with declining weights is better with less noisy.
-- By squaring returns, the realized vol puts a large weight on large changes, so it increase the impact of outliers and tails. As 4-th moment of prob distribution of returns might not be finite, the vol-of-vol might not be finite. So this estimator is not robust. So we prefer realized vol defined in $L^1$ norm.
+- It's based on rectangular weighting kernel, that all points have const weight of $$1/n$$ or 0, as soon as they're excluded from sample. Continuous kernel with declining weights is better with less noisy.
+- By squaring returns, the realized vol puts a large weight on large changes, so it increase the impact of outliers and tails. As 4-th moment of prob distribution of returns might not be finite, the vol-of-vol might not be finite. So this estimator is not robust. So we prefer realized vol defined in $$L^1$$ norm.
 
 A soft kernel will lead to lower mean value of vol than hard kernel (positive/negative parts are close to delta functions). In risk, we are interested in conditional daily vol, given today prices, we want to estimate/forcast the size of price move to tomorrow (vol within a small sample of only one day). The actual value of vol can be measured one day later. 
 
 ### 3.2.7. Windowed Fourier Transform (Complex Moving Average)
 
-For time series and vol at different time scales, we want a double representation in time and frequency, but we don't need an invertible transformation, because we need to analyze rather than further process the signal. This gives us flexibility in choosing transformations. We want a couple of oscillations in window $2\tau$, large $k$ increase frequency resolution at the cost of time resolutin. We compute EMA with complex $\tau$, which is equivalent to include sine and cosine in the kernel. Because this has nice computational iterative property of moving average. Kernel of complex ema: $ema[\zeta](t) = \frac{e^{-\zeta t}}{\tau}$, where $\zeta = \frac{1}{\tau}(1+ik)$ is complex. By using convolution formula, we can have iterative kernel of complex $EMA[\zeta,n;c] = \frac{c}{(1+ik)^n}$.
+For time series and vol at different time scales, we want a double representation in time and frequency, but we don't need an invertible transformation, because we need to analyze rather than further process the signal. This gives us flexibility in choosing transformations. We want a couple of oscillations in window $$2\tau$$, large $$k$$ increase frequency resolution at the cost of time resolutin. We compute EMA with complex $$\tau$$, which is equivalent to include sine and cosine in the kernel. Because this has nice computational iterative property of moving average. Kernel of complex ema: $$ema[\zeta](t) = \frac{e^{-\zeta t}}{\tau}$$, where $$\zeta = \frac{1}{\tau}(1+ik)$$ is complex. By using convolution formula, we can have iterative kernel of complex $$EMA[\zeta,n;c] = \frac{c}{(1+ik)^n}$$.
 
-Windowed Fourier transforms can be computed for a set of different $\tau$ values to obtain a full spectrum. But there's an upper limit in the range of computable frequencies. Results are reliable if $\tau$ > average time interval between ticks; but for $\tau$ < average tick interval, results are biased and noisy, which also applies to other time series operators.
+Windowed Fourier transforms can be computed for a set of different $$\tau$$ values to obtain a full spectrum. But there's an upper limit in the range of computable frequencies. Results are reliable if $$\tau$$ > average time interval between ticks; but for $$\tau$$ < average tick interval, results are biased and noisy, which also applies to other time series operators.
 
 # 4. Adaptve Data Cleaning
 
