@@ -1603,7 +1603,7 @@ Tree is good for pricing American options, this corresponds to optimal strategy 
 
 American option pricing algorithm.
 
-- Create array of final spot values $$S_0 e^{(r-d-1/2\sigma^2)T + \sigma \sqrt{T/N}j}$, where $j \in [-N, N]$$
+- Create array of final spot values $$S_0 e^{(r-d-1/2\sigma^2)T + \sigma \sqrt{T/N}j}$$, where $$j \in [-N, N]$$
 - For each of spot values evaluate payoff and store it
 - All previous time-slice compute possible values of spot: $$S_0 e^{(r-d-1/2\sigma^2)(N-1)T/N + \sigma \sqrt{T/N}j}$$, where $$j \in [-N+1, N-1]$$
 - For each values of spot, compute payoff and take max with discounted payoff of 2 possible values of spot at next time.
