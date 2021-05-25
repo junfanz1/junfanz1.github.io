@@ -90,7 +90,7 @@ Table of Contents
   - [5.4. Line Segment Intersection Search](#54-line-segment-intersection-search)
   - [5.5. K dimention-Trees](#55-k-dimention-trees)
     - [5.5.1. Space-partitioning trees](#551-space-partitioning-trees)
-    - [5.5.2. $k$-dimension Tree](#552-k-dimension-tree)
+    - [5.5.2. $$k$$-dimension Tree](#552-k-dimension-tree)
     - [5.5.3. Kd Tree](#553-kd-tree)
   - [5.6. Interval Search Tree](#56-interval-search-tree)
   - [5.7. Rectangle Intersection](#57-rectangle-intersection)
@@ -138,7 +138,7 @@ Table of Contents
     - [9.4.1. Relationship between flows and cuts](#941-relationship-between-flows-and-cuts)
     - [9.4.2. Augmenting Path Theorem.](#942-augmenting-path-theorem)
     - [9.4.3. Maxflow-mincut Theorem.](#943-maxflow-mincut-theorem)
-    - [9.4.4. Compute mincut $(A,B)$ from maxflow $f$](#944-compute-mincut-ab-from-maxflow-f)
+    - [9.4.4. Compute mincut $$(A,B)$$ from maxflow $$f$$](#944-compute-mincut-ab-from-maxflow-f)
     - [9.4.5. Flow network representation](#945-flow-network-representation)
     - [9.4.6. Application](#946-application)
   - [9.5. Mincut](#95-mincut)
@@ -148,7 +148,7 @@ Table of Contents
   - [9.9. MSD String Sort](#99-msd-string-sort)
   - [9.10. $$3$$-way string quicksort](#910-3-way-string-quicksort)
     - [9.10.1. Comparison: 3-way string quicksort vs. standard quicksort](#9101-comparison-3-way-string-quicksort-vs-standard-quicksort)
-    - [9.10.2. Comparison: $3$-way string quicksort vs. MSD string sort](#9102-comparison-3-way-string-quicksort-vs-msd-string-sort)
+    - [9.10.2. Comparison: $$3$$-way string quicksort vs. MSD string sort](#9102-comparison-3-way-string-quicksort-vs-msd-string-sort)
   - [9.11. Summary for Sorting Algorithms](#911-summary-for-sorting-algorithms)
 - [10. Tries and Substring Search](#10-tries-and-substring-search)
   - [10.1. R-way Tries](#101-r-way-tries)
@@ -159,7 +159,7 @@ Table of Contents
     - [10.1.5. Trie Performance](#1015-trie-performance)
   - [10.2. Ternary Search Tries (TST)](#102-ternary-search-tries-tst)
     - [10.2.1. Search in TST](#1021-search-in-tst)
-    - [10.2.2. Comparison: $26$-way trie vs. TST](#1022-comparison-26-way-trie-vs-tst)
+    - [10.2.2. Comparison: $$26$$-way trie vs. TST](#1022-comparison-26-way-trie-vs-tst)
     - [10.2.3. TST implementaton](#1023-tst-implementaton)
     - [10.2.4. Comparison: TST vs. Hashing](#1024-comparison-tst-vs-hashing)
     - [10.2.5. Longest Prefix in an R-way trie](#1025-longest-prefix-in-an-r-way-trie)
@@ -211,16 +211,16 @@ public class UF
 $$O(N^2)$$, too slow
 
 - `Find`
-    - Check if $p$ and $$q$$ have same id.
+    - Check if $$p$$ and $$q$$ have same id.
 - `Union`
-    - Merge components containing $p$ and $q$, change entries whose id equals $$id[p]$$ to $$id[q].$$
+    - Merge components containing $$p$$ and $$q$$, change entries whose id equals $$id[p]$$ to $$id[q].$$
 
 ## 1.2. Quick Union (lazy approach)
 
 - $$id[i]$$ is parent of i
 - Root of i is $$id[id[...id[i]..]]$$.
 - `Find`
-    - Check if $$p$$ and $q$ have same id.
+    - Check if $$p$$ and $$q$$ have same id.
 - `Union`
     - Merge components containing $$p$$ and $$q$$, set the id of p's root to id of q's root.
 
@@ -1134,7 +1134,7 @@ private void swim(int k)
 }
 ```
 
-__Insertion in the Heap.__  $O(\lg N)$. Add node at end and swim it up.
+__Insertion in the Heap.__  $$O(\lg N)$$. Add node at end and swim it up.
 
 __Demotion in the Heap.__ Parents' key becomes __smaller__ than one or both of its children's.
 
@@ -1228,7 +1228,7 @@ public class Heap
 
 __Complexity__
 
-In-place sorting algorithm with $O(N\log N)$ worst-case.
+In-place sorting algorithm with $$O(N\log N)$$ worst-case.
 
 - Mergesort: no, linear extra space.
 - Quicksort: no, quadratic time in worst case.
@@ -1432,7 +1432,7 @@ private int rank(Key key, Node x)
 
 ### 4.4.4. Deletion in BST
 
-Hibbard deletion is unastisfactory, because not symmetric, and not random ($O(\sqrt{N})$). Open problem. And that's why we need red-black BST.
+Hibbard deletion is unastisfactory, because not symmetric, and not random ($$O(\sqrt{N})$$). Open problem. And that's why we need red-black BST.
 
 ```java
 public void delete(Key key)
@@ -1620,7 +1620,7 @@ Use a `tree` to represent a recursive subdivision of 2d space.
 - Quadtree. Recursively divide space into 4 quandrants.
 - BSP tree. Recursively divide space into 2 regions.
 
-### 5.5.2. $k$-dimension Tree
+### 5.5.2. $$k$$-dimension Tree
 
 __Data Structure.__ BST, but alternate using x and y coordinates as key.
 
@@ -2068,7 +2068,7 @@ public class DepthFirstPaths
 }
 ```
 
-__Prop.__ DFS marks all vertices connected to $s$ in time proportion to the sum of their degrees. After DFS, can find vertices connected to $s$ in const time and can find a path to $s$ in time proportional to its length.
+__Prop.__ DFS marks all vertices connected to $$s$$ in time proportion to the sum of their degrees. After DFS, can find vertices connected to $$s$$ in const time and can find a path to $$s$$ in time proportional to its length.
 
 ### 7.1.1. DFS Application
 
@@ -2120,7 +2120,7 @@ __DFS__. Put unvisited vertices on a __stack__.
 
 __BFS__. Put unvisited vertices on a __queue__.
 
-__Shortest path.__ Find path from $s$ to $t$ that uses __fewest number of edges__.
+__Shortest path.__ Find path from $$s$$ to $$t$$ that uses __fewest number of edges__.
 
 ### 7.2.2. BFS Application
 
@@ -2128,7 +2128,7 @@ Routing. Shortest path.
 
 ## 7.3. Connected Components
 
-Is $v$ connected to $$w$$ in const time? Union find $$\times$$, DFS $$\checkmark$$.
+Is $$v$$ connected to $$w$$ in const time? Union find $$\times$$, DFS $$\checkmark$$.
 
 Finding connected components with DFS.
 
@@ -2327,8 +2327,8 @@ __Challenge.__ Find the min weight edge with exactly one endpoint in $$T$$.
 __Lazy solution.__ Maintain a PQ of __edges__ with at least one endpoint in $$T$$.
 
 - Key = edge; priority = weight of edge.
-- Delete-min to determine next edge $e = v-w$ to add to $$T$$.
-- Disregard if both endpoints $v$ and $w$ are in $$T$$.
+- Delete-min to determine next edge $$e = v-w$$ to add to $$T$$.
+- Disregard if both endpoints $$v$$ and $$w$$ are in $$T$$.
 - Otherwise, let $$w$$ be the vertex not in $$T$$: 
     - add to $$PQ$$ any edge incident to $$w$$ (assuming other endpoint not in $$T$$)
     - add $$w$$ to $$T$$
@@ -2544,7 +2544,7 @@ __Augmenting path.__ Find an undirected path from $$s$$ to $$t$$ such that:
 
 ## 9.4. Maxflow-Mincut Theorem
 
-__Def.__ The __net flow across__ a cut $(A,B)$ is the sum of the flows on its edges from $$A$$ to $$B$$ minus the sum of the flows on its edges from $$B$$ to $$A$$.
+__Def.__ The __net flow across__ a cut $$(A,B)$$ is the sum of the flows on its edges from $$A$$ to $$B$$ minus the sum of the flows on its edges from $$B$$ to $$A$$.
 
 __Flow-value lemma.__ Let $$f$$ be any flow and let (A,B) be any cut. Then, the net flow across (A,B) equals the value of $$f$$.
 
@@ -2560,7 +2560,7 @@ A flow $$f$$ is a maxflow iff no augmenting paths.
 
 Value of the maxflow = capacity of mincut.
 
-### 9.4.4. Compute mincut $(A,B)$ from maxflow $f$
+### 9.4.4. Compute mincut $$(A,B)$$ from maxflow $$f$$
 
 - By augmenting path theorem, no augmenting paths w.r.t. $$f$$.
 - Compare $$A$$ = set of vertices connected to $$s$$ by an undirected path with no full forward or empty backward edges.
@@ -2703,7 +2703,7 @@ Mincut $$(A,B)$$.
 
 - Let $$S$$ = students on $$s$$ side of cut.
 - Let $$T$$ = companies on $$s$$ side of cut.
-- Fact. $$|S|>|T|$$; students in $$S$$ can be matched only to companies in $$T$$.
+- Fact. $$\lvert S \rvert > \lvert T \rvert$$; students in $$S$$ can be matched only to companies in $$T$$.
 
 ## 9.6. Summary on Max Flow and Min Cut
 
@@ -2798,7 +2798,7 @@ Standard Quicksort.
 
 - Costly for keys with long common prefixes. (quite common)
 
-$3$-way string (radix) quicksort
+$$3$$-way string (radix) quicksort
 
  - Uses $$2N\ln N$$ __character compares__ on average for random strings.
  - Avoids re-comparing long common prefixes.
@@ -2853,7 +2853,7 @@ Come from re-__trie__-val. [Pronounced "try"]
 
 ### 10.1.4. Implementation
 
-__Node.__ A value, plus references to $R$ nodes.
+__Node.__ A value, plus references to $$R$$ nodes.
 
 R-way trie.
 
@@ -2926,7 +2926,7 @@ Search hit. Node where search ends has a non-null value.
 
 Search miss. Reach a null link or node where search ends has null value.
 
-### 10.2.2. Comparison: $26$-way trie vs. TST
+### 10.2.2. Comparison: $$26$$-way trie vs. TST
 
 __26-way trie.__ 26 null links in each leaf.
 
@@ -3022,7 +3022,7 @@ private int search(Node x, String query, int d, int length)
 
 ## 10.5. Substring Search
 
-Goal: Find pattern of length $M$ in a text of length $$N$$.
+Goal: Find pattern of length $$M$$ in a text of length $$N$$.
 
 Screen scraping: using `indexOf()` method to return the index of the first occurence of a given string.
 
@@ -3097,7 +3097,7 @@ public KMP(String pat)
 }
 ```
 
-__Running time.__ $M$ character accesses. KMP constructs `dfa[][]` in time and space proportional to $$RM$$).
+__Running time.__ $$M$$ character accesses. KMP constructs `dfa[][]` in time and space proportional to $$RM$$).
 
 ### 10.7.2. KMP substring search analysis
 
