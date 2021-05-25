@@ -3,9 +3,6 @@ permalink: /about/
 title: "About Me"
 ---
 
-body { font-family: Palatino, "Palatino Linotype", "URW Palladio L", serif; }
-code { font-family: "Courier New", Courier, "Nimbus Mono L", monospace; font-size: 90%; }
-
 I'm currently an Analyst at Societe Generale. I earned my M.S. in Financial Mathematics from UChicago in December 2020. 
 
 My interests lie in Quant Research / Trading, Machine Learning.
