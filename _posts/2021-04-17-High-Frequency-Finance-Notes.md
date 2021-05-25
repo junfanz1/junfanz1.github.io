@@ -288,7 +288,7 @@ It's different from missing observations (homogeneous + few gaps). Use Operator 
   - Compute a new variable from initial variable while keeping initial inhomogeneous time points. *Ex*: computing a series of local vol from initial price series.
   - Macroscopic operators extract *average* behavior of time series. They are immune to small variations of individual ticks, including adding/eliminating few ticks. They have well-defined limit when price quotes become infinitely dense. If price quotes are sufficiently dense inside the range of operator, we are close enough to its limit. For inhomogeneous time series, macroscopic operators are robust [^5]. The archetype of macroscopic operator is exponential moving average (EMA), with decaying weight on the past.
 
-[^5]: For homogeneous ones, macroscopic are unnecessary because sampling frequency is fixed and we don't need to take continuous-time limit or add/remove ticks. Moreover, homogeneous time series rely on backward shift operator $\mathcal{B}$, which is microscopic. See Zumbach and Muller (2001).
+[^5]: For homogeneous ones, macroscopic are unnecessary because sampling frequency is fixed and we don't need to take continuous-time limit or add/remove ticks. Moreover, homogeneous time series rely on backward shift operator $$\mathcal{B}$$, which is microscopic. See Zumbach and Muller (2001).
 
 ## 3.1. Variables in Homogeneous Time Series
 
@@ -324,7 +324,7 @@ If $$\Delta t_{scale}$$ = 1 year, then it's annualized vol. Typical annualized v
 
 So we have 3 time intervals:
 
-- time interval of return observations $\Delta t$ (if chosen too small, may also be biased, 15min - 2hr is OK)
+- time interval of return observations $$\Delta t$$ (if chosen too small, may also be biased, 15min - 2hr is OK)
 - sample size $$n \Delta t$$ (n=250 working days)
 - scaling interval $$\Delta t_{scale}$$ (1 year: annualized vol)
 
@@ -513,7 +513,7 @@ Pair filtering's change filter judges the credibility of a variable change. Dist
 Notes:
 
 1. Filtering shoul stay a local concept on time axis. But a quote has few close neighbors an distant neighbors, so when the additive trust capital of a qute is determined by pairwise comparisns to other quotes, the results from distant quotes must not dominate those from close neighbors, the interaction range should be limited. So we define trust capital $$\propto (\Delta \nu)^{-3}$$ for asymptotically large quote intervals $$\Delta \nu$$.
-2. For large $$\Delta \nu$$, even moderately aberrant quotes are easily accepted. So, the decline of trust capital with growing $$\Delta \nu$$ is important. But for negative trust capital, should stay negative even if $\Delta \nu$ is large. So there is a selective decline of trust capital with increasing $$\Delta \nu$$: fast for small $$\xi$$ (positive trust capital), slow for large $$\xi$$ (negative trust capital). It's important for data holes or gaps, where there're no close neighbor quotes.
+2. For large $$\Delta \nu$$, even moderately aberrant quotes are easily accepted. So, the decline of trust capital with growing $$\Delta \nu$$ is important. But for negative trust capital, should stay negative even if $$\Delta \nu$$ is large. So there is a selective decline of trust capital with increasing $$\Delta \nu$$: fast for small $$\xi$$ (positive trust capital), slow for large $$\xi$$ (negative trust capital). It's important for data holes or gaps, where there're no close neighbor quotes.
 
 Trust capital from change filter.
 
@@ -574,7 +574,7 @@ Market makers who want to attract buyers more than sellers, tend to publish skew
 
 ### 5.2.1. Distributional Properties of Returns
 
-At frequencies > 10 min, the fat tails start to decrease. (See figure 5.6) If data generating process is random walk with increments from stable distribution, which is defined by *scaled* returns $r/(\Delta t)^\gamma$, we can obtain uniform distribution with identical moments within signicifance limits.
+At frequencies > 10 min, the fat tails start to decrease. (See figure 5.6) If data generating process is random walk with increments from stable distribution, which is defined by *scaled* returns $$r/(\Delta t)^\gamma$$, we can obtain uniform distribution with identical moments within signicifance limits.
 
 ### 5.2.2. Tail Index of Return Distributions
 
@@ -598,7 +598,7 @@ Have we already seen the largest movements or are we going to experience even la
 
 Practically, hedging against extreme risk must be based on *unconditional* distribution. In large portfolio, it's impossible to find counterparties to hedge in turbulent states of market, so we should plan far in advance. 
 
-Expansion of asymptotic cumulative distribution function from $X_i$ observations are:
+Expansion of asymptotic cumulative distribution function from $$X_i$$ observations are:
 
 $$F(x) = 1-ax^{-\alpha}[1+bx^{-\beta}]$$
 
@@ -614,11 +614,11 @@ To compromise between accuracy of tail estimation and length of interval needed 
 
 ## 5.3. Scaling Laws
 
-Time interval $\Delta t$ and average vol measured as a power $p$ of absolute returns observed over intervals, has relationship:
+Time interval $$\Delta t$$ and average vol measured as a power $$p$$ of absolute returns observed over intervals, has relationship:
 
 $${E[\lvert r \rvert ^p]}^{1/p} = c(p) \Delta t ^{D(p)}$$.
 
-$D$: drift exponent. Taking logarithm, estimation of $c$ and $D$ can be derived by OLS regression. The lower the weight of tails in statistics, the more empirically determined drift exponent deviates from Gaussian random walk value 0.5, due to the changing form of distribution under aggregation and a sign of multifractality.
+$$D$$: drift exponent. Taking logarithm, estimation of $$c$$ and $$D$$ can be derived by OLS regression. The lower the weight of tails in statistics, the more empirically determined drift exponent deviates from Gaussian random walk value 0.5, due to the changing form of distribution under aggregation and a sign of multifractality.
 
 Scaling law applies to different currencies and commodities (gold, silver), when return distributions are unstable.
 
@@ -628,7 +628,7 @@ We not only should study statistical error by uncertainty of price, but also the
 
 $$\rm Var(\log \overline{ \lvert \Delta x \rvert}) \approx \frac{\eta^4}{4\overline{\lvert \Delta x \rvert}^4} + \frac{1}{2n}$$. For long time intervals, $$\overline{\lvert \Delta x \rvert} \gg \eta$$, and $$1/2n$$ is essential part of errors. 
 
-In case of short time intervals, $$n$$ is big, $$\overline{|\Delta x|}$$ has same order as $$\eta$$, so the first term plays the central role. This explains that errors are large for high frequency points, then diminishing and eventually increasing again when number of observations becomes small. (See figure 5.8)
+In case of short time intervals, $$n$$ is big, $$\overline{\lvert \Delta x \rvert}$$ has same order as $$\eta$$, so the first term plays the central role. This explains that errors are large for high frequency points, then diminishing and eventually increasing again when number of observations becomes small. (See figure 5.8)
 
 ### 5.3.2. Limitations of Scaling Laws
 
@@ -658,7 +658,7 @@ First, model the price process for seasonal vol patterns. Due to nonstationarity
 - Directing process $$\nu (t)$$, is a mapping rom physical time to another predetermined time scale, to contain intraday seasonal variations.
 - Subordinated price process generated from directing process $$x(t) = x^*[\nu (t)]$$ is tick data with intraday seasonalities, which leads to $$x^*$$ process (with no intraday seasonalities). 
 
-Transaction clock is defined to cumulate transaction volume to obtain new time scale. Since $\nu$-scale considers the seasonality of $x$, $x^*$ has nonseasonal vol patterns, it may be conditionally heteroskedastic.
+Transaction clock is defined to cumulate transaction volume to obtain new time scale. Since $$\nu$$-scale considers the seasonality of $$x$$, $$x^*$$ has nonseasonal vol patterns, it may be conditionally heteroskedastic.
 
 Market Activity and Scaling Law
 
@@ -672,7 +672,7 @@ To sum over the intraweekly sample, the minimization problem is nonlinear for so
 
 ## 6.2. $$\nu$$-Scale
 
-$$\nu$$ can model the seasonal, intradaily and intraweekly aspect of heteroskedasticity. Activity variable can define the speed of $\nu$ against time $$t$$. 
+$$\nu$$ can model the seasonal, intradaily and intraweekly aspect of heteroskedasticity. Activity variable can define the speed of $$\nu$$ against time $$t$$. 
 
 __Def__ 
 
@@ -702,13 +702,15 @@ Bias factor is the ratio of 2 mean realized vols over the same sample (See Eqn 7
 
 Autocorrelation of squared returns is meaningful only if kurtosis of return process is finite, but it's not guaranteed for currency returns. The autocorrelation of vol is significantly positive and declines at an __hyperbolic__ rate (See Figure 7.5) rather than exponential rate. This behavior indicates the presence of long memory process in the underlying data-generating process of returns. 
 
-### 7.0.3. Short/Long Memory
+### 7.0.3. Short / Long Memory
 
 Hyperbolic $$f_h(\tau) = k \tau^{-h}$$, exponential $$f_e (\tau) = k e^{-\tau/h}$$, 
 
 where $$\tau$$: lag order of autocorrelation function. Exponential function can't simultaneously capture the short and long-term persistence, but hyperbolic function can capture both.
 
-This is similar to fractional noise process $$a = \frac{\lvert l+1 \rvert ^{2H} - 2l^{2H} + \lvert l-1 \rvert ^{2H}}{2}$, 
+This is similar to fractional noise process: 
+
+$$a = \frac{\lvert l+1 \rvert ^{2H} - 2l^{2H} + \lvert l-1 \rvert ^{2H}}{2}$$, 
 
 where $$l$$: lag parameter, $$H$$: Hurst exponent $$\in [0.5,1]$$ for persistent fractional noise. 
 
@@ -740,8 +742,8 @@ See Figure 7.9, lead-lag correlation of fine and coarse vols for 4 different imp
 3 types:
 
 - ARCH. Autoregressive conditional heteroskedastic models define variance $$\sigma_t^2$$ of return as a function of *past returns*. In GARCH, $$\sigma_t$$ depends on its own past values and past returns.
-- Stochastic Vol models. $\sigma_t$ doesn't depend on past returns, and depends on its own past values. Since $$\sigma_t$$ is not observable andd not computable from past returns, so it's difficult to estimate params of this model. 
-- Realized vol models. Rather than modeling $$\sigma_t$$, we define $$\sigma_t$$ as realized vol computed at $$t-1$$. With high frequency data, return interval of 30-min keeps stochastic errors low. Time interval of main model is higher, as using realized vl at $t-1$ is predictor of vol between $$t-1$$ and $$t$$ relying on the vol clustering. Its advantage is that we use empirical data instead of model assumptions that might be wrong. Note that realized vol is biased if computed at high frequency (need bias correction methd). And realized vol at fine vol lags behind coarse vol in lead-lag analysis, which leads to suboptimal forecat quality when predicting the next step vol. In the end, realized vol at $$t-1$$ may not be the best predictor of vol between $$t-1$$ and $$t$$, which should be replaced by a more sophisticated forecast of realized vol at $$t$$.
+- Stochastic Vol models. $$\sigma_t$$ doesn't depend on past returns, and depends on its own past values. Since $$\sigma_t$$ is not observable andd not computable from past returns, so it's difficult to estimate params of this model. 
+- Realized vol models. Rather than modeling $$\sigma_t$$, we define $$\sigma_t$$ as realized vol computed at $$t-1$$. With high frequency data, return interval of 30-min keeps stochastic errors low. Time interval of main model is higher, as using realized vl at $$t-1$$ is predictor of vol between $$t-1$$ and $$t$$ relying on the vol clustering. Its advantage is that we use empirical data instead of model assumptions that might be wrong. Note that realized vol is biased if computed at high frequency (need bias correction methd). And realized vol at fine vol lags behind coarse vol in lead-lag analysis, which leads to suboptimal forecat quality when predicting the next step vol. In the end, realized vol at $$t-1$$ may not be the best predictor of vol between $$t-1$$ and $$t$$, which should be replaced by a more sophisticated forecast of realized vol at $$t$$.
 
 ## 8.1. Temporal Aggregatin of GARCH
 
@@ -763,7 +765,7 @@ Memory of vol is long, so we need a hiigh order of HARCH with large $$n$$, to mo
 
 ## 8.3. EMA-HARCH
 
-It has advantage of including a memory from past intervals. *partial* vol $$\sigma_j^2$$ is the contribution of $j^{th}$ component to the total market vol $$\sigma^2$$. 
+It has advantage of including a memory from past intervals. *partial* vol $$\sigma_j^2$$ is the contribution of $$j^{th}$$ component to the total market vol $$\sigma^2$$. 
 
 $$\sigma_{j,t}^2 = \mu_j \sigma_{j, t-1}^2 + (1-\mu_j) \left(\sum\limits_{i=1}^{j_j} r_{t-i}\right)^2$$. 
 
@@ -773,7 +775,9 @@ The depth of vol memory decay is determined by const $$\mu_j = e^{-\frac{1}{M(k_
 
 ## 9.1. Intrinsic Time
 
-FX returns has conditional heteroskedasticity, and can be treated with a change of time scale. Based on scaling law and price vol: $$\tau(t_c) = \tau(t_{c-1}) + k \frac{\nu(t_c) - \nu(t_{c-1})}{\Delta \nu} \frac{|\Delta x|^E}{c}$$, 
+FX returns has conditional heteroskedasticity, and can be treated with a change of time scale. Based on scaling law and price vol: 
+
+$$\tau(t_c) = \tau(t_{c-1}) + k \frac{\nu(t_c) - \nu(t_{c-1})}{\Delta \nu} \frac{\lvert \Delta x \rvert^E}{c}$$, 
 
 where $$t_c$$ is current time, price difference on same interval is $$\Delta \nu$$, $$E, c$$ are scaling law inverse exponent and factor. $$k$$ is calibration factor on time series, to keep $$\tau$$ in line with physical time in the long run. So, it's the reverse of scaling law for a return on const $$\nu$$-time interval size. 
 
@@ -791,7 +795,7 @@ This model doesn't rely on a fixed basic time interval, but is designed with a c
 
 ## 9.3. Measuring Forecast Quality
 
-We use a mapping function of returns: the forecast should fit the mapped returns $\hat{Y_i}$ rather than real returns $$Y_i$$, the map returns should have less leptokurtic than original returns.
+We use a mapping function of returns: the forecast should fit the mapped returns $$\hat{Y_i}$$ rather than real returns $$Y_i$$, the map returns should have less leptokurtic than original returns.
 
 - Small returns should be amplified when considered in regression, to establish a sufficient penalty against forecasts of wrong direction.
 - Large returns should be reduced when considered in regresson, so the distribution function of mapped returns is no longer leptokurtic.
@@ -835,7 +839,7 @@ Three parts of strategies:
 
 ![Data flow of prices and deal recommendations within a real-time trading model](https://user-images.githubusercontent.com/56275127/115132870-9ad7aa00-9fc9-11eb-853e-a5c539c58c06.png)
 
-__Current Return Calculations__. Traders seldom take full exposure at once, they like to build positions in gearing steps, so it's useful to introduce an auxiliary variable, the average price $\bar{p}$ paid for achieving the current exposure (gearing). This simplifies the computation of return of a position built in steps. After a new deal with index $i$, the average price dedpends on type of transactions:
+__Current Return Calculations__. Traders seldom take full exposure at once, they like to build positions in gearing steps, so it's useful to introduce an auxiliary variable, the average price $$\bar{p}$$ paid for achieving the current exposure (gearing). This simplifies the computation of return of a position built in steps. After a new deal with index $$i$$, the average price dedpends on type of transactions:
 
 $$\bar{p}_{i} \equiv\left\{\begin{array}{ll}
 \bar{p}_{i-1} & \text { if } \quad\left|g_{i}\right|<\left|g_{i-1}\right| \text { and } g_{i} g_{i-1}>0 \\
@@ -867,7 +871,7 @@ To minimize overfitting:
 
 Find new genetic algorithm that avoids concentration of many individuals around sharp peaks of high fitness but detects broad regions of param space containing a group of individuals with high average fitness level and small variance of individual fitness values.
 
-So we need a new sharing function that penalizes clusters with: large variance of individual fitness values and too many solutions concentrated inside too small a region. All individuals in a given cluster $c$ share the same fitness value. 
+So we need a new sharing function that penalizes clusters with: large variance of individual fitness values and too many solutions concentrated inside too small a region. All individuals in a given cluster $$c$$ share the same fitness value. 
 
 $$s_{f}(i)=\overline{f_{c}}-\left(\frac{N_{c}}{N_{a v}}+\frac{1-r_{d}}{r_{d}}\right) \sigma\left(f_{c}\right) \quad \forall x_{i} \in C_{c} \tag {11.2}$$
 
