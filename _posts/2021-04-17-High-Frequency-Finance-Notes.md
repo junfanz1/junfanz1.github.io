@@ -8,6 +8,9 @@ tags:
   - Notes
 ---
 
+![4](https://user-images.githubusercontent.com/56275127/119564478-744a2300-bd6e-11eb-9c1c-9cb45613ec2f.jpg)
+
+
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
