@@ -3,15 +3,17 @@ permalink: /about/
 title: "About Me"
 ---
 
-__Bio__
+## __Bio__
 
 My name is Junfan Zhu, I grow up in [Wuxi](https://en.wikipedia.org/wiki/Wuxi), a beautiful cultural city in China.
 
-I'm currently an Analyst at Societe Generale. I received M.S. degree in Financial Mathematics from UChicago in December 2020. 
+I'm currently an Analyst at Societe Generale in Chicago. I received M.S. degree in Financial Mathematics from the [University of Chicago](https://www.uchicago.edu/) in 2020 December. 
 
 My interests lie in Quant Research/Trading, Machine Learning and Computer Science.
 
-__Experiences__
+---
+
+## __Experiences__
 
 - (2020 Oct - Dec) I was a Quantitative Project Researcher at Belvedere Trading, building stochastic models for S&P volatility term structure analysis. 
 
@@ -25,7 +27,9 @@ __Experiences__
 
 - (2018 Jan - Mar) I was a Big Data Intern at KPMG.
 
-__Skills & Certificates__
+---
+
+## __Skills & Certificates__
 
 I’m proficient in Python, R, SQL; intermediate in C++, Spark, kdb+, Cuda. 
 
@@ -33,7 +37,9 @@ In Rotman International Trading Competition, I ranked Top 10 Algorithmic Trader.
 
 I love self-learning. I have certificates from Triplebyte Certified Machine Learning Engineer, Coursera Deep Learning & NLP & GAN & Probabilistic Graphical Models Specializations, etc. More Coursera learning certificates are available on [LinkedIn](https://www.linkedin.com/in/junfan-zhu/) `Licences & Certificates`, with selected notes and remarks (written in Chinese) on [Douban](https://www.douban.com/people/junfanz/notes).
 
-__Hobbies__
+---
+
+## __Hobbies__
 
 Outdoors: I completed Dalian International Marathon in 4h'55min, and Half Marathon in 2h'11min. 
 
@@ -41,6 +47,8 @@ I love trekking (Grand Circle itinerary in US Southwest, Nepal Annapurna Base Ca
 
 I love Chinese Calligraphy (childhood favoraites), Violin (L8, Shanghai Conservatory of Music), Kunqu Opera (my hometown culture), law (took China Bar Exam), and cooking. 
 
-__Relevant Links__
+---
+
+## __Relevant Links__
 
 [Blog](https://junfanz1.github.io/)  |  [Github](https://github.com/junfanz1)  |  [Zhihu](https://www.zhihu.com/people/zhu-jun-fan-33)  |  [Douban](https://www.douban.com/people/junfanz/notes)
