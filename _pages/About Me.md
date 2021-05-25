@@ -43,7 +43,7 @@ In Rotman International Trading Competition, I ranked Top 10 Algorithmic Trader.
 
 I love MOOC self-learning and reading all kinds of books. I have certificates from Triplebyte Certified Machine Learning Engineer, Coursera Deep Learning & NLP & GAN & Probabilistic Graphical Models Specializations, etc. More Coursera learning certificates are available on [LinkedIn](https://www.linkedin.com/in/junfan-zhu/) `Licences & Certificates`, 
 
-More selected Coursera course notes and remarks, as well as book excerpts and "Minutes of Humanities and Social Sciences Reading Club" blogs are available on 豆瓣 ([Douban](https://www.douban.com/people/junfanz/notes) (written in Chinese)).
+More selected Coursera course notes and remarks, as well as book excerpts and "Minutes of Humanities and Social Sciences Reading Club" blogs are available on 豆瓣 ([Douban](https://www.douban.com/people/junfanz/notes)), written in Chinese.
 
 ---
 
