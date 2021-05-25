@@ -79,7 +79,7 @@ Table of Contents
     - [4.4.3. Ordered Operations in BSTs](#443-ordered-operations-in-bsts)
     - [4.4.4. Deletion in BST](#444-deletion-in-bst)
 - [5. Balanced Search Trees (BST)](#5-balanced-search-trees-bst)
-  - [5.1. $2-3$ tree](#51-2-3-tree)
+  - [5.1. $$2-3$$ tree](#51-2-3-tree)
     - [5.1.1. Properties of 2-3 tree](#511-properties-of-2-3-tree)
   - [5.2. Left-learning Red-black BSTs](#52-left-learning-red-black-bsts)
     - [5.2.1. Search red-black BSTs](#521-search-red-black-bsts)
@@ -146,7 +146,7 @@ Table of Contents
   - [9.7. Radix Sort](#97-radix-sort)
   - [9.8. LSD Radix (String) Sort](#98-lsd-radix-string-sort)
   - [9.9. MSD String Sort](#99-msd-string-sort)
-  - [9.10. $3$-way string quicksort](#910-3-way-string-quicksort)
+  - [9.10. $$3$$-way string quicksort](#910-3-way-string-quicksort)
     - [9.10.1. Comparison: 3-way string quicksort vs. standard quicksort](#9101-comparison-3-way-string-quicksort-vs-standard-quicksort)
     - [9.10.2. Comparison: $3$-way string quicksort vs. MSD string sort](#9102-comparison-3-way-string-quicksort-vs-msd-string-sort)
   - [9.11. Summary for Sorting Algorithms](#911-summary-for-sorting-algorithms)
@@ -190,7 +190,6 @@ Table of Contents
 - [12. Reductions, Linear Programming and Intractability](#12-reductions-linear-programming-and-intractability)
   - [12.1. Reductions](#121-reductions)
   - [12.2. NP-Completeness](#122-np-completeness)
-- [$\mathbb{E}$nd - $\mathbb{O}$f - $\mathbb{T}$he - $\mathbb{C}$ourse - $\mathbb{N}$otes](#mathbbend---mathbbof---mathbbthe---mathbbcourse---mathbbnotes)
 
 <!-- /TOC -->
 
@@ -209,30 +208,30 @@ public class UF
 
 ## 1.1. Quick Find (eager approach)
 
-$O(N^2)$, too slow
+$$O(N^2)$$, too slow
 
 - `Find`
-    - Check if $p$ and $q$ have same id.
+    - Check if $p$ and $$q$$ have same id.
 - `Union`
-    - Merge components containing $p$ and $q$, change entries whose id equals $id[p]$ to $id[q].$
+    - Merge components containing $p$ and $q$, change entries whose id equals $$id[p]$$ to $$id[q].$$
 
 ## 1.2. Quick Union (lazy approach)
 
-- $id[i]$ is parent of i
-- Root of i is $id[id[...id[i]..]]$.
+- $$id[i]$$ is parent of i
+- Root of i is $$id[id[...id[i]..]]$$.
 - `Find`
-    - Check if $p$ and $q$ have same id.
+    - Check if $$p$$ and $q$ have same id.
 - `Union`
-    - Merge components containing $p$ and $q$, set the id of p's root to id of q's root.
+    - Merge components containing $$p$$ and $$q$$, set the id of p's root to id of q's root.
 
 
 Advantage: Only one value changes in the array.
 
 Improvement:
 
-- Weighted Quick Union: $N+M\log N$
-    - In Union step, need to change the size of array, so that depth of any node x is at most $\lg N$.
-- Weighted Quick Union + Path Compression: $N+M\lg N$
+- Weighted Quick Union: $$N+M\log N$$
+    - In Union step, need to change the size of array, so that depth of any node x is at most $$\lg N$$.
+- Weighted Quick Union + Path Compression: $$N+M\lg N$$
 
 ## 1.3. Union Find Applications
 
@@ -690,14 +689,14 @@ private static void exch(Comparable[] a, int i, int j)
 
 ## 2.7. Selection Sort
 
-$O(N^2)$
+$$O(N^2)$$
 
-__Algorithm.__ $\uparrow$ sort from left to right.
+__Algorithm.__ $$\uparrow$$ sort from left to right.
 
 __Invariants.__
 
-- Entries the left of $\uparrow$ fixed and in ascending order.
-- No entry to the right of $\uparrow$ is smaller than any entry to the left of $\uparrow$.
+- Entries the left of $$\uparrow$$ fixed and in ascending order.
+- No entry to the right of $$\uparrow$$ is smaller than any entry to the left of $$\uparrow$$.
 
 ### 2.7.1. Selection Sort Inner Loop
 
@@ -724,9 +723,9 @@ exch(a,i,min);
 
 ## 2.8. Insertion Sort
 
-$O(N^2)$
+$$O(N^2)$$
 
-In insertion $i$, swap $a[i]$ with each larger entry to its left.
+In insertion $$i$$, swap $$a[i]$$ with each larger entry to its left.
 
 __Implementation__
 
@@ -750,16 +749,16 @@ public class Insertion
 ```
 ## 2.9. Shell Sort
 
-Fast. Worst case of 3x+1: $O(N^{3/2})$. Accurate model has not yet been discovered.
+Fast. Worst case of 3x+1: $$O(N^{3/2})$$. Accurate model has not yet been discovered.
 
-Move entries more than one position at a time by $h$-sorting the array.
+Move entries more than one position at a time by $$h$$-sorting the array.
 
-__Prop.__ A $g$-sorted array remains $g$-sorted after $h$-sorted it.
+__Prop.__ A $$g$$-sorted array remains $$g$$-sorted after $$h$$-sorted it.
 
 Why insertion sort?
 
-- Big increments $\Rightarrow$ small subarray.
-- Small increments $\Rightarrow$ nearly in order [stay tuned].
+- Big increments $$\Rightarrow$$ small subarray.
+- Small increments $$\Rightarrow$$ nearly in order [stay tuned].
 
 __Implementation__
 
@@ -800,7 +799,7 @@ __Goal.__ Rearrange array so that result is a uniformly random permutation __in 
 
 ## 3.1. Merge Sort
 
-Upper bound and lower bound are both $O(N\log N)$, which proves Merge Sort is the optimal algorithm.
+Upper bound and lower bound are both $$O(N\log N)$$, which proves Merge Sort is the optimal algorithm.
 
 __Plan__
 
@@ -961,8 +960,8 @@ public class Student
 
 Which sorts are stable?
 
-- Insertion sort and merge sort: $\checkmark$ stable
-- Selection sort and shell sort: $\times$  not stable
+- Insertion sort and merge sort: $$\checkmark$$ stable
+- Selection sort and shell sort: $$\times$$  not stable
 
 Explanation:
 
@@ -972,7 +971,7 @@ Explanation:
   
 ## 3.5. Quick Sort
 
-$O(N\log N)$ on average, # of compares is 39% more than mergesort, but faster than mergesort because of less data movement. May go __quadratic__ if array is sorted or reverse sorted, or has many duplicates (even if randomized).
+$$O(N\log N)$$ on average, # of compares is 39% more than mergesort, but faster than mergesort because of less data movement. May go __quadratic__ if array is sorted or reverse sorted, or has many duplicates (even if randomized).
 
 Quick sort is not stable. It's in-place sorting algorithm. (More improvements see lecture, like median or cutoff.)
 
@@ -1032,7 +1031,7 @@ public class Quick
 
 __Quick-select__
 
-On average $O(N)$
+On average $$O(N)$$
 
 Partitioon array so that:
 
@@ -1060,7 +1059,7 @@ public static Comparable select(Comparable[] a, int k)
 
 ## 3.7. Duplicate Keys
 
-__Merge sort with duplicate keys.__ $O(N\log N)$
+__Merge sort with duplicate keys.__ $$O(N\log N)$$
 
 __Quicksort with duplicate keys.__ `qsort`. __Quadratic__ unless partitioning stops on equal keys.
 
@@ -1084,10 +1083,10 @@ while (StdIn.hashNextLine())
 }
 ```
 
-- sort: time $O(N\log N)$, space $O(N)$
-- elementary PQ: time $O(MN)$, space $O(M)$
-- binary heap: time $O(N\log M)$, space $O(M)$
-- best in theory: time $O(N)$, space $O(M)$
+- sort: time $$O(N\log N)$$, space $$O(N)$$
+- elementary PQ: time $$O(MN)$$, space $$O(M)$$
+- binary heap: time $$O(N\log M)$$, space $$O(M)$$
+- best in theory: time $$O(N)$$, space $$O(M)$$
 
 __Priority queue: unordered array implementation__
 
@@ -1157,7 +1156,7 @@ private void sink(int k)
 }
 ```
 
-__Delete Max in the Heap.__ Exchange root with node at end, then sink it down. $O(2\lg N)$
+__Delete Max in the Heap.__ Exchange root with node at end, then sink it down. $$O(2\lg N)$$
 
 Binary Heap
 
@@ -1196,8 +1195,8 @@ Can't change the data type once created. Safe to use as key in priority queue or
 
 ## 4.2. Heap Sort
 
-- Heap construction: $O(N)$ compares and exchanges
-- Heap sort: $O(N\lg N)$ compares and exchanges
+- Heap construction: $$O(N)$$ compares and exchanges
+- Heap sort: $$O(N\lg N)$$ compares and exchanges
 
 __Idea__
 
@@ -1315,7 +1314,7 @@ private class Node
 
 ### 4.4.1. BST Search
 
-$O(\lg N)$
+$$O(\lg N)$$
 
 ```java
 public Value get(Key key)
@@ -1334,7 +1333,7 @@ public Value get(Key key)
 
 ### 4.4.2. BST Insert
 
-$O(\lg N)$
+$$O(\lg N)$$
 
 Concise but tricky recursive Put: associate value with key.
 
@@ -1361,7 +1360,7 @@ __Correspondence__ between BST and quicksort partitioning is 1-1 if array has no
 
 ### 4.4.3. Ordered Operations in BSTs
 
-$O(h)$ (height of the tree, in proportion to $\log N$)
+$$O(h)$$ (height of the tree, in proportion to $$\log N$$)
 
 Compute the `floor` in the BST.
 
@@ -1466,7 +1465,7 @@ private Node delete(Node x, Key key)
 
 # 5. Balanced Search Trees (BST)
 
-## 5.1. $2-3$ tree
+## 5.1. $$2-3$$ tree
 
 Allow 1 or 2 keys per node.
 
@@ -1485,9 +1484,9 @@ Guaranteed __lograthmic__ in all kinds of operations.
 
 ## 5.2. Left-learning Red-black BSTs
 
-Worst: 2 $\lg(N)$
+Worst: 2 $$\lg(N)$$
 
-Average: $\lg(N)$
+Average: $$\lg(N)$$
 
 - Represent 2-3 tree as a BST.
 - Use 'internal' left-leaning links as 'glue' for 3-nodes.
@@ -1577,10 +1576,10 @@ private Node put(Node h, Key key, Value val)
 
 ## 5.3. B-Trees
 
-Generalize 2-3 trees by allowing up to $M-1$ [^1] key-link pairs per node.
+Generalize 2-3 trees by allowing up to $$M-1$$ [^1] key-link pairs per node.
 
 - At least 2 key-link pairs at root.
-- At least $M/2$ key-link pairs in other nodes.
+- At least $$M/2$$ key-link pairs in other nodes.
 - External nodes contain client keys.
 - Internal nodes contain copies of keys to guide search.
 
@@ -1588,9 +1587,9 @@ Generalize 2-3 trees by allowing up to $M-1$ [^1] key-link pairs per node.
 
 ### 5.3.1. Balance in B-tree
 
-__Prop.__ A search or an insertion in a B-tree of order $M$ with $N$ keys requires between $\log_{M-1}N$ and $\log_{M/2}N$ probes.
+__Prop.__ A search or an insertion in a B-tree of order $$M$$ with $$N$$ keys requires between $$\log_{M-1}N$$ and $$\log_{M/2}N$$ probes.
 
-In practice, number of probes is at most 4. For M = 1024, N = 62 million, $\log_{M/2}N \leq 4$
+In practice, number of probes is at most 4. For M = 1024, N = 62 million, $$\log_{M/2}N \leq 4$$
 
 __Optimization.__ Always keep root page in memory.
 
@@ -1599,16 +1598,16 @@ __Optimization.__ Always keep root page in memory.
 
 Quadratic algorithm: Check all pairs of line segments for intersection.
 
-Nondegeneracy assumption: All $x$ and $y$-coordinates are distinct.
+Nondegeneracy assumption: All $$x$$ and $$y$$-coordinates are distinct.
 
 __Sweep vertical line from left to right Algorithm__
 
-$O(N\log N)$
+$$O(N\log N)$$
 
-- $x$ coordinates define events
-- $h$-segment (left endpoint): insert $y$-coordinate into BST.
-- $h$-segment (right endpoint): remove $y$-coordinate from BST.
-- $v$-segment: range search for interval of $y$-endpoints.
+- $$x$$ coordinates define events
+- $$h$$-segment (left endpoint): insert $$y$$-coordinate into BST.
+- $$h$$-segment (right endpoint): remove $$y$$-coordinate from BST.
+- $$v$$-segment: range search for interval of $$y$$-endpoints.
 
 ## 5.5. K dimention-Trees
 
@@ -1630,7 +1629,7 @@ __Data Structure.__ BST, but alternate using x and y coordinates as key.
 
 __Range Search__
 
-Typical: $O(\log N)$. Worst: $O(\sqrt N)$
+Typical: $$O(\log N)$$. Worst: $$O(\sqrt N)$$
 
 Goal: Find all points in a query axis-aligned rectangle.
 
@@ -1642,29 +1641,29 @@ __Nearest neighbor search__
 
 ### 5.5.3. Kd Tree
 
-Recursively partition $k$-dimensional space into 2 halfspaces.
+Recursively partition $$k$$-dimensional space into 2 halfspaces.
 
 __Implementation.__ BST, but cycle through dimensionals ala 2d trees.
 
-Simple data structure for processing $k$-(high) dimensional data, N-body simulation and clustered data.
+Simple data structure for processing $$k$$-(high) dimensional data, N-body simulation and clustered data.
 
 ## 5.6. Interval Search Tree
 
-To insert an interval $(lo, hi)$:
+To insert an interval $$(lo, hi)$$:
 
-- Insert into BST, using $lo$ as the key.
+- Insert into BST, using $$lo$$ as the key.
 - Update max in each node on search path.
 
-To search for any one interval that intersects query interval $(lo, hi)$:
+To search for any one interval that intersects query interval $$(lo, hi)$$:
 
 - If interval in node intersects query interval, return it.
 - Else if left subtree is null, go right.
-- Else if max endpoint in left subtree is less than $lo$, go right.
+- Else if max endpoint in left subtree is less than $$lo$$, go right.
 - Else go left.
 
 If search goes __left__, then there is either an intersection in left subtree or no intersections in either.
 
-__Implementation.__ Use red-black BST [^2] to guaranterr performance $O(\log N)$.
+__Implementation.__ Use red-black BST [^2] to guaranterr performance $$O(\log N)$$.
 
 [^2]: Easy to maintain auxiliary info using log N extra work per operation.
 
@@ -1732,11 +1731,11 @@ public final class String
 
 __Separate chaining symbol table__
 
-Use an array of $M<N$ linked lists.
+Use an array of $$M<N$$ linked lists.
 
-- Hash: map key to integer $i$ between 0 and $M-1$.
-- Insert: put at front of $i^{th}$ chain, if not already there.
-- Search: need to search only $i^{th}$ chain.
+- Hash: map key to integer $$i$$ between 0 and $$M-1$$.
+- Insert: put at front of $$i^{th}$$ chain, if not already there.
+- Search: need to search only $$i^{th}$$ chain.
 
 Separate Chaining Searching Tree
 
@@ -1767,10 +1766,10 @@ public class SeparateChainingHashST<Key, Value>
 
 When a new key collides, find next empty slot, and put it there.
 
-- Hash. Map key to integer $i$ between $0$ and $M-1$.
-- Insert. Put at table index $i$ if free; if not try $i+1$, $i+2$, etc.
-- Search. Search table index $i$, if occupied but no match, try $i+1$, $i+2$, etc.
-- Note. Array size $M$ must be greater than number of key-value pairs $N$.
+- Hash. Map key to integer $$i$$ between $$0$$ and $$M-1$$.
+- Insert. Put at table index $$i$$ if free; if not try $$i+1$$, $$i+2$$, etc.
+- Search. Search table index $$i$$, if occupied but no match, try $$i+1$$, $$i+2$$, etc.
+- Note. Array size $$M$$ must be greater than number of key-value pairs $$N$$.
 
 Linear Probing Searching Tree
 
@@ -1827,7 +1826,7 @@ Hash tables.
 
 - Simpler to code.
 - No effective alternative for unordered keys.
-- Faster for simple keys (a few arithmetic ops vs. $\log N$ compares.)
+- Faster for simple keys (a few arithmetic ops vs. $$\log N$$ compares.)
 - Better system support in Java for strings (e.g., cached hash code)
 
 Balanced search trees.
@@ -1906,14 +1905,14 @@ File Indexing, book index. Concordance.
 
 ### 6.5.3. Sparse Matrix-vector Multiplication
 
-Nested loops: $O(N^2)$
+Nested loops: $$O(N^2)$$
 
-__Vector representations.__ 1D array standard representatin: ($\times$)
+__Vector representations.__ 1D array standard representatin: ($$\times$$)
 
 - Const time access to elements.
 - Space proportional to N.
 
-Symbol table representation: ($\checkmark$)
+Symbol table representation: ($$\checkmark$$)
 
 - Key = index, value = entry.
 - Efficient iterator.
@@ -1959,7 +1958,7 @@ __Matrix Representations__
 2D array (standard) matrx representation: Each row of matrix is an __array__.
 
 - Const time access to elements.
-- Space proportional to $N^2$.
+- Space proportional to $$N^2$$.
 
 Space matrix representation. Each row of matrix is a __sparse vector__.
 
@@ -1980,7 +1979,7 @@ for (int v = o0, v < G.V(); v++)
         StdOut.println(v + '-' + w);
 ```
 
-Compute degree of $v$
+Compute degree of $$v$$
 
 ```java
 public static int degree(Graph G, int v)
@@ -2077,14 +2076,14 @@ Flood fill in photography.
 
 ## 7.2. Breadth-First Search (BFS)
 
-Put $s$ onto a FIFO queue, and mark $s$ as visited.
+Put $$s$$ onto a FIFO queue, and mark $$s$$ as visited.
 
 Repeat until queue is empty:
 
-- Remove vertex $v$ from queue.
-- Add to queue all unmarked vertices adjacent neighbors to $v$ and mark them as visited.
+- Remove vertex $$v$$ from queue.
+- Add to queue all unmarked vertices adjacent neighbors to $$v$$ and mark them as visited.
 
-__Prop__. BFS computes shortest paths from $s$ to all other vertices in a graph in time proportional to $E+V$.
+__Prop__. BFS computes shortest paths from $$s$$ to all other vertices in a graph in time proportional to $$E+V$$.
 
 BFS
 
@@ -2129,7 +2128,7 @@ Routing. Shortest path.
 
 ## 7.3. Connected Components
 
-Is $v$ connected to $w$ in const time? Union find $\times$, DFS $\checkmark$.
+Is $v$ connected to $$w$$ in const time? Union find $$\times$$, DFS $$\checkmark$$.
 
 Finding connected components with DFS.
 
@@ -2235,7 +2234,7 @@ __Prop.__ Reverse DFS postorder of a DAG is a topological order.
 
 ## 7.6. Strong Components
 
-If there is a directedd path from $v$ to $w$ __and__ a directed path from $w$ to $v$.
+If there is a directedd path from $$v$$ to $$w$$ __and__ a directed path from $$w$$ to $$v$$.
 
 Two DFS is needed. Only one line change in the code.
 
@@ -2248,9 +2247,9 @@ Two DFS is needed. Only one line change in the code.
 
 # 8. Minimum Spanning Trees (MST)
 
-__Given.__ Undirected graph $G$ with positive edge weights connected. 
+__Given.__ Undirected graph $$G$$ with positive edge weights connected. 
 
-__Def.__ A __spanning tree__ of $G$ is a subgraph $T$ that is both a __tree__ (connected, acyclic) and __spanning__ (includes all of the vertices).
+__Def.__ A __spanning tree__ of $$G$$ is a subgraph $$T$$ that is both a __tree__ (connected, acyclic) and __spanning__ (includes all of the vertices).
 
 __Goal.__ Find a min weight spanning tree.
 
@@ -2270,19 +2269,19 @@ Choose cut? Find min-weight edge?
 
 ## 8.2. Kruskal's Algorithm
 
-Consider edges in ascending order of weight. Add next edge to tree $T$ unless doing so would create a cycle.
+Consider edges in ascending order of weight. Add next edge to tree $$T$$ unless doing so would create a cycle.
 
-__Challenge.__ Would adding edge $v-w$ to tree $T$ create a cycle? If not, add it.
+__Challenge.__ Would adding edge $$v-w$$ to tree $$T$$ create a cycle? If not, add it.
 
 __Efficient solution.__ Use the __union-find__ data structure.
 
-- Maintain a set for each connected component in $T$.
-- If $v$ and $w$ are in same set, then adding $v-w$ would create a cycle.
-- To add $v-w$ to $T$, merge sets containing $v$ and $w$.
+- Maintain a set for each connected component in $$T$$.
+- If $$v$$ and $$w$$ are in same set, then adding $$v-w$$ would create a cycle.
+- To add $$v-w$$ to $$T$$, merge sets containing $$v$$ and $$w$$.
 
 Kruskal's Algorithm
 
-Worst: $O(E\log E)$
+Worst: $$O(E\log E)$$
 
 ```java
 public class KruskalMST
@@ -2319,24 +2318,24 @@ public class KruskalMST
 
 Idea
 
-- Start with vertex 0 and greedily grow tree $T$.
-- Add to $T$ the min weight edge with exactly one endpoint in $T$.
-- Repeat until $V-1$ edges.
+- Start with vertex 0 and greedily grow tree $$T$$.
+- Add to $$T$$ the min weight edge with exactly one endpoint in $$T$$.
+- Repeat until $$V-1$$ edges.
 
-__Challenge.__ Find the min weight edge with exactly one endpoint in $T$.
+__Challenge.__ Find the min weight edge with exactly one endpoint in $$T$$.
 
-__Lazy solution.__ Maintain a PQ of __edges__ with at least one endpoint in $T$.
+__Lazy solution.__ Maintain a PQ of __edges__ with at least one endpoint in $$T$$.
 
 - Key = edge; priority = weight of edge.
-- Delete-min to determine next edge $e = v-w$ to add to $T$.
-- Disregard if both endpoints $v$ and $w$ are in $T$.
-- Otherwise, let $w$ be the vertex not in $T$: 
-    - add to $PQ$ any edge incident to $w$ (assuming other endpoint not in $T$)
-    - add $w$ to $T$
+- Delete-min to determine next edge $e = v-w$ to add to $$T$$.
+- Disregard if both endpoints $v$ and $w$ are in $$T$$.
+- Otherwise, let $$w$$ be the vertex not in $$T$$: 
+    - add to $$PQ$$ any edge incident to $$w$$ (assuming other endpoint not in $$T$$)
+    - add $$w$$ to $$T$$
 
 ### 8.3.1. Prim's Algorithm: lazy implementation
 
-Worst: $O(E \log E)$
+Worst: $$O(E \log E)$$
 
 ```java
 public class LazyPrimMST
@@ -2383,15 +2382,15 @@ public class LazyPrimMST
 
 ### 8.3.2. Prim's algorithm: eager implementation
 
-__Challenge.__ Find min weight edge with exactly one endpoint in $T$.
+__Challenge.__ Find min weight edge with exactly one endpoint in $$T$$.
 
-__Eager solution.__ Maintain a PQ of __vertices__ connected by an edge to $T$, where priority of vertex $v$ = weight of shortese edge connecting $v$ to $T$.
+__Eager solution.__ Maintain a PQ of __vertices__ connected by an edge to $$T$$, where priority of vertex $$v$$ = weight of shortese edge connecting $$v$$ to $$T$$.
 
 Idea
 
-- Start with vertex 0 and greedily grow tree $T$.
-- Add to $T$ the min weight edge with exactly one endpoint in $T$.
-- Repeat until $V-1$ edges.
+- Start with vertex 0 and greedily grow tree $$T$$.
+- Add to $$T$$ the min weight edge with exactly one endpoint in $$T$$.
+- Repeat until $$V-1$$ edges.
 
 ### 8.3.3. Application
 
@@ -2401,7 +2400,7 @@ Euclidean MST. k-clustering.
 
 Disjstra's algorithm computes a SPT in any edge-weighted digraph with nonnegative weights.
 
-- Consider vertices in increasing order of distance from $s$.
+- Consider vertices in increasing order of distance from $$s$$.
 - Add vertex to tree and relax all edges pointing from that vertex.
 
 ```java
@@ -2515,22 +2514,22 @@ Negative weights and negative cycles.
 
 ## 9.1. Mincut
 
-__Input.__ An edge-weighted digraph, souce vertex $s$, target vertex $t$.
+__Input.__ An edge-weighted digraph, souce vertex $$s$$, target vertex $$t$$.
 
-__Def.__ An __$st-$cut__ is a partition of the vertices into 2 disjoint sets, with $s$ in one set $A$ and $t$ in the other set $B$.
+__Def.__ An __$$st-$$cut__ is a partition of the vertices into 2 disjoint sets, with $$s$$ in one set $$A$$ and $$t$$ in the other set $$B$$.
 
-__Def.__ Its __capacity__ is the sum of the capacities of the edges from $A$ to $B$.
+__Def.__ Its __capacity__ is the sum of the capacities of the edges from $$A$$ to $$B$$.
 
 __Minimum st-cut (mincut) problem.__ Find a cut of minimum capacity.
 
 ## 9.2. Maxflow
 
-__Def.__ An  __$st-$flow__ is an assignment of values to the edges such that:
+__Def.__ An  __$$st-$$flow__ is an assignment of values to the edges such that:
 
-- Capacity constraint: $0 \leq$ edge's flow $\leq$ edge's capacity.
-- Local equilibrium: inflow = outflow at every vertex (except $s$ and $t$).
+- Capacity constraint: $$0 \leq$$ edge's flow $$\leq$$ edge's capacity.
+- Local equilibrium: inflow = outflow at every vertex (except $$s$$ and $$t$$).
 
-__Def.__ The __value__ of a flow is the inflow at $t$.
+__Def.__ The __value__ of a flow is the inflow at $$t$$.
 
 __Maximum st-flow (maxflow) problem.__ Find a flow of a maximum value.
 
@@ -2538,24 +2537,24 @@ __Maximum st-flow (maxflow) problem.__ Find a flow of a maximum value.
 
 __Idea.__ Increase flow along augmenting paths.
 
-__Augmenting path.__ Find an undirected path from $s$ to $t$ such that:
+__Augmenting path.__ Find an undirected path from $$s$$ to $$t$$ such that:
 
 - Can increase flow on forward edges (not full).
 - Can decrease flow on backward edge (not empty).
 
 ## 9.4. Maxflow-Mincut Theorem
 
-__Def.__ The __net flow across__ a cut $(A,B)$ is the sum of the flows on its edges from $A$ to $B$ minus the sum of the flows on its edges from $B$ to $A$.
+__Def.__ The __net flow across__ a cut $(A,B)$ is the sum of the flows on its edges from $$A$$ to $$B$$ minus the sum of the flows on its edges from $$B$$ to $$A$$.
 
-__Flow-value lemma.__ Let $f$ be any flow and let (A,B) be any cut. Then, the net flow across (A,B) equals the value of $f$.
+__Flow-value lemma.__ Let $$f$$ be any flow and let (A,B) be any cut. Then, the net flow across (A,B) equals the value of $$f$$.
 
 ### 9.4.1. Relationship between flows and cuts
 
-__Weak duality.__ Let $f$ be any flow and let $(A,B)$ be any cut. Then, the value of the flow $\leq$ the capacity of the cut.
+__Weak duality.__ Let $$f$$ be any flow and let $$(A,B)$$ be any cut. Then, the value of the flow $$\leq$$ the capacity of the cut.
 
 ### 9.4.2. Augmenting Path Theorem.
 
-A flow $f$ is a maxflow iff no augmenting paths.
+A flow $$f$$ is a maxflow iff no augmenting paths.
 
 ### 9.4.3. Maxflow-mincut Theorem.
 
@@ -2563,8 +2562,8 @@ Value of the maxflow = capacity of mincut.
 
 ### 9.4.4. Compute mincut $(A,B)$ from maxflow $f$
 
-- By augmenting path theorem, no augmenting paths w.r.t. $f$.
-- Compare $A$ = set of vertices connected to $s$ by an undirected path with no full forward or empty backward edges.
+- By augmenting path theorem, no augmenting paths w.r.t. $$f$$.
+- Compare $$A$$ = set of vertices connected to $$s$$ by an undirected path with no full forward or empty backward edges.
 
 1. Shortest path: augmenting path with fewest number of edges.
 
@@ -2700,17 +2699,17 @@ Bipartitie matching problem.
 
 ## 9.5. Mincut
 
-Mincut $(A,B)$.
+Mincut $$(A,B)$$.
 
-- Let $S$ = students on $s$ side of cut.
-- Let $T$ = companies on $s$ side of cut.
-- Fact. $|S|>|T|$; students in $S$ can be matched only to companies in $T$.
+- Let $$S$$ = students on $$s$$ side of cut.
+- Let $$T$$ = companies on $$s$$ side of cut.
+- Fact. $$|S|>|T|$$; students in $$S$$ can be matched only to companies in $$T$$.
 
 ## 9.6. Summary on Max Flow and Min Cut
 
-__Mincut problem.__ Find an $st$-cut of min capacity.
+__Mincut problem.__ Find an $$st$$-cut of min capacity.
 
-__Maxflow problem.__ Find an $st$-flow of max value.
+__Maxflow problem.__ Find an $$st$$-flow of max value.
 
 __Duality.__ Value of the maxflow = capacity of mincut.
 
@@ -2745,7 +2744,7 @@ public static String reverse(String s)
 ## 9.8. LSD Radix (String) Sort
 
 - Consider characters from right to left.
-- Stably sort using $d^{th}$ character as the key (using key-indexed counting).
+- Stably sort using $$d^{th}$$ character as the key (using key-indexed counting).
 
 ## 9.9. MSD String Sort
 
@@ -2761,11 +2760,11 @@ Disadvantage of quicksort.
 - Linearithmic number of string compares (not linear).
 - Has to rescan many characters in keys with long prefix matches.
 
-## 9.10. $3$-way string quicksort
+## 9.10. $$3$$-way string quicksort
 
-Do 3-way partitioning on the $d^{th}$ character.
+Do 3-way partitioning on the $$d^{th}$$ character.
 
-- Less overhead than $R$-way partitioning in MSD string sort.
+- Less overhead than $$R$$-way partitioning in MSD string sort.
 - Doesn't re-examine characters equal to the partitioning char (but does re-examine characters not equal to the partitioning char).
 
 ```java
@@ -2795,16 +2794,16 @@ private static voi sort(String[] a, int lo, int hi, int d)
 
 Standard Quicksort.
 
-- Uses $2N\ln N$ __string compares__ on average.
+- Uses $$2N\ln N$$ __string compares__ on average.
 
 - Costly for keys with long common prefixes. (quite common)
 
 $3$-way string (radix) quicksort
 
- - Uses $2N\ln N$ __character compares__ on average for random strings.
+ - Uses $$2N\ln N$$ __character compares__ on average for random strings.
  - Avoids re-comparing long common prefixes.
 
-### 9.10.2. Comparison: $3$-way string quicksort vs. MSD string sort
+### 9.10.2. Comparison: $$3$$-way string quicksort vs. MSD string sort
 
 MSD string sort.
 
@@ -2812,7 +2811,7 @@ MSD string sort.
 - Too much memory storing `count[]`.
 - Too much overhead reinitializing `count[]` and `aux[]`.
 
-$3$-way string quicksort.
+$$3$$-way string quicksort.
 
 - Cache-friendly.
 - Has a short inner loop.
@@ -2839,7 +2838,7 @@ Recall String symbol table: Red-black BST, hashing (linear probing).
 Come from re-__trie__-val. [Pronounced "try"]
 
 - Store *characters* in nodes (not keys).
-- Each node has $R$ children, one for each possible character.
+- Each node has $$R$$ children, one for each possible character.
 - Store values in nodes corresponding to last characters in keys.
 
 ### 10.1.2. Search in a trie
@@ -2903,14 +2902,14 @@ public class TrieST<Value>
 
 ### 10.1.5. Trie Performance 
 
-__Search hit.__ Needd to examine all $L$ characters for equality.
+__Search hit.__ Needd to examine all $$L$$ characters for equality.
 
 __Search miss.__
 
 - Could have mismatch on first character.
 - Typical case: examine only a few characters (sublinear).
 
-__Space.__ $R$ null links at each leaf. (But sublinear space possible if many short strings share common prefixes)
+__Space.__ $$R$$ null links at each leaf. (But sublinear space possible if many short strings share common prefixes)
 
 Fast search hit and even faster search miss, but wastes space.
 
@@ -2935,7 +2934,7 @@ __TST.__ 3 null links in each leaf.
 
 ### 10.2.3. TST implementaton
 
-A TST node is 5 fields: value, character $c$, reference to left TST, reference to middle TST, reference to right TST.
+A TST node is 5 fields: value, character $$c$$, reference to left TST, reference to middle TST, reference to right TST.
 
 ```java
 public class TST<Value>
@@ -3008,7 +3007,7 @@ private int search(Node x, String query, int d, int length)
 
 ### 10.4.1. Red-black BST
 
-- Performance guarantee: $\log N$ key compares.
+- Performance guarantee: $$\log N$$ key compares.
 - Supports ordered symbol table API.
 
 ### 10.4.2. Hash tables
@@ -3018,12 +3017,12 @@ private int search(Node x, String query, int d, int length)
 
 ### 10.4.3. Tries. R-way, TST.
 
-- Performance guarantee: $\log N$ __characters__ assessed.
+- Performance guarantee: $$\log N$$ __characters__ assessed.
 - Supports character-based operations.
 
 ## 10.5. Substring Search
 
-Goal: Find pattern of length $M$ in a text of length $N$.
+Goal: Find pattern of length $M$ in a text of length $$N$$.
 
 Screen scraping: using `indexOf()` method to return the index of the first occurence of a given string.
 
@@ -3098,11 +3097,11 @@ public KMP(String pat)
 }
 ```
 
-__Running time.__ $M$ character accesses. KMP constructs `dfa[][]` in time and space proportional to $RM$).
+__Running time.__ $M$ character accesses. KMP constructs `dfa[][]` in time and space proportional to $$RM$$).
 
 ### 10.7.2. KMP substring search analysis
 
-__Prop.__ KMP substring search accesses no more than $M+N$ chars to search for a pattern of length $M$ in a text of length $N$.
+__Prop.__ KMP substring search accesses no more than $$M+N$$ chars to search for a pattern of length $$M$$ in a text of length $$N$$.
 
 ### 10.7.3. Rabin-Karp
 
@@ -3163,7 +3162,7 @@ Compression reduces the size of a file: to save space when storing it, to save t
 
 ### 11.2.1. Lossless compression and expansion
 
-Binary data $B$ we want to compress. Generate a *compressed* representation $C(B)$, and reconstructs original bitstream $B$.
+Binary data $$B$$ we want to compress. Generate a *compressed* representation $$C(B)$$, and reconstructs original bitstream $$B$$.
 
 ## 11.3. Huffman Coding
 
@@ -3304,7 +3303,7 @@ __Implementation__
 1. Tabulate char frequencies and build trie.
 2. Encode file by traversing trie or lookup table.
 
-__Running time.__ Using a binary heap $\Rightarrow$ $N+R \log R$ (input size + alphabet size).
+__Running time.__ Using a binary heap $$\Rightarrow$$ $$N+R \log R$$ (input size + alphabet size).
 
 ## 11.4. Statistical methods comparison
 
@@ -3336,7 +3335,7 @@ __Lossless compression.__
 
 __Theoretical limits on compression.__ 
 
-Shannon entropy: $H(X) = - \Sigma_i^n p(x_i)\lg p(x_i)$
+Shannon entropy: $$H(X) = - \Sigma_i^n p(x_i)\lg p(x_i)$$
 
 ---
 
@@ -3344,9 +3343,9 @@ Shannon entropy: $H(X) = - \Sigma_i^n p(x_i)\lg p(x_i)$
 
 ## 12.1. Reductions
 
-__Def.__ Problem $X$ __reduces to__ problem $Y$ if you can use an algorithm that solves $Y$ to help solve $X$.
+__Def.__ Problem $$X$$ __reduces to__ problem $$Y$$ if you can use an algorithm that solves $$Y$$ to help solve $$X$$.
 
-Cost of solving $X$ = total cost of solving $Y$ + cost of reduction
+Cost of solving $$X$$ = total cost of solving $$Y$$ + cost of reduction
 
 Linear-time reductions (*Figure 4*)
 
