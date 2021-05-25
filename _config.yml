@@ -59,7 +59,7 @@ author:
   avatar : "https://avatars.githubusercontent.com/u/56275127?s=400&u=f11d0ea730981957d1dc8eb9f1c1d3ed6af16463&v=4"
   bio    : "An interesting tech blog on Financial Mathematics, Machine Learning, and coding."
   email  : "junfanz@gatech.edu"
-  location: "Chicago - USA"
+  location: "Chicago"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -70,6 +70,16 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/junfan-zhu"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/junfan_zhu"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://facebook.com/junfan.zhu.961"      
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/JunfanZhu"      
+      
 #     - label: "Email"
 #       icon: "fas fa-fw fa-envelope-square"
 #       url: mailto:junfanz@gatech.edu
