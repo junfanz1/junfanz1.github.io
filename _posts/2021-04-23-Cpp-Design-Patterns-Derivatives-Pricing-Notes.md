@@ -1270,7 +1270,7 @@ void AntiThetic::Reset()
 - `rand` is implementation-dependent. Results from `rand()` aren't easily reproducible.
 - We need to be sure that random generator is capable of dimentionality necessary for a simulation.
 - Using random number class allows us to use decoration.
-- The inverse cumulative normal function is the most robustt way to turn uniform variates from open interval $(0,1)$ to Gaussian variaets.
+- The inverse cumulative normal function is the most robustt way to turn uniform variates from open interval $$(0,1)$$ to Gaussian variaets.
 - Using random number class makes it easier to plug in low-discrepancy numbers
 - Anti-thetic sampling can be implemented via decoration.
 
@@ -1301,7 +1301,7 @@ The product takes in a vecttor of spot values for its relevant times and split o
 
 Many products can only pay off at one time, whicch means it's better to pre-compute discount factor for that time. But we still need to knoow what time is, so we require product to have anther method `PossibleCachFlowTimes` which returns an array defining possible times. Engine will knw all possible times in advance, we can return cashflow as a pair: index + amount. 
 
-`CashFlows` method takes in array defining spot values, and returns cashflows. We alloow more thann 1 cach flow, so we must use container to pass them back with STL vector class. But it's time consuming as we have to create a new vector every time method is called and need memory allcationn. So we take argument of type `vector<CashFlow>$`.
+`CashFlows` method takes in array defining spot values, and returns cashflows. We alloow more thann 1 cach flow, so we must use container to pass them back with STL vector class. But it's time consuming as we have to create a new vector every time method is called and need memory allcationn. So we take argument of type `vector<CashFlow>`.
 
 The vector should be in correct size, but resizing needs memory allocation, and some implementations of STL destroy all objects in vector during resize, so every resize involves looping, and is slow when no memory allocation is necessary. So we can tell how big the vector has to be, and then each time the method is called, return an unsigned long saying how many cashflows have been generated. So we have 2 pure virtual methods:
 
