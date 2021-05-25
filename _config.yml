@@ -70,7 +70,7 @@ author:
       url: "https://www.linkedin.com/in/junfan-zhu"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
-      url: "junfanz@gatech.edu"
+      mailto: "junfanz@gatech.edu"
       
 defaults:
   # _posts
