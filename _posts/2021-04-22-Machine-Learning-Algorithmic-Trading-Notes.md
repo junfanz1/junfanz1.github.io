@@ -10,6 +10,10 @@ tags:
 
 2021/04/22
 
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">Total visits to my blog: <span id="busuanzi_value_site_pv"></span></span>
+
 ![3](https://user-images.githubusercontent.com/56275127/119564400-5d0b3580-bd6e-11eb-95ce-ba6ee2809bd2.jpg)
 
 
@@ -17,8 +21,6 @@ tags:
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_site_pv">Total visits to this site: <span id="busuanzi_value_site_pv"></span></span>
 
 Book Link
 -------------
