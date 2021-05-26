@@ -11,7 +11,7 @@ tags:
 2021/04/06 
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_site_pv">Total visits to this site: <span id="busuanzi_value_site_pv"></span></span>
+<span id="busuanzi_container_site_pv">Total visits to my blog: <span id="busuanzi_value_site_pv"></span></span>
 
 ![5](https://user-images.githubusercontent.com/56275127/119564752-c25f2680-bd6e-11eb-87a2-fe01a316aa34.png)
 
