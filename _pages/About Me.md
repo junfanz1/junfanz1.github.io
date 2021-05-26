@@ -3,6 +3,9 @@ permalink: /about/
 title: "About Me"
 ---
 
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">Total visits to my blog: <span id="busuanzi_value_site_pv"></span></span>
+
 ## __Bio__
 
 My name is Junfan Zhu (Chinese characters below).
