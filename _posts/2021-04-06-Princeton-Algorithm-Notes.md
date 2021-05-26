@@ -17,6 +17,9 @@ tags:
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">Total visits to this site: <span id="busuanzi_value_site_pv"></span></span>
+
 Course Links
 -------------
 
@@ -3403,4 +3406,6 @@ public class HamiltonPath
 # End of Course Notes
 
 - [__PDF Notes__](https://github.com/junfanz1/CS-Online-Course-Notes/blob/main/Princeton%20Algorithm/Princeton%20Algorithm%20Coursera%20Notes%20Junfan%20Zhu.pdf)
+
+
 
