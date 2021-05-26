@@ -16,6 +16,9 @@ tags:
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">Total visits to this site: <span id="busuanzi_value_site_pv"></span></span>
+
 
 Book Link
 -------------
