@@ -7,16 +7,17 @@ title: "About Me"
 </script>
 
 <span id="busuanzi_container_site_pv">
-    Total visits: <span id="busuanzi_value_site_pv"></span>
+    Blog total visits: <span id="busuanzi_value_site_pv"></span>
 </span>
 
 <span id="busuanzi_container_site_pv">
-    Vistors: <span id="busuanzi_value_site_uv"></span>
+    Blog vistors: <span id="busuanzi_value_site_uv"></span>
 </span>
 
 <span id="busuanzi_container_site_pv">
-    Views: <span id="busuanzi_value_page_pv"></span>
+    Views on this article: <span id="busuanzi_value_page_pv"></span>
 </span>
+
 
 
 
