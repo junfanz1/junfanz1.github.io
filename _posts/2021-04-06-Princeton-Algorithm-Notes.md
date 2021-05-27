@@ -10,13 +10,19 @@ tags:
 
 2021/04/06 
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-Total <span id="busuanzi_value_site_pv"></span> views on my blog.
-You are number <span id="busuanzi_value_site_uv"></span> visitor to my blog.
-<span id="busuanzi_value_page_pv"></span> Hits on this page.
+<span id="busuanzi_container_site_pv">
+    Total <span id="busuanzi_value_site_pv"></span> views on my blog.
+</span>
 
+<span id="busuanzi_container_site_uv">
+  You are number <span id="busuanzi_value_site_uv"></span> visitor to my blog.
+</span>
+
+<span id="busuanzi_container_page_pv">
+  <span id="busuanzi_value_page_pv"></span> hits on this page.
+</span>
 
 
 
