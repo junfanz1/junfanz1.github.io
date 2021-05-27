@@ -6,17 +6,9 @@ title: "About Me"
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
 
-<span id="busuanzi_container_site_pv">
-    Blog total visits: <span id="busuanzi_value_site_pv"></span>
-</span>
-
-<span id="busuanzi_container_site_pv">
-    Blog vistors: <span id="busuanzi_value_site_uv"></span>
-</span>
-
-<span id="busuanzi_container_site_pv">
-    Views on this article: <span id="busuanzi_value_page_pv"></span>
-</span>
+Total <span id="busuanzi_value_site_pv"></span> views on my blog.
+You are number <span id="busuanzi_value_site_uv"></span> visitor to my blog.
+<span id="busuanzi_value_page_pv"></span> Hits on this page.
 
 
 
