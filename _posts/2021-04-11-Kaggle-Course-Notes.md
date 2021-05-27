@@ -11,8 +11,11 @@ tags:
 2021/04/11
 
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_site_pv">Total visits to my blog: <span id="busuanzi_value_site_pv"></span></span>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+Total visits to my blog: <span id="busuanzi_value_site_pv"></span><br/>
+Number of visitors: <span id="busuanzi_value_site_uv"></span><br/>
+Views of this article: <span id="busuanzi_value_page_pv"></span><br/>
+
 
 <img width="490" alt="6" src="https://user-images.githubusercontent.com/56275127/119565199-4c0ef400-bd6f-11eb-9d79-7000be1cf318.png">
 
