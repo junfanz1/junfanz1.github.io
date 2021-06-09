@@ -1,10 +1,12 @@
 ---
-title: "Princeton Algorithm Coursera Course Notes"
-date: 2021-04-06
+title: "Stochastic Volatility Modeling Char 1. Introduction Notes"
+date: 2021-06-09
 categories:
   - Blog
+  - Book Notes Series
 tags:
-  - CS
+  - Quant
+  - Stochastic Volatility Modeling
   - Notes
 ---
 
