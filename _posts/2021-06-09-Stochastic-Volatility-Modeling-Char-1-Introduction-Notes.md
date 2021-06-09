@@ -26,6 +26,8 @@ tags:
   <span id="busuanzi_value_page_pv"></span> hits on this page.
 </span>
 
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+
 
 ![Book](https://user-images.githubusercontent.com/56275127/121436137-a4d0b600-c945-11eb-862c-f00afe6e1efd.png)
 
