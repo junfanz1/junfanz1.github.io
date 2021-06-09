@@ -244,5 +244,5 @@ A cliquet is an option on volatility, more precisely on forward implied volatili
 
 # References:
 
-[[1]](http://quantlabs.net/academy/download/free_quant_instituitional_books_/[Risk%20Magazine,%20Castagna]%20The%20Vanna-Volga%20Method%20for%20Implied%20Volatilities.pdf) A. Castagna, F.Mercurio, *The Vanna-Volga method for implied volatilities*, Risk (2007, Jan) 106-111
+[1] A. Castagna, F.Mercurio, [*The Vanna-Volga method for implied volatilities*](http://quantlabs.net/academy/download/free_quant_instituitional_books_/[Risk%20Magazine,%20Castagna]%20The%20Vanna-Volga%20Method%20for%20Implied%20Volatilities.pdf) , Risk (2007, Jan) 106-111
 
