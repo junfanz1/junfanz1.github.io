@@ -1,9 +1,29 @@
-Stochastic Volatility Modeling - Char 1 Introduction Notes
-====
-
-Junfan Zhu
+---
+title: "Princeton Algorithm Coursera Course Notes"
+date: 2021-04-06
+categories:
+  - Blog
+tags:
+  - CS
+  - Notes
+---
 
 2021 - 06 - 09
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<span id="busuanzi_container_site_pv">
+    Total <span id="busuanzi_value_site_pv"></span> views on my blog.
+</span>
+
+<span id="busuanzi_container_site_uv">
+  You are number <span id="busuanzi_value_site_uv"></span> visitor to my blog.
+</span>
+
+<span id="busuanzi_container_page_pv">
+  <span id="busuanzi_value_page_pv"></span> hits on this page.
+</span>
+
 
 ![Book](https://user-images.githubusercontent.com/56275127/121436137-a4d0b600-c945-11eb-862c-f00afe6e1efd.png)
 
@@ -165,3 +185,12 @@ A cliquet is an option on volatility, more precisely on forward implied volatili
 - Delta hedging is not adequate for reducing the standard deviation of the P\&L of an option position to reasonable levels. The sources of the dispersion of this P\&L are: (a) the tails of returns, (b) the volatility of realized volatility and the correlation of future realized volatilities - see (1.15). Except for very short options, the latter effect prevails, because of the long-ranged nature of volatility/volatility correlations.
 - Using options for gamma-hedging immunizes us against realized volatility. Dynamical trading of vanilla options, however, exposes us to uncertainty as to future levels of implied volatilities. Stochastic volatility models are thus needed for modeling the dynamics of implied volatilities, rather than that of realized volatility.
 - Exotic options often depend in a complex way on the dynamics of implied volatilities. Some specific classes of options, such as barrier options, or cliquets, are such that their volatility risk can be pinpointed, enabling an easier assessment of the suitability of a given model.
+
+
+---
+
+# End of Book Chapter 1 Notes
+
+- [__PDF Notes__](https://github.com/junfanz1/Quant-Books-Notes/blob/main/Stochastic%20Volatility%20Modeling/Stochastic%20Volatility%20Modeling%20-%20Char%201%20Introduction%20Notes.pdf)
+
+
