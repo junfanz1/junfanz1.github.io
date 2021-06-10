@@ -590,7 +590,7 @@ Investigating model-generated future skews is useful for assessing localvolatili
 
 ## 9.6. Delta and Carry P&L
 
-- The carry P&L of a delta and vega-hedged option position in the local volatility model can be expressed in the usual gamma-theta form, with payoffindependent break-even levels for spot variance, spot/volatility covariances and volatility/volatility covariances. The local volatility model is a genuine diffusive market model.
+- The carry P&L of a delta and vega-hedged option position in the local volatility model can be expressed in the usual gamma-theta form, with payoff independent break-even levels for spot variance, spot/volatility covariances and volatility/volatility covariances. The local volatility model is a genuine diffusive market model.
 
 - The carry P&L of a delta-hedged, vega-hedged option position can be equivalently expressed either in terms of spot and implied volatilities (2.105), or as a function of spot and option prices (2.107). The "real" delta of the local volatility model is given by the derivative of the price with respect to $$S$$, keeping vanilla option prices fixed. The delta computed by keeping fixed implied volatilities is called the sticky-strike delta. Regardless of the particular parametrization used for vanilla option prices, once the deltas of the hedging vanilla options are included, the "real" delta is recovered.
 
