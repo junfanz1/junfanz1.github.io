@@ -1,11 +1,12 @@
 ---
-title: "High-Frequency Finance Notes"
+title: "04  High-Frequency Finance - Notes"
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
+  - Book Notes Series
 tags:
-  - Quant
-  - Notes
+  - Quant 
+  - Market Microstructure / High Frequency
 ---
 
 2021/04/17
