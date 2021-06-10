@@ -28,6 +28,6 @@ tags:
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 
 
-<center><embed src="https://www.coursera.org/account/accomplishments/certificate/3QGDXN5CT939" width="850" height="600"></center>
+<center><embed src="https://github.com/junfanz1/junfanz1.github.io/files/6634083/FinancialRegines__Zeileis.pdf" width="850" height="600"></center>
 
 
