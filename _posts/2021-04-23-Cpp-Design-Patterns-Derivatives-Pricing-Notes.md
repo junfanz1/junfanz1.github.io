@@ -1,11 +1,13 @@
 ---
-title: "C++ Design Patterns Derivatives Pricing Notes"
+title: "06  C++ Design Patterns Derivatives Pricing - Notes"
 categories:
   - Blog
+  - Book Notes Series 
 tags:
   - C++
-  - CS
-  - Notes
+  - Quant
+  - Computer Science
+  - Design Pattern
 ---
 
 2021/04/23
