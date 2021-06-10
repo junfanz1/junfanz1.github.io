@@ -33,8 +33,7 @@ tags:
 
 # 2021-04
 
-Write Like Mozart: An Introduction to Classical
-Music Composition - National University of Singapore
+## Write Like Mozart: An Introduction to Classical Music Composition - National University of Singapore
 
 <iframe src="https://drive.google.com/file/d/18anFj2V36Q_pms7R32JhYu5mzdV_bNLa/preview" width="640" height="480"></iframe>
 
@@ -52,12 +51,11 @@ Music Composition - National University of Singapore
 
 <iframe src="https://drive.google.com/file/d/1X63HECOUNfbBURcHlGCK8sUm20VoUn_X/preview" width="640" height="480"></iframe>
 
-## Guitar for Beginners
+## Guitar for Beginners - Berklee College of Music
 
 <iframe src="https://drive.google.com/file/d/1PFymK9zbu12f2XEM9zkJAVL9lc-Z1I6w/preview" width="640" height="480"></iframe>
 
-## Teaching the Violin and Viola: Creating a Healthy
-Foundation - Northwestern University
+## Teaching the Violin and Viola: Creating a Healthy Foundation - Northwestern University
 
 <iframe src="https://drive.google.com/file/d/1PGposqy_0s10FwjtGX9BSF-yHVF0HLXu/preview" width="640" height="480"></iframe>
 
@@ -65,8 +63,7 @@ Foundation - Northwestern University
 
 <iframe src="https://drive.google.com/file/d/1cBB7xmSPnN6GAkkKoV10GQXxgU9cEAcB/preview" width="640" height="480"></iframe>
 
-## 又見大觀:《紅樓夢》中的烏托邦 (The Red Chamber
-Dream (3): Daguan Garden) - 台湾大学
+## 又見大觀:《紅樓夢》中的烏托邦 (The Red Chamber Dream (3): Daguan Garden) - 台湾大学
 
 <iframe src="https://drive.google.com/file/d/1cNJehLVyVL2VfQW1rSY4nHaMulQ2JEtI/preview" width="640" height="480"></iframe>
 
@@ -74,6 +71,7 @@ Dream (3): Daguan Garden) - 台湾大学
 
 <iframe src="https://drive.google.com/file/d/1V5SZZ5uaCU_cLOxKZO1Ekvw-03bn6brt/preview" width="640" height="480"></iframe>
 
+---
 
 # 2021-02
 
@@ -125,6 +123,8 @@ Dream (3): Daguan Garden) - 台湾大学
 
 <iframe src="https://drive.google.com/file/d/14jHxdWBKHbBsF6m0cTHFKUD9UzuZYsyq/preview" width="640" height="480"></iframe>
 
+---
+
 # 2021-01
 
 ## Civic Engagement in American Democracy - Duke University
@@ -135,7 +135,7 @@ Dream (3): Daguan Garden) - 台湾大学
 
 <iframe src="https://drive.google.com/file/d/1crrTHPFQnszszjkIk2Oj4ccOwTRDK3R8/preview" width="640" height="480"></iframe>
 
-## Management of Fashion and Luxury Companies - Universita Commerciale Luigi Bocconi
+## Management of Fashion and Luxury Companies - Universita Bocconi
 
 <iframe src="https://drive.google.com/file/d/146o7CJto8X1RfY9B3PHCnxKdCKkNSVDH/preview" width="640" height="480"></iframe>
 
@@ -191,6 +191,8 @@ Dream (3): Daguan Garden) - 台湾大学
 
 <iframe src="https://drive.google.com/file/d/1dPBIEOAqP2swCkGzKYMvvVuq56C3w9jc/preview" width="640" height="480"></iframe>
 
+---
+
 # 2020-12
 
 ## Global Diplomacy – Diplomacy in the Modern World - University of London
@@ -209,6 +211,8 @@ Dream (3): Daguan Garden) - 台湾大学
 
 <iframe src="https://drive.google.com/file/d/1q00kmdjEVdDoFBfOb2dHEfap2hbre-uz/preview" width="640" height="480"></iframe>
 
+---
+
 # 2020-11
 
 ## Russian History: from Lenin to Putin - UC Santa Cruz
@@ -218,6 +222,8 @@ Dream (3): Daguan Garden) - 台湾大学
 ## Søren Kierkegaard - Subjectivity, Irony and the Crisis of Modernity - University of Copenhagen
 
 <iframe src="https://drive.google.com/file/d/1LZpY6mBYeRE-iEoLeAmQGx6B4i7eXuZ3/preview" width="640" height="480"></iframe>
+
+---
 
 # 2020-10
 
@@ -259,6 +265,8 @@ Dream (3): Daguan Garden) - 台湾大学
 
 <iframe src="https://drive.google.com/file/d/13VE5i-TQ1XGqdB8XEi5X53VG0XrgLVZv/preview" width="640" height="480"></iframe>
 
+---
+
 # 2020-09
 
 ## A Law Student’s Toolkit - Yale
@@ -277,6 +285,8 @@ Dream (3): Daguan Garden) - 台湾大学
 
 <iframe src="https://drive.google.com/file/d/1hhZ4fVnYDxIqxPrYoJ5uvANFMHrZbpl_/preview" width="640" height="480"></iframe>
 
+---
+
 # 2020-08
 
 ## Bloomberg Market Concepts - Bloomberg
@@ -291,7 +301,7 @@ Dream (3): Daguan Garden) - 台湾大学
 
 <iframe src="https://drive.google.com/file/d/1H7RigMK8My8x9U0s1tMwx0EQdGe83z0P/preview" width="640" height="480"></iframe>
 
-
+__Online Course notes and detailed evaluations, please refer to my [Douban blogs](https://www.douban.com/people/junfanz/).__
 
 
 
