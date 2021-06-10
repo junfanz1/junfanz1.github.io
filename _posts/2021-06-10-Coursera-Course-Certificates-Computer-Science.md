@@ -28,5 +28,4 @@ tags:
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 
  
- <iframe src="https://drive.google.com/file/d/10SvB4TU3HGNI2mUVKjuHGUKAjwA5YWTw/view?usp=sharing" style="width:718px; height:700px;" frameborder="0"></iframe>
-
+<iframe src="https://drive.google.com/file/d/10SvB4TU3HGNI2mUVKjuHGUKAjwA5YWTw/preview" width="640" height="480"></iframe>
