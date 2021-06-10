@@ -28,6 +28,5 @@ tags:
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 
 
-<center><embed src="https://github.com/junfanz1/junfanz1.github.io/files/6634083/FinancialRegines__Zeileis.pdf" width="850" height="600"></center>
-
+<object data="https://github.com/junfanz1/junfanz1.github.io/files/6634083/FinancialRegines__Zeileis.pdf" width="1000" height="1000" type='application/pdf'/>
 
