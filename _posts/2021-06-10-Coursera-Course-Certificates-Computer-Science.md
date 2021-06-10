@@ -28,7 +28,6 @@ tags:
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 
 
-
-<embed width='100%' height="100%"name="plugin" id="plugin" src="https://www.coursera.org/account/accomplishments/certificate/3QGDXN5CT939" internalinstanceid="37" title="Cloud Computing Applications, Part 2: Big Data and Applications in the Cloud">
+<center><embed src="https://www.coursera.org/account/accomplishments/certificate/3QGDXN5CT939" width="850" height="600"></center>
 
 
