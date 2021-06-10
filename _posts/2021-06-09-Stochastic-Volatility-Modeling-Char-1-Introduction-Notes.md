@@ -1,5 +1,5 @@
 ---
-title: "Stochastic Volatility Modeling Char 1. Introduction Notes"
+title: "07  Stochastic Volatility Modeling - Char 1 Introduction - Notes"
 date: 2021-06-09
 categories:
   - Blog
@@ -7,7 +7,7 @@ categories:
 tags:
   - Quant
   - Stochastic Volatility Modeling
-  - Notes
+
 ---
 
 2021 - 06 - 09
