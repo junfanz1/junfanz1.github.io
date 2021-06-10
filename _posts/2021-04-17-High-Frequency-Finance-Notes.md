@@ -9,7 +9,7 @@ tags:
   - Market Microstructure / High Frequency
 ---
 
-2021/04/17
+2021 - 04 - 17
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
