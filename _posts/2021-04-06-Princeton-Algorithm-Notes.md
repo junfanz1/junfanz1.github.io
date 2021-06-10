@@ -1,5 +1,5 @@
 ---
-title: "01  Princeton Algorithm - Coursera Course Notes"
+title: "01  Princeton Algorithm - Notes"
 date: 2021-04-06
 categories:
   - Blog
