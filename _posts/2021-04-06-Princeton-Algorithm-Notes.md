@@ -1,14 +1,15 @@
 ---
-title: "Princeton Algorithm Coursera Course Notes"
+title: "01 Princeton Algorithm - Coursera Course - Notes"
 date: 2021-04-06
 categories:
   - Blog
+  - Course Notes Series
 tags:
-  - CS
+  - Algorithm
   - Notes
 ---
 
-2021/04/06 
+2021 -04 - 06 
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
