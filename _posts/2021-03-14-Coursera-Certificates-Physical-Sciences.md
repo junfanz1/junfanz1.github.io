@@ -27,7 +27,7 @@ tags:
 
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 
-Online Course notes and detailed evaluations, please refer to my [Douban blogs](https://www.douban.com/people/junfanz/).
+__Online Course notes and detailed evaluations, please refer to my [Douban blogs](https://www.douban.com/people/junfanz/).__
 
 
 # 2021-03
