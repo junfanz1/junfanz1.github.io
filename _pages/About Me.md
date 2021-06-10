@@ -57,9 +57,9 @@ I’m proficient in Python, R, SQL; intermediate in C++, Spark, kdb+, Cuda.
 
 In Rotman International Trading Competition, I ranked Top 10 Algorithmic Trader. I have honors including Outstanding Bachelor Thesis (Top 1%), Meritorious Winner in International Mathematical Contest in Modeling, Second Prize in Asia Supercomputing Challenge, and Top 10% in Citadel Datathon. 
 
-## __Online Course & Reading Book Notes__
+## __Online Course & `Book Reading Club` Notes__
 
-I love MOOC self-learning and reading all kinds of books. I have 3 blogs as summaries of acheived Coursera learning certificates. More selected Coursera course notes and remarks, as well as book excerpts and "Minutes of Humanities and Social Sciences Reading Club" blogs are available on 豆瓣 ([Douban](https://www.douban.com/people/junfanz/notes)).
+I love MOOC self-learning and reading all kinds of books. I have 3 [galleries](https://junfanz1.github.io/categories/#online-course-certificates) as a summary of my acheived Coursera learning certificates. More online course ratings and detailed evaluations, and "Minutes of Humanities and Social Sciences Reading Club" are available on 豆瓣 ([Douban](https://www.douban.com/people/junfanz/notes)).
 
 ---
 
