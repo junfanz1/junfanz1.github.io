@@ -1,11 +1,12 @@
 ---
-title: "Machine Learning Algorithmic Trading Notes"
+title: "05  Machine Learning Algorithmic Trading - Notes"
 categories:
   - Blog
+  - Book Notes Series
 tags:
   - Quant
   - Machine Learning
-  - Notes
+  
 ---
 
 2021/04/22
