@@ -29,10 +29,6 @@ tags:
 
 
 
+<embed width='100%' height="100%"name="plugin" id="plugin" src="https://www.coursera.org/account/accomplishments/certificate/3QGDXN5CT939" internalinstanceid="37" title="Cloud Computing Applications, Part 2: Big Data and Applications in the Cloud">
 
 
-<object data="https://www.coursera.org/account/accomplishments/certificate/3QGDXN5CT939" type="Cloud Computing Applications, Part 2: Big Data and Applications in the Cloud" width="95%" height="700px">
-    <embed src="https://www.coursera.org/account/accomplishments/certificate/3QGDXN5CT939">
-        <p>Coursera certificates: <a href="https://www.coursera.org/account/accomplishments/certificate/3QGDXN5CT939">Download PDF</a>.</p>
-    </embed>
-</object>
