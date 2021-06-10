@@ -1,11 +1,12 @@
 ---
-title: "Kaggle Course Notes"
+title: "02 Kaggle Course - Notes"
 categories:
   - Blog
+  - Course Notes Series
 tags:
-  - CS
+  - Data Science
   - Machine Learning
-  - Notes
+
 ---
 
 2021/04/11
