@@ -6,7 +6,7 @@ categories:
   - Course Notes Series
 tags:
   - Algorithm
-  - Notes
+
 ---
 
 2021 -04 - 06 
