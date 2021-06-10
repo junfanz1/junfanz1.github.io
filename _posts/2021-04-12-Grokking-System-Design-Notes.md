@@ -1,10 +1,11 @@
 ---
-title: "Grokking System Design Notes"
+title: "03  Grokking System Design - Notes"
 categories:
   - Blog
+  - Course Notes Series
 tags:
-  - CS
-  - Notes
+  - System Design
+  - Computer Science
 
 ---
 
