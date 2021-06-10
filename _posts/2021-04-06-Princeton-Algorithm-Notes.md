@@ -6,6 +6,7 @@ categories:
   - Course Notes Series
 tags:
   - Algorithm
+  - Computer Science
 
 ---
 
