@@ -150,7 +150,11 @@ Randomized Algorithms - Stanford Online
 
 <iframe src="https://drive.google.com/file/d/1cElPCnYvY19LnixPQQ48tsJ5tuiPwMrc/preview" width="640" height="480"></iframe>
 
+## Triplebyte Certified Machine Learning Engineer
 
+__Credential ID: YXqBsyA__
+
+__[Credential URL](https://triplebyte.com/tb/junfan-zhu-kfxhnjo/certificate/track/ml)__
 
 # 2020-07
 
