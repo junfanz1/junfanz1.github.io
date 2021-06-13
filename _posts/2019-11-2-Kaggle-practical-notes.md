@@ -1,3 +1,41 @@
+---
+title: "Data Science Practical Guides"
+categories:
+  - Blog
+  - Practical Guide
+tags:
+  - Data Science
+  - Machine Learning
+
+
+---
+
+2019 - 11 - 2
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<span id="busuanzi_container_site_pv">
+    Total <span id="busuanzi_value_site_pv"></span> views on my blog.
+</span>
+
+<span id="busuanzi_container_site_uv">
+  You are number <span id="busuanzi_value_site_uv"></span> visitor to my blog.
+</span>
+
+<span id="busuanzi_container_page_pv">
+  <span id="busuanzi_value_page_pv"></span> hits on this page.
+</span>
+
+
+
+<img width="490" alt="6" src="https://user-images.githubusercontent.com/56275127/119565199-4c0ef400-bd6f-11eb-9d79-7000be1cf318.png">
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
 # Kaggle Competition Pipeline
 
 |  Feature Engineering |  Modeling | 
