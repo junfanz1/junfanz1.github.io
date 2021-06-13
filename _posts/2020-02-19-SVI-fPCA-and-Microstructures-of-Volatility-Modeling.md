@@ -64,6 +64,8 @@ tags:
 ![SVI, fPCA and Microstructures of Volatility Modeling-16](https://user-images.githubusercontent.com/56275127/121812845-0b4c2180-cc2f-11eb-899a-54cf8e1d6d54.jpg)
 
 
-# [PDF Slides Download Link](https://www.linkedin.com/posts/junfan-zhu_svi-ensemble-carr-pelts-functional-pca-activity-6635411863037411328-Tdul), thank you! :)
+# [PDF Slides Download Link](https://www.linkedin.com/posts/junfan-zhu_svi-ensemble-carr-pelts-functional-pca-activity-6635411863037411328-Tdul)
+
+# Thank you! 
 
 
