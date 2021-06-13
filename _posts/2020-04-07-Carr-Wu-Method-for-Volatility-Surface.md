@@ -2,7 +2,7 @@
 title: "Carr Wu Method for Volatility Surface"
 categories:
   - Blog
-  - Project Presentation
+  - Project Presentations
 tags:
   - Stochastic Volatility Modeling
   - Quant
