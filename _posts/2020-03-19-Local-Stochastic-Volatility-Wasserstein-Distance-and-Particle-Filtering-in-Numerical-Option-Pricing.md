@@ -2,7 +2,7 @@
 title: "Local Stochastic Volatility, Wasserstein Distance and Particle Filtering in Numerical Option Pricing"
 categories:
   - Blog
-  - Course Notes Series
+  - Project Presentations
 tags:
   - Quant
   - Stochastic Volatility Modeling
