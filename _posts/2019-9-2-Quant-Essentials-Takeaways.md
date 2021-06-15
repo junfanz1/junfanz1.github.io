@@ -61,7 +61,7 @@ __Def__: A process for __observable__ quantities (forward rates, swap rates). In
 
 $$\frac{df_i}{f_j} = \mu_j dt + \sigma_t dW_t^{(j)}$$
 
-Vol $$\sigma_j$$ price the caplet on $j$-th forward rate correctly. So calibration to the current yield curve and at-the-money caplet market is automatic as model is consistent with Black's formula.
+Vol $$\sigma_j$$ price the caplet on $$j$$-th forward rate correctly. So calibration to the current yield curve and at-the-money caplet market is automatic as model is consistent with Black's formula.
 
 The set of attainable yield curves is high dimensional, depending on the chosen dimension of Brownian motion $$W_t$$, which makes market models more suited to exotic products. Due to high dimensionality, market model must be implemented using Monte Carlo.
 
@@ -73,7 +73,7 @@ $$dx(t) = \lambda(t) dW_t$$
 
 We only need to keep track of underlying Markov process, meaning they can be priced using a lattice. They also allow for easy calibration to market prices as there is freedom to choose functional form of the model.
 
-Similarly for short rate models, the assumption that space of yield curve attainable at a time is expressed by 1 or 2 random factors can be too simplistic to givr good prices for exotic instruments.
+Similarly for short rate models, the assumption that space of yield curve attainable at a time is expressed by 1 or 2 random factors can be too simplistic to give good prices for exotic instruments.
 
 ## Under what condition is LIBOR market model Markovian?
 
@@ -143,7 +143,7 @@ __Jump diffusion__: have FX rate moving as geometric Brownian motion with an add
 
 $$\frac{dS_t}{S_t} = \mu dt \sigma dW_t +(J-1)dN_t$$
 
-\where $$J$$ is a random jump size, could be log-normal distribution, $$N_t$$ = Poisson process  
+where $$J$$ is a random jump size, could be log-normal distribution, $$N_t$$ = Poisson process  
 
 Jump diffusion produce a floating smile, the smile moves when spot moves, so that the bottom of the smil will remain at-the-money. As a floating smile is a feature of FX markets, it's an advantage of jump diffusion models.
 
@@ -207,6 +207,9 @@ __Notes:__
 - Code must be included in the header, so as to be available to clients, so changing it will cause a lot to recompile, and any compiler-time dependencies it has, will be dependencies for clients
 - Compiler can use extra optimizations
 - Adding/ Removing `inline` never affects anything other than the efficiency of program.
+
+---
+
 
 `macro`
 
