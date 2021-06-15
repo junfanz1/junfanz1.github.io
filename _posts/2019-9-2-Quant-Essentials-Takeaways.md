@@ -1,3 +1,38 @@
+---
+title: "Quant Essentials Takeaways"
+categories:
+  - Blog
+  - Takeaways
+ 
+tags:
+  - Quant
+  - C++
+
+
+---
+
+2019 - 9 - 2
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<span id="busuanzi_container_site_pv">
+    Total <span id="busuanzi_value_site_pv"></span> views on my blog.
+</span>
+
+<span id="busuanzi_container_site_uv">
+  You are number <span id="busuanzi_value_site_uv"></span> visitor to my blog.
+</span>
+
+<span id="busuanzi_container_page_pv">
+  <span id="busuanzi_value_page_pv"></span> hits on this page.
+</span>
+
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 
 # Interest Rates Models
 
@@ -13,7 +48,7 @@ $$B(t) = \rm exp(\int_0^t r(s)ds)$$
 
 __Cons:__ 
 
-- Dynamics aren't compatible with standard market prices from Black's formula, which makes the calibration and fitting $\alpha, \beta$ difficult. 
+- Dynamics aren't compatible with standard market prices from Black's formula, which makes the calibration and fitting $$\alpha, \beta$$ difficult. 
 - At time t, attainable yield curves is one dimensional, which is too limiting for most exotic interest rate derivatives. For products which derive their value from changing shape of the yield curve aren't priced well.
 
 __Pros:__
@@ -26,13 +61,13 @@ __Def__: A process for __observable__ quantities (forward rates, swap rates). In
 
 $$\frac{df_i}{f_j} = \mu_j dt + \sigma_t dW_t^{(j)}$$
 
-Vol $\sigma_j$ price the caplet on $j$-th forward rate correctly. So calibration to the current yield curve and at-the-money caplet market is automatic as model is consistent with Black's formula.
+Vol $$\sigma_j$$ price the caplet on $j$-th forward rate correctly. So calibration to the current yield curve and at-the-money caplet market is automatic as model is consistent with Black's formula.
 
-The set of attainable yield curves is high dimensional, depending on the chosen dimension of Brownian motion $W_t$, which makes market models more suited to exotic products. Due to high dimensionality, market model must be implemented using Monte Carlo.
+The set of attainable yield curves is high dimensional, depending on the chosen dimension of Brownian motion $$W_t$$, which makes market models more suited to exotic products. Due to high dimensionality, market model must be implemented using Monte Carlo.
 
 ## Markov Functional Models
 
-__Def__: To incorporate some good features of both short rate models and market models. We have market rates and instruments as a function of a low-dimensional Markov process $x$ where
+__Def__: To incorporate some good features of both short rate models and market models. We have market rates and instruments as a function of a low-dimensional Markov process $$x$$ where
 
 $$dx(t) = \lambda(t) dW_t$$
 
@@ -46,7 +81,7 @@ Volatility function is __separable__, if we ignore drafts. Volatility function f
 
 $$\sigma_i(t) = v_i \times \nu(t)$$
 
-where $v_i$ is a LIBOR specific scalar, $\nu(t)$ is a deterministic function of time, which is common to all LIBOR rates.
+where $$v_i$$ is a LIBOR specific scalar, $$\nu(t)$$ is a deterministic function of time, which is common to all LIBOR rates.
 
 LIBOR market model is never Markovian in BM since it contains state-dependent drifts. But, these can be approximated using schemes like predictor-corrector to make rates functions of underlying increments only across a single step. 
 
@@ -56,11 +91,11 @@ LIBOR market model is never Markovian in BM since it contains state-dependent dr
 
 ### Monte Carlo and Binomial Tree
 
-Binomial tree is easy to do early exercise, its rate of convergence for continuous payoffs including American options is $1/n$, where $n$ is steps number. Since number of computations increases as $n^2$, so the rate of convergence is $t^{-1/2}$ where $t$ is computational time. For higher dimensional trees, convergence will be slower. Path-dependence is not natural in trees but can be dealt with by using an auxiliary variable which increases the dimension by 1.
+Binomial tree is easy to do early exercise, its rate of convergence for continuous payoffs including American options is $$1/n$$, where $$n$$ is steps number. Since number of computations increases as $$n^2$$, so the rate of convergence is $$t^{-1/2}$$ where $$t$$ is computational time. For higher dimensional trees, convergence will be slower. Path-dependence is not natural in trees but can be dealt with by using an auxiliary variable which increases the dimension by 1.
 
 Monte Carlo pros:
 
-- Convergence is order $t^{-1/2}$ in all dimensions.
+- Convergence is order $$t^{-1/2}$$ in all dimensions.
 - Path-dependency is easy.
 
 Monte Carlo cons:
@@ -104,11 +139,11 @@ __Volatility skew__ is a downward sloping compared to symmetric smile.
 
 ### Jump diffusion
 
-__Jump diffusion__: have FX rate moving as geometric Brownian motion with an added random jump, as a Poisson process. $S_t$ = exchange rate:
+__Jump diffusion__: have FX rate moving as geometric Brownian motion with an added random jump, as a Poisson process. $$S_t$$ = exchange rate:
 
 $$\frac{dS_t}{S_t} = \mu dt \sigma dW_t +(J-1)dN_t$$
 
-\where $J$ is a random jump size, could be log-normal distribution, $N_t$ = Poisson process  
+\where $$J$$ is a random jump size, could be log-normal distribution, $$N_t$$ = Poisson process  
 
 Jump diffusion produce a floating smile, the smile moves when spot moves, so that the bottom of the smil will remain at-the-money. As a floating smile is a feature of FX markets, it's an advantage of jump diffusion models.
 
@@ -124,9 +159,9 @@ $$\frac{dS_t}{S_t} = \mu dt +  \sqrt{V_t} dW_t^{(1)}$$
 
 $$dV_t = \kappa(\theta - V_t) dt + \sigma_V \sqrt{V_t} dW_t^{(2)}$$
 
-where $\theta$ is long term average volatility, $\kappa$ is the rate of mean-reversion of the process, $\sigma_V$ is vol of vol, $W_t^{(1)}$ and $W_t^{(2)}$ are BMs with correlation $\rho$.
+where $$\theta$$ is long term average volatility, $$\kappa$$ is the rate of mean-reversion of the process, $$\sigma_V$$ is vol of vol, $$W_t^{(1)}$$ and $$W_t^{(2)}$$ are BMs with correlation $$\rho$$.
 
-Stochastic volatility models produce a floating smile and their smile shape can be changed by tweaking parameters. Ex: skew can be introduced by having $\rho \neq 0$, the flattening out of the smile can be adjusted by mean reversion parameter $\kappa$.
+Stochastic volatility models produce a floating smile and their smile shape can be changed by tweaking parameters. Ex: skew can be introduced by having $$\rho \neq 0$$, the flattening out of the smile can be adjusted by mean reversion parameter $$\kappa$$.
 
 __Cons of flexibility of changing smile shape__: All parameters need to be fitted in a stable and consistent way with market, which is not straightforward.
 
@@ -134,7 +169,7 @@ __Cons of flexibility of changing smile shape__: All parameters need to be fitte
 
 Variance Gamma takes FX rate and time as stochastic process. 
 
-__Def__: FX rates move when market information arrives and this information arrival is a stochastic process. If a large amount of information is arriving, then we expect high volatility, but on a day with minimal information arrival, we can expect low volatility. $b(t; \theta,\sigma)$ is a BM,
+__Def__: FX rates move when market information arrives and this information arrival is a stochastic process. If a large amount of information is arriving, then we expect high volatility, but on a day with minimal information arrival, we can expect low volatility. $$b(t; \theta,\sigma)$$ is a BM,
 
 $$db_t = \theta dt + \sigma dW_t$$
 
@@ -142,13 +177,13 @@ Let
 
 $$X(t;\sigma, \nu,\theta) = b(T_t;\theta,\sigma)$$
 
-where $T_t$ is time $t$ value of a Gamma process with variance rate $\nu$.
+where $$T_t$$ is time $$t$$ value of a Gamma process with variance rate $$\nu$$.
 
 Variance Gamma smiles are similar to jump diffusion smiles, the smiles tend to flatten out over time as the model becomes more similar to a pure diffusive model.
 
 ### Local Volatility
 
-Local volatility derives volatility surface from quoted market prices, and use this surface to price more exotic instruments. Under risk-neutrality, there's a unique diffusion process consistent with market prices. The unique volatility function $\sigma(S_t, t)$ is local volatility function.
+Local volatility derives volatility surface from quoted market prices, and use this surface to price more exotic instruments. Under risk-neutrality, there's a unique diffusion process consistent with market prices. The unique volatility function $$\sigma(S_t, t)$$ is local volatility function.
 
 Once local volatility surface is found, exotic instruments can be priced consistently with market price. The problem is that the volatility surface is market's current view of volatility, and this will change in future, so exotic options will no longer be consistent with market prices.
 
@@ -365,6 +400,6 @@ The third usage of `static` is to specify a function which has no linkage outsid
 
 The 4-th use of `static` is to denote class data members for which there's only one copy for entire class rather than 1 for each object in the class. There're issues with thread safety.
 
-## Polymorphism
+
 
 
