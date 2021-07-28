@@ -45,8 +45,7 @@ tags:
 
 ## 《新教伦理与资本主义精神》导读 - 复旦大学
 
-
-<center><embed src="https://github.com/junfanz1/junfanz1.github.io/files/6896901/default.pdf" width="850" height="600"></center>
+<embed src="https://github.com/junfanz1/junfanz1.github.io/files/6896901/default.pdf" width="640" height="480">
 
 ## Philosophy of Science - University of Pennsylvania
 
