@@ -42,114 +42,109 @@ __Online Course notes and detailed evaluations, please refer to my [Douban blogs
 
 ## Data Science in Production: Building Scalable Model Pipelines - Educative
 
-<iframe src="https://drive.google.com/file/d/1uGDDeyu3-6iYjbsQJ2yMCXUzZwtVTLXy/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128941894-2e7b6daa-7280-46bd-8237-96369b3a32b4.png)
 
 ## Introduction to Machine Learning in Production - deeplearning.ai
 
-<iframe src="https://drive.google.com/file/d/1fHb8ATfe6-F2D9pm1nJSzt7YDbweTAQp/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128941958-0a07b386-912a-4f06-b9f4-bc8829226f4c.png)
 
 ## Introduction to Microsoft Azure Cloud Services - Coursera
 
-<iframe src="https://drive.google.com/file/d/175ZICc9vA_5aYoxj0LkYTcr5lreBuFZ2/preview" width="640" height="480"></iframe>
-
+![image](https://user-images.githubusercontent.com/56275127/128942002-f5c13be1-1500-4335-a043-9b2b0d0f4dec.png)
 
 # 2021-04
 
 ## Designing data-intensive applications - National Autonomous University of Mexico
 
-<iframe src="https://drive.google.com/file/d/1lY-lRmCKfvU_eTL8F52TKd_vnmw-yUQi/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942059-7f557231-103d-4208-8af8-2178b8d8982f.png)
 
 ## Introduction to Designing Data Lakes on AWS - AWS
 
-<iframe src="https://drive.google.com/file/d/1n6MF44_C4SNf0E8dZdu_z8S92GUPf8nw/preview" width="640" height="480"></iframe>
-
-
+![image](https://user-images.githubusercontent.com/56275127/128942099-bc54567c-e982-4e44-9c05-1aab1690ad1b.png)
 
 # 2021-03
 
 ## IBM Data Topology - IBM
 
-<iframe src="https://drive.google.com/file/d/1soMZmV8XsVztjEO3N6Mjl48KaDw-hxgI/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942220-083006a9-bfa2-47e1-9521-b65b7c03c4c6.png)
 
 ## Production Machine Learning Systems - Google Cloud
 
-<iframe src="https://drive.google.com/file/d/14T26b2QCxUdzui7O0yLcHleOz50dV10E/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942273-a233e08c-7eab-4ede-bed1-5b76e95049f0.png)
 
 ## Software Defined Networking - University of Chicago
 
-<iframe src="https://drive.google.com/file/d/1JmZqjhYol1dNE3VhYnlAViOfj9of1dqZ/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942310-14e5553e-eb37-4b95-8471-7fbdbb16e2dd.png)
 
 ## Software Security - University of Maryland
 
-<iframe src="https://drive.google.com/file/d/1l3lIskpLEJiGsJxGP9PlxO2o7t0NoAwK/preview" width="640" height="480"></iframe>
-
+![image](https://user-images.githubusercontent.com/56275127/128942339-1f37cbd9-b8cc-4790-80f9-b98795c8dee4.png)
 
 # 2021-02
 
 ## Distributed Computing with Spark SQL - UC Davis
 
-<iframe src="https://drive.google.com/file/d/1PhvW_VJXT5DVSBZH0_WY0lLSNNqx1F4v/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942386-7ca44cab-fe8d-42a2-b160-440259b14302.png)
 
 ## Introduction to Git and GitHub - Google
 
-<iframe src="https://drive.google.com/file/d/1ovgsTkC7QpKp_Si1opQzKIIUaHQAxElG/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942466-c4e0db3e-cef2-4a20-824c-61fa7ca4b62b.png)
 
 ## Linux for Developers - Linux Foundation
 
-<iframe src="https://drive.google.com/file/d/1HFBwhDkqT3wNLrK45o7GlUT_zWg1E2-j/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942493-8d36af3f-1728-4aa1-a3dc-e78810cdc78d.png)
 
 # 2021-01
 
 ## Cryptography I - Stanford Online
 
-<iframe src="https://drive.google.com/file/d/1_Pgr8nli3eCc2Fx6sMNH9yiRTCQYzXMv/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942529-38f9cd29-6493-446c-9ae7-6077768270ef.png)
 
 # 2020-12
 
 ## Introduction to MongoDB - MongoDB
 
-<iframe src="https://drive.google.com/file/d/1yRjmj-S_PW7BWnw1QBhJFZ3tIr4Lpt_R/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942550-9e165d6c-201f-43b9-92b4-56a647aa42a1.png)
 
 ## 機器學習技法 (Machine Learning Techniques) - 台湾大学
 
-<iframe src="https://drive.google.com/file/d/1nLIwLS9CMIxaX-nUEt34XTTcECS0B5mt/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942583-605a2108-c931-4bca-9561-4d7063f0eeb2.png)
 
 # 2020-11
 
 ## Data Manipulation at Scale: Systems and Algorithms - University of Washington
 
-<iframe src="https://drive.google.com/file/d/15ky1DwSXu2D0rhsWX1P53DTVLLpijfDr/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942622-55ece213-e2ae-47be-aa35-e39160b2b110.png)
 
 ## Probabilistic Graphical Models Specialization - Stanford Online
 
-<iframe src="https://drive.google.com/file/d/1ZeuVsTt0Zfis3OKvOfncCxwNvcONXRAn/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942666-b315553f-b10a-44a2-bd7f-2e94b29e57ff.png)
 
 # 2020-10
 
 ## Computational Neuroscience - University of Washington
 
-<iframe src="https://drive.google.com/file/d/1Y735o25Da2zMmY0hakFkaAZwAEk62DQ0/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942703-51031fdd-10c7-43a2-8620-ea70ffc1128f.png)
 
 ## Generative Adversarial Networks (GANs) Specialization - deeplearning.ai
 
-<iframe src="https://drive.google.com/file/d/12mNhXRdBGauI9wqfTJPxivIxo3o6Hs5w/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942747-123899bf-0666-47d6-939b-bace05f579b8.png)
 
 ## Operating Systems - Peking University
 
-<iframe src="https://drive.google.com/file/d/11OfefNFAG3R2ELUIhKvj_GlLpgaBIzla/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942799-4ae67744-2c5a-4ef2-87c7-0fdb9c02be4d.png)
 
 # 2020-09
 
 ## Natural Language Processing Specialization - deeplearning.ai
 
-<iframe src="https://drive.google.com/file/d/1C9Zl97UWIHEYiazauwXJxd-8nxIEUw2Q/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942852-7a271290-49ff-4f00-8034-fe18990f1238.png)
 
 # 2020-08
 
-## Divide and Conquer, Sorting and Searching, and
-Randomized Algorithms - Stanford Online
+## Divide and Conquer, Sorting and Searching, and Randomized Algorithms - Stanford Online
 
-<iframe src="https://drive.google.com/file/d/1cElPCnYvY19LnixPQQ48tsJ5tuiPwMrc/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942931-6c501559-3d28-411b-b1dd-425d51d26528.png)
 
 ## Triplebyte Certified Machine Learning Engineer
 
@@ -161,24 +156,24 @@ __[Credential URL](https://triplebyte.com/tb/junfan-zhu-kfxhnjo/certificate/trac
 
 ## Deep Learning Specialization - deeplearning.ai
 
-<iframe src="https://drive.google.com/file/d/1jE3WqRrWAKIR7eoKny6j4M2nUtK0pRRg/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942970-cd26c436-6f79-44e1-a9e0-3065a06cb468.png)
 
 
 # 2020-06
 
 ## Art and Science of Machine Learning - Google Cloud
 
-<iframe src="https://drive.google.com/file/d/1dWgjllfln3dfoaOT9-lpgakYwhUZeEBz/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128942994-d37e07bb-88aa-4c99-a392-6c0d3a2004c0.png)
 
 ## Modernizing Data Lakes and Data Warehouses with GCP - Google Cloud
 
-<iframe src="https://drive.google.com/file/d/1X8ClAskUfp2sk8ZlnMULBusKbVh2TXpl/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128943024-a3864d27-18ff-4525-8fcd-77df3bf1c70a.png)
 
 # 2019-01
 
 ## Blockchain Platforms - State University of New York
 
-<iframe src="https://drive.google.com/file/d/1j7m458blSA6CDrNET0Q2_BWDVziUchDJ/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128943054-b4ff0877-9b6a-4edb-863e-f5c623604ee0.png)
 
 
 # 2018-12
@@ -186,15 +181,15 @@ __[Credential URL](https://triplebyte.com/tb/junfan-zhu-kfxhnjo/certificate/trac
 
 ## Deep Learning for Business - Yonsei University
 
-<iframe src="https://drive.google.com/file/d/1Hc-5usaMLY6NirzocgBrZGdvqRSXhdgE/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128943083-4dd3c6ac-4a66-43db-928b-5b70c2d43de0.png)
 
 ## Deep Learning with Tensorflow - edX
 
-<iframe src="https://drive.google.com/file/d/1grxlgjNJq3pFi9gnbnt9RQH1os0FmmlN/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128943111-9313b8f7-c2e6-403f-b9e2-700eead71195.png)
 
 ## FPGA computing systems: Background knowledge and introductory materials - Politecnico Milano
 
-<iframe src="https://drive.google.com/file/d/1VBvNlEzHw0yGLFhyb-Wjw-emnXiajO47/preview" width="640" height="480"></iframe>
+![Uploading image.png…]()
 
 
 
