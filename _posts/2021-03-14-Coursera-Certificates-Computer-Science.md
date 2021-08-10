@@ -40,9 +40,6 @@ __Online Course notes and detailed evaluations, please refer to my [Douban blogs
 <object data="https://github.com/junfanz1/junfanz1.github.io/files/6964740/Cover_letter_2020_Feb_20_summer_intern_Junfan_Zhu.pdf" type="application/pdf" width="100%" height="877px">
 
 
-
-<iframe src="https://drive.google.com/file/d/1PsIA_QU6H0JHttq4zb2xZx0-xAQJV6oJ/preview" width="640" height="480"></iframe>
-
 ## Data Science in Production: Building Scalable Model Pipelines - Educative
 
 <iframe src="https://drive.google.com/file/d/1uGDDeyu3-6iYjbsQJ2yMCXUzZwtVTLXy/preview" width="640" height="480"></iframe>
