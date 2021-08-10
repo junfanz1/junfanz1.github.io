@@ -37,7 +37,7 @@ __Online Course notes and detailed evaluations, please refer to my [Douban blogs
 
 ## Cloud Computing Applications, Part 2: Big Data and Applications in the Cloud - UIUC
 
-<object data="https://github.com/junfanz1/junfanz1.github.io/files/6964740/Cover_letter_2020_Feb_20_summer_intern_Junfan_Zhu.pdf" type="application/pdf" width="100%" height="877px">
+![image](https://user-images.githubusercontent.com/56275127/128941667-e8d8d79f-1ae6-4c15-a471-a700ccb32fa7.png)
 
 
 ## Data Science in Production: Building Scalable Model Pipelines - Educative
