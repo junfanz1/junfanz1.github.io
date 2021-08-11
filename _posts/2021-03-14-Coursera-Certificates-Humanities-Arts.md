@@ -1,5 +1,5 @@
 ---
-title: "Coursera Course Certificates - Humanities, Arts & Social Sciences"
+title: "Coursera Course Certificates - Humanities, Arts & Social Sciences (59)"
 date: 2021-03-14
 categories:
   - MOOC
@@ -33,273 +33,274 @@ tags:
 
 # 2021-04
 
-## Write Like Mozart: An Introduction to Classical Music Composition - National University of Singapore
+## 59  Write Like Mozart: An Introduction to Classical Music Composition - National University of Singapore
 
-<iframe src="https://drive.google.com/file/d/18anFj2V36Q_pms7R32JhYu5mzdV_bNLa/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949148-cc796221-7464-4759-a0c8-5ca12d52b9db.png)
 
-## 職場素養 (Professionalism) - 台湾大学
+## 58  職場素養 (Professionalism) - 台湾大学
 
-<iframe src="https://drive.google.com/file/d/1DUx2mBV65rCZWs74Rv4xsQmGFUlj0HJd/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949179-ff3ed5ec-7b4a-47bc-bd04-113ef719a927.png)
 
 # 2021-03
 
-## 《新教伦理与资本主义精神》导读 - 复旦大学
+## 57  《新教伦理与资本主义精神》导读 - 复旦大学
 
-<iframe src="https://drive.google.com/file/d/1QnPQ7C1tfy56EWJ8thjCrUrqRX7espwa/preview" width="640" height="480" allow="autoplay"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949211-53a02bba-caac-4547-bf40-c26f990c3326.png)
 
-## Philosophy of Science - University of Pennsylvania
+## 56  Philosophy of Science - University of Pennsylvania
 
-<iframe src="https://drive.google.com/file/d/1X63HECOUNfbBURcHlGCK8sUm20VoUn_X/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949584-405e76c7-6f73-4e19-85a7-a7d3cabb569c.png)
 
-## Guitar for Beginners - Berklee College of Music
+## 55  Guitar for Beginners - Berklee College of Music
 
-<iframe src="https://drive.google.com/file/d/1PFymK9zbu12f2XEM9zkJAVL9lc-Z1I6w/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949616-dedf0adb-93de-42dd-81a4-2f8cdc6d708b.png)
 
-## Teaching the Violin and Viola: Creating a Healthy Foundation - Northwestern University
+## 54  Teaching the Violin and Viola: Creating a Healthy Foundation - Northwestern University
 
-<iframe src="https://drive.google.com/file/d/1PGposqy_0s10FwjtGX9BSF-yHVF0HLXu/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949642-b87d666e-8466-418f-9406-a1de50511462.png)
 
-## 紅樓夢(The Red Chamber Dream) - 台湾大学
+## 53  紅樓夢(The Red Chamber Dream) - 台湾大学
 
-<iframe src="https://drive.google.com/file/d/1cBB7xmSPnN6GAkkKoV10GQXxgU9cEAcB/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949036-c21dc782-c333-4bb9-85f4-984f13defc62.png)
 
-## 又見大觀:《紅樓夢》中的烏托邦 (The Red Chamber Dream (3): Daguan Garden) - 台湾大学
+## 52  又見大觀:《紅樓夢》中的烏托邦 (The Red Chamber Dream (3): Daguan Garden) - 台湾大学
 
-<iframe src="https://drive.google.com/file/d/1cNJehLVyVL2VfQW1rSY4nHaMulQ2JEtI/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949078-63cc6f49-f2c8-4eb2-be86-250e4316ec58.png)
 
-## 唐詩新思路 (Tang Poetry) - 台湾大学
+## 51  唐詩新思路 (Tang Poetry) - 台湾大学
 
-<iframe src="https://drive.google.com/file/d/1V5SZZ5uaCU_cLOxKZO1Ekvw-03bn6brt/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949105-0e042444-b785-498e-a991-c4452253d95d.png)
 
 ---
 
 # 2021-02
 
-## Age of Jefferson - University of Viginia
+## 50  Age of Jefferson - University of Viginia
 
-<iframe src="https://drive.google.com/file/d/1e4sZTRM8LRObgPfiPcbYyRYm082qFQDD/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949669-1a4f0dab-4211-4d24-9dfa-8cf1bcc904c2.png)
 
-## In the Studio: Postwar Abstract Painting - Museum of Modern Art (MoMA)
+## 49  In the Studio: Postwar Abstract Painting - Museum of Modern Art (MoMA)
 
-<iframe src="https://drive.google.com/file/d/1bPzOtay-WIlGJMIZ9HhoRkQFkcI_enID/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949694-afa7441a-40f1-4458-a8b5-1f461e77e8a8.png)
 
-## Richard Schechner's Introduction to Performance Studies - NYU
+## 48  Richard Schechner's Introduction to Performance Studies - NYU
 
-<iframe src="https://drive.google.com/file/d/1R2XHPyPTpFQTHJZulT_Pq21O0EJ_qDns/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949724-df298c77-69cf-4e5c-9dae-3602383ee533.png)
 
-## The Ancient Greeks - Wesleyan University
+## 47  The Ancient Greeks - Wesleyan University
 
-<iframe src="https://drive.google.com/file/d/1lXpk9s13N-WD8SodNZpJWMXAsmVdzpZa/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949750-7e6df40c-d9f7-4711-b2f8-9bbee25dbf13.png)
 
-## The Bible's Prehistory, Purpose, and Political Future - Emory University
+## 46  The Bible's Prehistory, Purpose, and Political Future - Emory University
 
-<iframe src="https://drive.google.com/file/d/1z0IZo9FW5Ulc_AfJr98NZkQrOPsaxN3c/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949775-5722228b-a196-47f6-941d-de3985dd9d59.png)
 
-## The Talmud: A Methodological Introduction - Northwestern University
+## 45  The Talmud: A Methodological Introduction - Northwestern University
 
-<iframe src="https://drive.google.com/file/d/1_JKqwE_QPiYGS_6vZxoEe2__mTHrALAv/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949794-887560a9-a117-4c08-839d-ffc85551fd74.png)
 
-## Understanding Memory: Explaining the Psychology of Memory through Movies - Wesleyan University
+## 44  Understanding Memory: Explaining the Psychology of Memory through Movies - Wesleyan University
 
-<iframe src="https://drive.google.com/file/d/1kftnFvmJe3D41n6cYXa_pB9LTX8zAxqI/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949817-8064b72b-da0a-4aea-9c64-a6ecb95a4d50.png)
 
-## William Shakespeare's Twelfth Night: Comedy, Conflict, and Community - University of Colorado
+## 43  William Shakespeare's Twelfth Night: Comedy, Conflict, and Community - University of Colorado
 
-<iframe src="https://drive.google.com/file/d/1REalm_Wj_eaug_lni0DeNWuXprVk4Mn3/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949835-d6462175-c373-4172-9dc8-f14f924d0e5c.png)
 
-## Wine Tasting: Sensory Techniques for Wine Analysis - UC Davis
+## 42  Wine Tasting: Sensory Techniques for Wine Analysis - UC Davis
 
-<iframe src="https://drive.google.com/file/d/1Nd0YqxYCN98k2R2ALTeM-JeFroYm6sza/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949862-74841482-10bd-4590-bc9e-778c0f82711c.png)
 
-## Words Spun Out of Images: Visual and Literary Culture in Nineteenth Century Japan - University of Tokyo
+## 41  Words Spun Out of Images: Visual and Literary Culture in Nineteenth Century Japan - University of Tokyo
 
-<iframe src="https://drive.google.com/file/d/1paFQNV793R4JNDStH0OeyuqB_M1Vt2od/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949881-b9a34d04-fbaa-4d0d-988f-f601885619f9.png)
 
-## Write Your First Novel - Michigan State University
+## 40  Write Your First Novel - Michigan State University
 
-<iframe src="https://drive.google.com/file/d/1Ezm4daI6Z5P22nwjcSbkOCSeophq_Om5/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949911-9b163aab-f5fa-446e-897a-89e571ee3a74.png)
 
-## 史記 (Shi Ji) - 台湾大学
 
-<iframe src="https://drive.google.com/file/d/14jHxdWBKHbBsF6m0cTHFKUD9UzuZYsyq/preview" width="640" height="480"></iframe>
+## 39  史記 (Shi Ji) - 台湾大学
+
+![image](https://user-images.githubusercontent.com/56275127/128949131-b3e03ee3-8d84-435b-9b98-41ba0dc44114.png)
 
 ---
 
 # 2021-01
 
-## Civic Engagement in American Democracy - Duke University
+## 38  Civic Engagement in American Democracy - Duke University
 
-<iframe src="https://drive.google.com/file/d/1bpKcAqK0od3aRIs96tEdigdBrLVCX_bi/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949940-7a0588ea-b43c-4d28-8153-a225bc7ccc47.png)
 
-## Constitutional Reforms in Russia - Saint Petersburg State University
+## 37  Constitutional Reforms in Russia - Saint Petersburg State University
 
-<iframe src="https://drive.google.com/file/d/1crrTHPFQnszszjkIk2Oj4ccOwTRDK3R8/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949974-bfd30f47-171f-4c3a-a75a-ce3e659d221e.png)
 
-## Management of Fashion and Luxury Companies - Universita Bocconi
+## 36  Management of Fashion and Luxury Companies - Universita Bocconi
 
-<iframe src="https://drive.google.com/file/d/146o7CJto8X1RfY9B3PHCnxKdCKkNSVDH/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950000-45816a66-b02e-4814-8e3a-e3abfe26ff41.png)
 
-## Plagues, Witches, and War: The Worlds of Historical Fiction - University of Virginia
+## 35  Plagues, Witches, and War: The Worlds of Historical Fiction - University of Virginia
 
-<iframe src="https://drive.google.com/file/d/1t3I6GqKt9bXsB11tNjLgDnw4jFmpMRHk/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950012-f1447bca-a31d-4430-b704-8ca10a176164.png)
 
-## Relativism - UC Irvine
+## 34  Relativism - UC Irvine
 
-<iframe src="https://drive.google.com/file/d/1uXR4ILZVN0O14OzKKaj9vn3eE-hXulRr/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950041-82312cbd-f966-48b3-b9e9-effa5c26a143.png)
 
-## Schizophrenia - Wesleyan University
+## 33  Schizophrenia - Wesleyan University
 
-<iframe src="https://drive.google.com/file/d/1ospjBK95ebRHbNTKW16u0qFD6lKJyug5/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950068-4661576f-2f7f-425a-a026-9d70fea51d56.png)
 
-## Social and Economic Networks: Models and Analysis - Stanford Online
+## 32  Social and Economic Networks: Models and Analysis - Stanford Online
 
-<iframe src="https://drive.google.com/file/d/1MbojbARngIThao4fp65E5OqtbzMaGfj8/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950093-002500c8-70bb-4e87-938c-797b8fc8cd00.png)
 
-## The American South: Its Stories, Music, and Art - University of North Carolina at Chapel Hill
+## 31  The American South: Its Stories, Music, and Art - University of North Carolina at Chapel Hill
 
-<iframe src="https://drive.google.com/file/d/1yBfdqOGsGsRBR_ld2aLrFxoAgDsXqQj5/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950122-bee8886b-b304-4e40-bf85-668d099b33e6.png)
 
-## The Modern and the Postmodern (Part 1) - Wesleyan University
+## 30  The Modern and the Postmodern (Part 1) - Wesleyan University
 
-<iframe src="https://drive.google.com/file/d/1cwN6OO3UomRsDFJfNZR4gG25IT7SnHIA/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950141-1a532a57-1768-438f-af1f-4c172d0b396c.png)
 
-## The Modern and the Postmodern (Part 2) - Wesleyan University
+## 29  The Modern and the Postmodern (Part 2) - Wesleyan University
 
-<iframe src="https://drive.google.com/file/d/1GGocAMOsJm-1ZJ1CgXYXCm6AmzK2if_s/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950156-bd9856c7-a5f6-45ef-92b7-134fcfafbba8.png)
 
-## The Politics of Skepticism - Erasmus University Rotterdam
+## 28  The Politics of Skepticism - Erasmus University Rotterdam
 
-<iframe src="https://drive.google.com/file/d/1FoqHU_Y8vmTkZN4HrXTI-Ux11W184bK1/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950175-331406a3-1e6e-493c-99c4-14a5516365f6.png)
 
-## Understanding International Relations Theory - Higher School of Economics (HSE) National Research University
+## 27  Understanding International Relations Theory - Higher School of Economics (HSE) National Research University
 
-<iframe src="https://drive.google.com/file/d/1mDKSx2o-5m6NqVDibAltKr1qVMGPpObD/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950255-43623b0f-7489-4439-b46a-7b1aee34bfc7.png)
 
-## Understanding Korean Politics - Yonsei University
+## 26  Understanding Korean Politics - Yonsei University
 
-<iframe src="https://drive.google.com/file/d/1m3hDI17hgd05-2JGcSrI7-IZ1FYySTGp/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950284-cf07cfa9-a380-45eb-b410-18926ee883e7.png)
 
-## 中國古代歷史與人物:秦始皇(Qin Shi Huang) - 台湾大学
+## 25  中國古代歷史與人物:秦始皇(Qin Shi Huang) - 台湾大学
 
-<iframe src="https://drive.google.com/file/d/16PDIwzCsFYQ7IaPi8XKWD0k9_K58LSOT/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950317-c8d5175c-3c17-4210-9168-4ff7e7365e56.png)
 
-## 莊子─人情 (Zhuangzi─Between People) - 台湾大学
+## 24  莊子─人情 (Zhuangzi─Between People) - 台湾大学
 
-<iframe src="https://drive.google.com/file/d/1I93o2wbu6bh0ZFfYG_ubQZLvJedXo_pd/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128949006-8db3ae75-4470-4fbc-9ea6-acdf572bd2ec.png)
 
-## 莊子─姿勢、意識與感情 (Zhuangzi─Posture, Awareness, and Sentiment) - 台湾大学
+## 23  莊子─姿勢、意識與感情 (Zhuangzi─Posture, Awareness, and Sentiment) - 台湾大学
 
-<iframe src="https://drive.google.com/file/d/1dPBIEOAqP2swCkGzKYMvvVuq56C3w9jc/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128948673-b8f282b4-622d-4690-affd-155a6e485d4d.png)
 
 ---
 
 # 2020-12
 
-## Global Diplomacy – Diplomacy in the Modern World - University of London
+## 22  Global Diplomacy – Diplomacy in the Modern World - University of London
 
-<iframe src="https://drive.google.com/file/d/1NeD4bLOoey8rlv1R4QEmjjgrrPqE1aWB/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950358-44164f50-acfc-4cc5-806b-88ef07b9f277.png)
 
-## The Art of Music Production - Berklee College of Music
+## 21  The Art of Music Production - Berklee College of Music
 
-<iframe src="https://drive.google.com/file/d/1RbPe18fWs1u3hLLp7wSOzeIgrbbYtm5i/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950392-4f6b6e91-f5f4-44bb-90e5-e298c9ef7a48.png)
 
-## The Modern World, Part One: Global History from 1760 to 1910 - University of Virginia
+## 20  The Modern World, Part One: Global History from 1760 to 1910 - University of Virginia
 
-<iframe src="https://drive.google.com/file/d/1B5osp-LkbTjMGpZqFd8QrtU12sDey6w-/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950430-567f10cf-6a62-466c-adda-d71223cf26c5.png)
 
-## The Modern World, Part Two: Global History since 1910 - University of Virginia
+## 19  The Modern World, Part Two: Global History since 1910 - University of Virginia
 
-<iframe src="https://drive.google.com/file/d/1q00kmdjEVdDoFBfOb2dHEfap2hbre-uz/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950496-5b209d3d-fe2f-4d93-ad0b-6405c9529a04.png)
 
 ---
 
 # 2020-11
 
-## Russian History: from Lenin to Putin - UC Santa Cruz
+## 18  Russian History: from Lenin to Putin - UC Santa Cruz
 
-<iframe src="https://drive.google.com/file/d/1mQ_wOK-KalZo_NWhsrXv4Mk6KMkN7lRX/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950524-0a504b41-9010-4b2d-89ea-bb8502256862.png)
 
-## Søren Kierkegaard - Subjectivity, Irony and the Crisis of Modernity - University of Copenhagen
+## 17  Søren Kierkegaard - Subjectivity, Irony and the Crisis of Modernity - University of Copenhagen
 
-<iframe src="https://drive.google.com/file/d/1LZpY6mBYeRE-iEoLeAmQGx6B4i7eXuZ3/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950545-725deeb2-ef6c-49c3-a391-7d769aecc1d4.png)
 
 ---
 
 # 2020-10
 
-## Classical Sociological Theory - University of Amsterdam
+## 16  Classical Sociological Theory - University of Amsterdam
 
-<iframe src="https://drive.google.com/file/d/1x_Dy0Dw8RkIEFQ3ma62iuKeQc7K1APwx/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950573-94832aa3-e528-4a8a-be75-f9caeb6fd253.png)
 
-## Financial Markets (with Honors) - Yale
+## 15  Financial Markets (with Honors) - Yale
 
-<iframe src="https://drive.google.com/file/d/116NT3hj7gAhEiqr6bjst4xsMxGBdlZPT/preview" width="640" height="480"></iframe>
-
-
-## Introduction to Classical Music - Yale
-
-<iframe src="https://drive.google.com/file/d/1Mfg9ji4-sWDLFx3r85_HJHELKQOiRpEl/preview" width="640" height="480"></iframe>
-
-## Introduction to Psychology - Yale
-
-<iframe src="https://drive.google.com/file/d/1ATVyFbFOKjemLVP4QdqFdvGhiBEtHe73/preview" width="640" height="480"></iframe>
-
-## Modern Art & Ideas - Museum of Modern Art (MoMA)
-
-<iframe src="https://drive.google.com/file/d/1xc6K0cTNmiFtTAaAQNghaE-ljSBrfHza/preview" width="640" height="480"></iframe>
-
-## Mountains 101 - University of Alberta
-
-<iframe src="https://drive.google.com/file/d/1LcURtjrG7lGfxVPhp3bQltKCkob844av/preview" width="640" height="480"></iframe>
-
-## The Beauty of Kunqu Opera - Chinese University of Hong Kong
-
-<iframe src="https://drive.google.com/file/d/144zUm7Ck2YP39GNmn7BtZnr4u7XoApYN/preview" width="640" height="480"></iframe>
-
-## The Global Financial Crisis - Yale
-
-<iframe src="https://drive.google.com/file/d/1Xkyxl2ujGsRQypUKhaquRe_vKcJhkTLH/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950599-e0d0c6a7-aa11-450b-a90c-5cbef4d8440c.png)
 
 
-## The Science of Well-Being - Yale
+## 14  Introduction to Classical Music - Yale
 
-<iframe src="https://drive.google.com/file/d/13VE5i-TQ1XGqdB8XEi5X53VG0XrgLVZv/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950630-af673baf-387e-4d2e-a90a-611f183e07fb.png)
+
+## 13  Introduction to Psychology - Yale
+
+![image](https://user-images.githubusercontent.com/56275127/128950651-519e20b5-9f3d-405b-84d5-5826d935f4dc.png)
+
+## 12  Modern Art & Ideas - Museum of Modern Art (MoMA)
+
+![image](https://user-images.githubusercontent.com/56275127/128950688-d74e1fed-df45-4b68-8f7c-5b1f2d3057e9.png)
+
+## 11  Mountains 101 - University of Alberta
+
+![image](https://user-images.githubusercontent.com/56275127/128950714-5fb98afb-45e1-42a7-9589-8abc5c2e06bf.png)
+
+## 10  The Beauty of Kunqu Opera - Chinese University of Hong Kong
+
+![image](https://user-images.githubusercontent.com/56275127/128950747-6fd5a661-8289-4124-b07b-416f2afeffd4.png)
+
+## 9  The Global Financial Crisis - Yale
+
+![image](https://user-images.githubusercontent.com/56275127/128950763-8b17fc63-68ea-428a-b8b9-1661b99892fc.png)
+
+
+## 8  The Science of Well-Being - Yale
+
+![image](https://user-images.githubusercontent.com/56275127/128950786-fd3834bf-e6fb-495b-b828-f0f18066bc5b.png)
 
 ---
 
 # 2020-09
 
-## A Law Student’s Toolkit - Yale
+## 7  A Law Student’s Toolkit - Yale
 
-<iframe src="https://drive.google.com/file/d/1XdKAmAE2fHQuDDFH0c5y8UiyGlMt6Nil/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950811-baffb14a-c664-4381-911d-9137a5f8617c.png)
 
-## Introduction to Philosophy - University of Edinburgh
+## 6  Introduction to Philosophy - University of Edinburgh
 
-<iframe src="https://drive.google.com/file/d/1ArNiE_5KbIklw_OKYbw7Dvz9Dw5icCRr/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950838-cdf3a0f3-4d71-4413-b9d9-792e04cd9c18.png)
 
-## Moral Foundations of Politics - Yale
+## 5  Moral Foundations of Politics - Yale
 
-<iframe src="https://drive.google.com/file/d/1ZOCRIKn236aDGFP4l7fGfg46ke4Dy9mI/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950868-8f144975-3b0a-4249-a5a4-c8772fcd73de.png)
 
-## Successful Negotiation: Essential Strategies and Skills - University of Michigan
+## 4  Successful Negotiation: Essential Strategies and Skills - University of Michigan
 
-<iframe src="https://drive.google.com/file/d/1hhZ4fVnYDxIqxPrYoJ5uvANFMHrZbpl_/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950893-eb774b52-e094-46bf-97a0-6023906f4f26.png)
 
 ---
 
 # 2020-08
 
-## Bloomberg Market Concepts - Bloomberg
+## 3  Bloomberg Market Concepts - Bloomberg
 
-<iframe src="https://drive.google.com/file/d/1xrQDNMy7GlGhDYjl7OnmkG6hfuJzHZNb/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950937-869b03ba-f4af-4489-9b11-02309bdc75da.png)
 
-## Introduction to English Common Law - University of London
+## 2  Introduction to English Common Law - University of London
 
-<iframe src="https://drive.google.com/file/d/1Q_QK1JxiA4JsXRTrQw5_Rh_MWvuNcsR2/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950959-584d93e5-b066-450a-afa8-60bd876e49fb.png)
 
-## Introduction to Key Constitutional Concepts and Supreme Court Cases - University of Pennsylvania
+## 1  Introduction to Key Constitutional Concepts and Supreme Court Cases - University of Pennsylvania
 
-<iframe src="https://drive.google.com/file/d/1H7RigMK8My8x9U0s1tMwx0EQdGe83z0P/preview" width="640" height="480"></iframe>
+![image](https://user-images.githubusercontent.com/56275127/128950994-9f3b89a7-97a6-4039-9b7d-2ea5db31083f.png)
 
 __Online Course notes and detailed evaluations, please refer to my [Douban blogs](https://www.douban.com/people/junfanz/).__
 
