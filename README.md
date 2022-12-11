@@ -4,7 +4,7 @@ Welcome to my blog! https://junfanz1.github.io/
 
 An interesting tech blog on Financial Mathematics, Machine Learning, and coding.
 
-## Blog
+## Blogs
 
 - [09 Essential Linux](https://junfanz1.github.io/blog/practical%20guide/Essential-Linux/)
 - [08 Stochastic Volatility Modeling - Char 2 Local Volatility - Notes](https://junfanz1.github.io/blog/book%20notes%20series/Stochastic-Volatility-Modeling-Char-2-Local-Volatility-Notes/)
@@ -19,7 +19,8 @@ An interesting tech blog on Financial Mathematics, Machine Learning, and coding.
 - [Quant Essential Takeaways](https://junfanz1.github.io/blog/takeaways/Quant-Essentials-Takeaways/)
 
 
-## Presentation
+## Presentations
+
 
 - [Carr Wu Method for Volatility Surface](https://junfanz1.github.io/blog/project%20presentations/Carr-Wu-Method-for-Volatility-Surface/)
 - [Local Stochastic Volatility, Wasserstein Distance and Particle Filtering in Numerical Option Pricing](https://junfanz1.github.io/blog/project%20presentations/Local-Stochastic-Volatility-Wasserstein-Distance-and-Particle-Filtering-in-Numerical-Option-Pricing/)
@@ -27,7 +28,8 @@ An interesting tech blog on Financial Mathematics, Machine Learning, and coding.
 - [SVI, fPCA and Microstructures of Volatility Modeling](https://junfanz1.github.io/blog/project%20presentations/SVI-fPCA-and-Microstructures-of-Volatility-Modeling/)
 
 
-## Coursera Learning
+## Coursera Learnings
+
 
 - [Coursera Course Certificates - Physical Sciences (24)](https://junfanz1.github.io/mooc/online%20course%20certificates/Coursera-Certificates-Physical-Sciences/)
 - [Coursera Course Certificates - Humanities, Arts & Social Sciences (59)](https://junfanz1.github.io/mooc/online%20course%20certificates/Coursera-Certificates-Humanities-Arts/)
