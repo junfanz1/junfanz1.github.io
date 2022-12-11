@@ -35,6 +35,8 @@ Since I live in Chicago, I also travelled by [Amtrak trains](https://www.amtrak.
 
 My hobbies are bartending, open water diving, private pilot, skiing, trekking, Chinese Calligraphy, Violin, Kunqu Opera and I'm a big fan of AoT (Attack on Titan). I love reading and keep [notes](https://github.com/junfanz1/Douban) on humanities and arts.
 
+***
+
 I'm currently an Analyst at [Societe Generale](https://americas.societegenerale.com/en/) in Chicago. I graduated with [MS. Financial Mathematics](https://finmath.uchicago.edu/) from [UChicago](https://www.uchicago.edu/) in December 2020, and expected to graduate with [MS. Computer Science](https://omscs.gatech.edu/) from [Georgia Tech](https://www.gatech.edu/) in 2023 June. My interests are Quant Research/Trading, Machine Learning and Computer Science. 
 
 Before full time at SocGen, I was a Quantitative Project Researcher at Belvedere Trading, building stochastic models for S&P volatility term structure analysis. In 2020 summer, I interned at Societe Generale. I researched on Variational Autoencoder, robust regression's applications on quanto futures Monte Carlo analysis. In Sinovation Venture Deep Learning program, I digged microstructure features with Refinitiv’s 20-year Forex tick data with ElasticNet, GBRT, CatBoost, LightGBM for multivariate time series, and to forecast order book dispersion’s micro-price. 
