@@ -31,17 +31,14 @@ tags:
 </script>
 
 
-
 Essential Linux
 ==================
 
 > __Junfan Zhu__ 
 >
-> [junfanz@gatech.edu](mailto:junfanz@gatech.edu)
+> [`Email`: junfanz@gatech.edu](mailto:junfanz@gatech.edu) | [`Blog`: junfanz1.github.io](https://junfanz1.github.io)
 >
 > Last update: 2022-12-10
->
-> Download PDF version of this blog: [Essential Linux PDF](https://github.com/junfanz1/junfanz1.github.io/blob/master/Notes/Essential%20Linux.pdf) (32 pages)
  
 Content
 ---------
@@ -301,7 +298,7 @@ Execute above shell and pass each value into it.
 |17. `read name, echo Hello, $name`| You enter `World`, it outputs `Hello, World`|
 |18. `read -p "balabala" -t 5 name, echo Hello, $name`| It says `balabala` and suggest you to input, You enter `World`, it outputs `Hello, World`. It wait for your input for only `5` seconds, if you don't answer, after `5` seconds it ignores such command, and continues to the next command, which is `echo Hello, $name`, and output `Hello,`. |
 |19. `echo "Hello World" > output.txt`| output into file `output.txt`. You can see the output by `ls, cat output.txt`. |
-|20. `test -e test.sh && echo "exist" \|\| echo "Not exist"` | output exist if `test.sh` exist, vice versa. Note that after every `test`, need to enter another line `echo $?` to see its result, result `0` means true, `nonzero` means false. |
+|20. `test -e test.sh && echo "exist" || echo "Not exist"` | output exist if `test.sh` exist, vice versa. Note that after every `test`, need to enter another line `echo $?` to see its result, result `0` means true, `nonzero` means false. |
 |21. `test $a -eq $b`| if `a` equals to `b`. Note that `eq` is equal, `ne` is not equal, `gt` is >, `lt` is <, `ge` is >=, `le` is <=. |
 |22. `[ 2 -lt 3 ]`| True, return 0. Note that `[]` is same as `test` but more in if conditions. Everything inside `[]` needs `<Space>`. |
 | 23. `name="abc", [ "$name" == "abc" ]`| True. Note that every string including variable needs `""`. |
@@ -722,14 +719,14 @@ Difference between pipe and file redirection:
 
 *Pipe command*
 
-`find . -name '*.py' \| xargs cat \| wc -l`
+`find . -name '*.py' | xargs cat | wc -l`
 
 - Calculate total rows of all the `.py` files under current directory. 
-  - __Notes:__ `find .` means find in current directory, `\|` is a pipe to output to next command. 
+  - __Notes:__ `find .` means find in current directory, `|` is a pipe to output to next command. 
   - `xargs` turns `stdin` to file's content, using `<Space>` to separate contents in `stdin`, as an input and pass into `cat`. 
   - `xargs cat` is to `cat` show contents of all the files, same as `cat ./a.py ./b.py ./c.py and so on`. 
   - `wc` is total rows of `stdin`. 
-  - Without `xargs`, the output will only be total number __file names__, not the total rows of __contents__ of the files.|
+  - Without `xargs`, the output will only be total number __file names__, not the total rows of __contents__ of the files.
 
 *Notes on `xargs`* 
 
@@ -763,7 +760,7 @@ Difference between pipe and file redirection:
 |3. `free -h`| Show memory usage.|
 |4. `du -sh`| Show current directory occupies how much space on hard disk.|
 |5. `ps aux`| Show all processes.|
-|6. `ps aux \| grep abc`| Search for one specific process `abc`, `\|` is pipe, `grep` is a string matching tool to find a name includes `abc`. It will show 2 processes, the first one being that process we want to find, the second one is current `grep` process. (After you find this process, you can kill it.) |
+|6. `ps aux | grep abc`| Search for one specific process `abc`, `|` is pipe, `grep` is a string matching tool to find a name includes `abc`. It will show 2 processes, the first one being that process we want to find, the second one is current `grep` process. (After you find this process, you can kill it.) |
 |7. `kill -9 pid`| To kill a Process ID = `pid`. If `pid = 6298`, then `kill -9 6298`. Note: `-9` means `SIGKILL` signal. If you want to use `SIGTERM` signal, do `kill -s SIGTERM pid`.|
 |8. `netstat -nt`| Check Internet connection. This is useful if you want to check on `ssh myserver`, there may be many IP connections from Internet worldwide. |
 |9. `w`| List current logging in user.|
@@ -778,13 +775,13 @@ Difference between pipe and file redirection:
 |3. `find path/ | sort` | Sort content of every line (file names under `path`) by alphabetical order. |
 |4. `head -5 main.txt > top.txt`| Get first 5 rows in `main.txt`, store the result in `top.txt`. Same logic, `tail -5` means the last 5 rows. |
 |5. `tree` or `tree /path/`| Show structure of current directory. `tree . -a` includes hidden files. |
-|6. `find /path/ -name '*.py' \| xargs cat \| grep 'balabala'`| Search from whole folder and all files, which line contains string `balabala`, output this line with highlight. `xargs` read the `stdin` result from pipe, and put the file name as pass-in parameter to `cat`, `cat` list the __content__ of file (If without `xargs` to convert `stdin` to pass-in parameter, `cat` will only list the file __name__). Note that we only know if there's a line that contains `balabala`, but we don't know this line belongs to which file. To do so, we need `ag balabala`.|
+|6. `find /path/ -name '*.py' | xargs cat | grep 'balabala'`| Search from whole folder and all files, which line contains string `balabala`, output this line with highlight. `xargs` read the `stdin` result from pipe, and put the file name as pass-in parameter to `cat`, `cat` list the __content__ of file (If without `xargs` to convert `stdin` to pass-in parameter, `cat` will only list the file __name__). Note that we only know if there's a line that contains `balabala`, but we don't know this line belongs to which file. To do so, we need `ag balabala`.|
 |7. `ag balabala`| Global search and show which file which line contains string `balabala`. This is much more intelligent than above command, very useful. |
 |8. `wc main.cpp`, `wc match_server/*`| Count total lines, words and characters, can do either single file `main.cpp` or a bunch of files under a directory `match_server/*`. |
-|9. `find . -name '*.cpp' \| xargs cat \| wc - l`| Count total code lines of all `.cpp` files under this directory. `find . -name`: find all the files under current directory. `wc -l`: lines, `wc -w`: words, `wc -c`: characters.|
-|10. `echo $PATH \| cut -d ':' -f 3,5`| Output `PATH`, and use `:` to cut the last 3 and 5 rows. Note that `3,5` means row `3` and row `5`; `3-5` means from row `3` to row `5`.|
-|11. `echo $PATH \| cut -c 3-5`| Output `PATH`'s character 3 to character 5.|
-|12. `cat a.txt \| cut -d ' ' -f 1 \| sort > b.txt`| Pick (cut) every first (`1`) word in every row in `a.txt`, split by `' '` space, and sort in alphabetical order, store the result in `b.txt`. If you want second word in every row, change `1` to `2`. |
+|9. `find . -name '*.cpp' | xargs cat | wc - l`| Count total code lines of all `.cpp` files under this directory. `find . -name`: find all the files under current directory. `wc -l`: lines, `wc -w`: words, `wc -c`: characters.|
+|10. `echo $PATH | cut -d ':' -f 3,5`| Output `PATH`, and use `:` to cut the last 3 and 5 rows. Note that `3,5` means row `3` and row `5`; `3-5` means from row `3` to row `5`.|
+|11. `echo $PATH | cut -c 3-5`| Output `PATH`'s character 3 to character 5.|
+|12. `cat a.txt | cut -d ' ' -f 1 | sort > b.txt`| Pick (cut) every first (`1`) word in every row in `a.txt`, split by `' '` space, and sort in alphabetical order, store the result in `b.txt`. If you want second word in every row, change `1` to `2`. |
 
 
 
