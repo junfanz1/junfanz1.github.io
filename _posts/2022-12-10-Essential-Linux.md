@@ -36,9 +36,11 @@ Essential Linux
 
 > __Junfan Zhu__ 
 >
-> [`Email`: junfanz@gatech.edu](mailto:junfanz@gatech.edu) | [`Blog`: junfanz1.github.io](https://junfanz1.github.io)
+> [`Email`: junfanz@gatech.edu](mailto:junfanz@gatech.edu) 
 >
 > Last update: 2022-12-10
+>
+> Download PDF version of this blog: [Essential Linux PDF](https://github.com/junfanz1/junfanz1.github.io/blob/master/Notes/Essential%20Linux.pdf) (32 pages)
  
 Content
 ---------
