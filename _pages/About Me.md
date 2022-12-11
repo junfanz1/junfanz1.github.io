@@ -25,7 +25,7 @@ My name is Junfan Zhu. I grow up in 无锡 ([Wuxi](https://en.wikipedia.org/wiki
 
 ![eb028265fa024f1480bef5dab2034fdd](https://user-images.githubusercontent.com/56275127/119562808-64c9da80-bd6c-11eb-990c-983fe77af963.png)
 
-I completed a Marathon in 4h'55min, travelled 46 States and 13 National Parks in USA (more to go :D) - East in Maine; West in Unalaska and Cold Bay in Aleutian islands; North in Alaska Arctic Circle; South in Hawaii, Puerto Rico and Key West. 
+I love travelling, traveled 46 States and 13 National Parks in USA (more to go :D) - East in Maine; West in Unalaska and Cold Bay in Aleutian islands; North in Alaska Arctic Circle; South in Hawaii, Puerto Rico and Key West. 
 
 My favorite 12 beautiful towns in USA are: Kodiak, Alaska; Seward, Alaska; Homer, Alaska; Waikoloa, Hawaii Big Island; Honolulu, Hawaii Oahu Island; Old San Juan, Puerto Rico; Culebra, Puerto Rico; Esperanza, Vieques of Puerto Rico; Portland, Oregon; Avalon, Santa Catalina Island of California; Stowe, Vermont; Bar Harbor, Maine. 
 
@@ -33,7 +33,7 @@ My favorite 12 beautiful towns in USA are: Kodiak, Alaska; Seward, Alaska; Homer
 
 Since I live in Chicago, I also travelled by [Amtrak trains](https://www.amtrak.com/) - California Zephyr, Coast Starlight, Southwest Chief, Empire Builder, Pacific Surfliner are among the best 5; Crescent, Capitol Limited, Texas Eagle, etc. 
 
-My hobbies are bartending, open water diving, private pilot, skiing, trekking, Chinese Calligraphy, Violin, Kunqu Opera and I'm a big fan of AoT (Attack on Titan). I love reading and keep [notes](https://github.com/junfanz1/Douban) on humanities and arts.
+I completed a Marathon in 4h'55min. My hobbies are bartending, open water diving, private pilot, skiing, trekking, Chinese Calligraphy, Violin, Kunqu Opera and I'm a big fan of AoT (Attack on Titan). I love reading and keep [notes](https://github.com/junfanz1/Douban) on humanities and arts.
 
 ***
 
