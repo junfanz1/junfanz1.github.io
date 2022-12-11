@@ -775,7 +775,7 @@ Difference between pipe and file redirection:
 | ----------- | ----------- |
 |1. `find /path/ -name '*.py'`| Search all `.py` files under `path`. |
 |2. `grep balabala`| Read data from `stdin`, filter on the content if it contains string `balabala`, output this line and highlight `balabala` in red. |
-|3. `find path/ \| sort` | Sort content of every line (file names under `path`) by alphabetical order. |
+|3. `find path/ | sort` | Sort content of every line (file names under `path`) by alphabetical order. |
 |4. `head -5 main.txt > top.txt`| Get first 5 rows in `main.txt`, store the result in `top.txt`. Same logic, `tail -5` means the last 5 rows. |
 |5. `tree` or `tree /path/`| Show structure of current directory. `tree . -a` includes hidden files. |
 |6. `find /path/ -name '*.py' \| xargs cat \| grep 'balabala'`| Search from whole folder and all files, which line contains string `balabala`, output this line with highlight. `xargs` read the `stdin` result from pipe, and put the file name as pass-in parameter to `cat`, `cat` list the __content__ of file (If without `xargs` to convert `stdin` to pass-in parameter, `cat` will only list the file __name__). Note that we only know if there's a line that contains `balabala`, but we don't know this line belongs to which file. To do so, we need `ag balabala`.|
