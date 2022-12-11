@@ -1,8 +1,8 @@
 # Junfan Zhu's Blog
 
-Welcome to my blog! https://junfanz1.github.io/
+Welcome to my [blog](https://junfanz1.github.io/)! An interesting tech blog on Financial Mathematics, Machine Learning, and coding.
 
-An interesting tech blog on Financial Mathematics, Machine Learning, and coding.
+[About me](https://junfanz1.github.io/about/)
 
 ## Blogs
 
