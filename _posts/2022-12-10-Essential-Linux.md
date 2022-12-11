@@ -1,5 +1,6 @@
 ---
-title: "Essential Linux"
+title: "09 Essential Linux"
+date: 2022-12-10
 categories:
   - Blog
   - Practical Guide
