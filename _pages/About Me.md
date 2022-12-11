@@ -19,71 +19,29 @@ title: "About Me"
 
 
 
-
-
 ## __Bio__
 
-My name is Junfan Zhu (Chinese characters below).
+My name is Junfan Zhu. I grow up in 无锡 ([Wuxi](https://en.wikipedia.org/wiki/Wuxi)), a beautiful cultural city in China. 
 
 ![eb028265fa024f1480bef5dab2034fdd](https://user-images.githubusercontent.com/56275127/119562808-64c9da80-bd6c-11eb-990c-983fe77af963.png)
 
-I grow up in 无锡 ([Wuxi](https://en.wikipedia.org/wiki/Wuxi)), a beautiful cultural city in China.
+I completed a Marathon in 4h'55min, travelled 46 States and 13 National Parks in USA (more to go :D) - East in Maine; West in Unalaska and Cold Bay in Aleutian islands; North in Alaska Arctic Circle; South in Hawaii, Puerto Rico and Key West. My favorite ten beautiful towns in USA are: Kodiak, Alaska; Seward, Alaska; Homer, Alaska; Waikoloa, Big Island of Hawaii; Honolulu, Oahu Island of Hawaii; Old San Juan, Puerto Rico; Portland, Oregon; Catalina Island, California; Stowe, Vermont; Bar Harbor, Maine. Since I live in Chicago, I also travelled by [Amtrak trains](https://www.amtrak.com/) - California Zephyr, Coast Starlight, Southwest Chief, Empire Builder, Pacific Surfliner are among the best 5; Crescent, Capitol Limited, Texas Eagle, etc. 
 
-Currently, I'm an Analyst at Societe Generale in Chicago. I received M.S. degree in Financial Mathematics from the [University of Chicago](https://www.uchicago.edu/) in 2020 December. 
+![image](https://user-images.githubusercontent.com/56275127/206920092-cbe6b26b-6c2d-47e4-ae4e-cebaedb0eb42.png)
 
-My interests lie in Quant Research/Trading, Machine Learning and Computer Science.
+My hobbies are bartending, open water diving, private pilot, skiing, trekking, Chinese Calligraphy, Violin, Kunqu Opera and I'm a big fan of AoT (Attack on Titan). I love reading and keep [notes](https://github.com/junfanz1/Douban) on humanities and arts.
 
----
+I'm currently an Analyst at [Societe Generale](https://americas.societegenerale.com/en/) in Chicago. I graduated with [MS. Financial Mathematics](https://finmath.uchicago.edu/) from [UChicago](https://www.uchicago.edu/) in December 2020, and expected to graduate with [MS. Computer Science](https://omscs.gatech.edu/) from [Georgia Tech](https://www.gatech.edu/) in 2023 June. My interests are Quant Research/Trading, Machine Learning and Computer Science. 
 
-## __Experiences__
+Before SocGen, I was a Quantitative Project Researcher at Belvedere Trading, building stochastic models for S&P volatility term structure analysis. In 2020 summer, I interned at Societe Generale. I researched on Variational Autoencoder, robust regression's applications on quanto futures Monte Carlo analysis. In Sinovation Venture, I digged microstructure features with Refinitiv’s 20-year Forex tick data with ElasticNet, GBRT, CatBoost, LightGBM for multivariate time series, and to forecast order book dispersion’s micro-price. 
 
-- (2020 Oct - Dec) I was a Quantitative Project Researcher at Belvedere Trading, building stochastic models for S&P volatility term structure analysis. 
+In 2020 Spring, I was an OMM Quant Researcher Intern in a prop trading firm (with recognition), where I applied dynamic SABR with Stochastic Gradient Hamiltonian Monte Carlo (SGHMC, ICML’2014), and enhanced fitness performance by Functional Data Analysis (FDA). I compared Carr-Wu model with Stochastic Volatility Inspired (SVI) and optimized volatility surface with Nadaraya-Waston kernel estimator and B-spline. In UChicago Statistics, I researched on High Frequency Data in Microstructure Noise with Statistical Stochastic PDEs. I estimated bid-ask imbalance indicators including VWAP, TSRV, minRV, VPIN microstructure for Toxic Order Flow risk metrics. In 2019 Oct-Dec, I was an NLP Researcher in a trading firm, where I built a hybrid-sentiment trading signaling model. I have experiences as Big Data Intern at KPMG, and Top 10% in Citadel Datathon.
 
-- (2020 Jun - Sept) I interned at Societe Generale. I researched on Variational Autoencoder, robust regression's applications on quanto futures Monte Carlo analysis. In Sinovation Venture, I digged microstructure features with Refinitiv’s 20-year Forex tick data with ElasticNet, GBRT, CatBoost, LightGBM for multivariate time series, and to forecast order book dispersion’s micro-price.
-
-- (2020 Apr - Jun) I was an OMM Quant Researcher in a prop trading firm (with recognition), where I applied dynamic SABR with Stochastic Gradient Hamiltonian Monte Carlo (SGHMC, ICML’2014), and enhanced fitness performance by Functional Data Analysis (FDA). I compared Carr-Wu model with Stochastic Volatility Inspired (SVI) and optimized volatility surface with Nadaraya-Waston kernel estimator and B-spline. 
-
-- (2020 Jan - Apr) In UChicago Statistics, I researched on High Frequency Data in Microstructure Noise with Statistical Stochastic PDEs. I estimated bid-ask imbalance indicators including VWAP, TSRV, minRV, VPIN microstructure for Toxic Order Flow risk metrics. 
-
-- (2019 Oct - Dec) I was an NLP Researcher in a trading firm, where I built a hybrid-sentiment trading signaling model. 
-
-- (2018 Jan - Mar) I was a Big Data Intern at KPMG.
+I’m proficient in `Python`, `R`, `SQL`; intermediate in `C++`, `Spark`, `Linux`, `Cuda`, Cloud Native. I hold certificates of Triplebyte Certified Machine Learning Engineer, Coursera Deep Learning & NLP & Probabilistic Graphical Models Specializations, Bloomberg Market Concepts. In Rotman International Trading Competition, I ranked Top 10 Algorithmic Trader. I have honors including Outstanding Bachelor Thesis (Top 1%), Meritorious Winner in International Mathematical Contest in Modeling, and Second Prize in Asia Supercomputing Challenge.
 
 ---
 
-## __Skills & Certificates__
-
-I’m proficient in Python, R, SQL; intermediate in C++, Spark, kdb+, Cuda. 
-
-In Rotman International Trading Competition, I ranked Top 10 Algorithmic Trader. I have honors including Outstanding Bachelor Thesis (Top 1%), Meritorious Winner in International Mathematical Contest in Modeling, Second Prize in Asia Supercomputing Challenge, and Top 10% in Citadel Datathon. 
-
-## __Online Course & Book Reading Club Notes__
-
-[Online Course Certificates Gallery](https://junfanz1.github.io/categories/#online-course-certificates) is a summary of my MOOC learning journey, especially in self-quarantine time during the COVID-19 pandemic. 
-
-Online course ratings, detailed evaluations, and "Minutes of Humanities and Social Sciences Reading Club" are available on 豆瓣 ([Douban](https://www.douban.com/people/junfanz/notes)).
-
----
-
-## __Hobbies__
-
-I'm a marathon runner. I completed Dalian International Marathon in 4h'55min, and Half Marathon in 2h'11min. 
-
-I'm a big fan of trekking [^1]
-
-- Grand Circle itinerary in Southwest USA
-- Nepal Annapurna Base Camp Trek
-- Inner-Mongolia Kubuqi Desert Traverse
-
-I'm new to skiing, wrestle a lot in Cascade Mountain in Wisconsin :) 
-
-I love Chinese Calligraphy (childhood favoraites), Violin (L8, Shanghai Conservatory of Music), Kunqu Opera (my hometown culture), law (took China Bar Exam), and cooking. 
-
-[^1]: See more on [Chicago Travelling Notes](https://www.douban.com/note/796577749/), written in Chinese on Douban.
-
----
-
-## __My Links__
+## __Links__
 
 - [Blog](https://junfanz1.github.io/)  
 - [Github](https://github.com/junfanz1)  
