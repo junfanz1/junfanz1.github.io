@@ -45,6 +45,8 @@ I love travelling, traveled to 46 States and 13 National Parks in USA (more to g
 - North in Alaska Arctic Circle; 
 - South in Hawaii, Puerto Rico and Key West. 
 
+![image](https://user-images.githubusercontent.com/56275127/206920092-cbe6b26b-6c2d-47e4-ae4e-cebaedb0eb42.png)
+
 My favorite 12 beautiful towns in USA: 
 
 - Kodiak, Alaska; 
@@ -59,8 +61,6 @@ My favorite 12 beautiful towns in USA:
 - Avalon, Santa Catalina Island of California; 
 - Stowe, Vermont; 
 - Bar Harbor, Maine. 
-
-![image](https://user-images.githubusercontent.com/56275127/206920092-cbe6b26b-6c2d-47e4-ae4e-cebaedb0eb42.png)
 
 I travel by [Amtrak](https://www.amtrak.com/) - California Zephyr, Coast Starlight, Southwest Chief, Empire Builder, Pacific Surfliner are among the best 5 in my heart, I also experienced Crescent, Capitol Limited, Texas Eagle, etc. 
 
