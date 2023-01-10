@@ -38,7 +38,7 @@ I grow up in 无锡 ([Wuxi](https://en.wikipedia.org/wiki/Wuxi)), a beautiful cu
 
 ![eb028265fa024f1480bef5dab2034fdd](https://user-images.githubusercontent.com/56275127/119562808-64c9da80-bd6c-11eb-990c-983fe77af963.png)
 
-I love travelling, traveled to 46 States and 13 National Parks in USA (more to go :D) 
+I love travelling, traveled to 45 States and 13 National Parks in USA (more to go :D) 
 
 - East in Maine; 
 - West in Unalaska and Cold Bay in Aleutian islands; 
