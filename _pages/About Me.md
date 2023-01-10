@@ -45,7 +45,8 @@ I love travelling, traveled to 46 States and 13 National Parks in USA (more to g
 - North in Alaska Arctic Circle; 
 - South in Hawaii, Puerto Rico and Key West. 
 
-![image](https://user-images.githubusercontent.com/56275127/206920092-cbe6b26b-6c2d-47e4-ae4e-cebaedb0eb42.png)
+![image](https://user-images.githubusercontent.com/56275127/211465545-06b965a4-322b-4365-a70f-04acece0aa8c.png)
+
 
 My favorite 12 beautiful towns in USA: 
 
